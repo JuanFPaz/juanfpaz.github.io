@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(15, 23, 42);
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 90px;
+}
+
+/* Style the topnav links */
+.header-container a#logo {
+    display: block;
+    padding: 16px;
+    color: #ff5555;
+    border: 1px solid #bd1b1b;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 60px;
+}
+
+h1,
+h2,
+h3 {
+    color: #ff5555;
+    ;
+    -webkit-text-stroke: 2px #bd1b1b
+}
+
+.header-container nav a {
+    color: #ff6464;
+    font-size: 24px;
+    -webkit-text-stroke: 1px #bd1b1b;
+    text-align: center;
+    text-decoration: none;
+}
+
+p {
+    font-size: 24px;
+    color: #ccd6f6;
+    -webkit-text-stroke: 1px #8892b0;
+}
+
+/* Change color on hover */
+.header-container nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.body-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style the content */
+.content {
+    padding: 10px;
+    min-height: 100vh;
+
+    /* Should be removed. Only for demonstration */
+}
+
+
+/* Style the footer */
+.footer {
+    padding: 10px;
+}
