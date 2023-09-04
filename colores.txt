@@ -1,8 +1,0 @@
-background color: rgb (15,23,42)
-
-color titulos: color: #ff5555;
-
-color fluor:   color: #ff1b1b;
-
-color texto: #ccd6f6
-
