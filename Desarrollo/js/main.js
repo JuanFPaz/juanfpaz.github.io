@@ -1,0 +1,3 @@
+const parrafo = document.querySelector("p");
+
+parrafo.textContent = `Soy un apasionado desarrollador web con experiencia en la creación de aplicaciones web dinámicas y funcionales. Mi especialización se centra en el lenguaje de programación JavaScript, y me enorgullece trabajar con tecnologías modernas para ofrecer soluciones web de alta calidad. Mi conjunto de habilidades incluye el uso de herramientas poderosas como Node.js, que me permite construir aplicaciones escalables y eficientes. Siempre estoy emocionado por los desafíos creativos que presenta el mundo del desarrollo web y me esfuerzo por mantenerme actualizado con las últimas tendencias y mejores prácticas de la industria.`;
