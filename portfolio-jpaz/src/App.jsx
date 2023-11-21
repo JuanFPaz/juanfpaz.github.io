@@ -15,7 +15,7 @@ function App() {
             >
               <img
                 id="logo-img"
-                src="https://raw.githubusercontent.com/JuanFPaz/JuanFPaz.github.io/main/portfolio-jpaz-react/public/jp-logo-home-10.png"
+                src="https://raw.githubusercontent.com/JuanFPaz/JuanFPaz.github.io/main/portfolio-jpaz/public/jp-logo-home-10.png"
                 alt="jp - logo home"
               />
             </a>
