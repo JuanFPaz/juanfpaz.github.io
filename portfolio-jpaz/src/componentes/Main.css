@@ -1,0 +1,42 @@
+main {
+  margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main h1,
+  main h2,
+  main h3 {
+    color: #ff2c2c;
+    /* text-shadow: 0 0px 8px #ff2c2c; */
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  
+  main p {
+    color: #ccd6f6;
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+  
+  main p {
+    margin-top: 1em;
+  }
+    
+  h1 {
+    font-size: 3em;
+  }
+  
+  h2 {
+    font-size: 6em;
+  }
+  
+  h3 {
+    font-size: 4em;
+  }
