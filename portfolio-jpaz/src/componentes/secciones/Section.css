@@ -6,12 +6,87 @@ section {
     align-items: center;
     margin-top: 50px;
   }
-
-section div{
-    width: 80%;
-    min-height: 600px;
+section div#sobremi,
+section div#skills{
+    width: 50%;
     border: 1px solid #84a0fc;
     border-radius: 5px;
-    box-shadow: 1px 1px 30px -10px #84a0fc;
+    box-shadow: 1px 1px 15px -5px #84a0fc;
     padding: 20px;
+}
+
+section div#inicio{
+  text-shadow: 0 0px 10px #ff2c2c;
+}
+
+section div#sobremi{
+  display: flex;
+  flex-direction: column;
+}
+
+section .sobreMi-contenido{
+  display: flex;
+}
+
+section .sobreMi-main {
+  padding-right: 20px;
+}
+
+section .sobreMi-aside {
+  margin-top: 1em;
+}
+section .image-contenedor{
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  background-color: #84a0fc;
+}
+section .image-contenedor img{
+  opacity: 0.50;
+  display: block;
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  transition: opacity ease-in-out 0.5s;
+}
+
+section .image-contenedor img:hover{
+  opacity: 1;
+}
+
+section .skills-contenido{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .skills-grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 120px 120px 120px 120px 120px 120px 120px ;
+  grid-template-rows: 120px 120px;
+  gap: 8px;
+}
+
+section .skills-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #84a0fc41;
+}
+section .skills-items img{
+  width: 85%;
+}
+
+
+a{
+  color: #84a0fc;
+  text-decoration: none;
+  transition: text-shadow 0.5s ease-in-out;
+}
+
+a:hover{
+  text-shadow: 0 0 10px #84a0fc;
+
 }

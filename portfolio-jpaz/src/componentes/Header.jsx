@@ -5,23 +5,26 @@ function Header () {
   return (
     <header className='fixed-top'>
       <div className='logo-contenedor'>
-        <a href='#' id='logo'>
+        <a href='#inicio' id='logo'>
           <img src={jpazLogo} alt='logo-jpaz' />
         </a>
       </div>
       <nav>
         <ul>
           <li>
-            <a href='#section1'>Inicio</a>
+            <a href='#sobremi'>Sobre Mi</a>
           </li>
           <li>
-            <a href='#section2'>Sobre Mi</a>
+            <a href='#skills'>Skills</a>
           </li>
           <li>
-            <a href='#section3'>Mis Proyectos</a>
+            <a href='#miexperiencia'>Mi Experiencia</a>
           </li>
           <li>
-            <a href='#section4'>Curriculum Vitae</a>
+            <a href='#misestudios'>Mis Estudios</a>
+          </li>
+          <li>
+            <a href='#curriculum'>Curriculum</a>
           </li>
         </ul>
       </nav>

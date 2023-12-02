@@ -1,14 +1,13 @@
-/* eslint-disable react/prop-types */
 import './Section.css'
 
 function Inicio ({ id }) {
   return (
     <section>
-      <div id={id} className='inicio-contenedor'>
-        <h1>Hola</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet magni ab illo ullam rem suscipit aut officia beatae cumque? Quasi unde optio, libero quis eum dolores est impedit ea.</p>
+      <div id={id}>
+        <h1>Hola, mi nombre es</h1>
+        <h2>Juan Paz.</h2>
+        <h3>Te doy la bienvenida a mi sitio web.</h3>
       </div>
-
     </section>
   )
 }
