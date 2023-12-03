@@ -15,6 +15,7 @@ module.exports = {
   plugins: ['react-refresh'],
   rules: {
     "react/jsx-max-props-per-line": [1, { "when": "multiline" }],
+    "react/prop-types": "off",
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },

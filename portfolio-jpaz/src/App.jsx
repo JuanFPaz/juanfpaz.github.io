@@ -1,19 +1,15 @@
-import jpazLogo from './assets/jp-logo-home-10.png'
+import Header from './componentes/Header'
+import Main from './componentes/Main'
 
 function App () {
   return (
-    <main>
-      <section className='content' id='Inicio'>
-        <h1>Disculpe las molestias</h1>
-        <p>Me encuentro creando nuevo contenido para mi sitio web.</p>
-        <p>Nos vemos pronto.</p>
-        <div className='container'>
-          <a id='logo' href='https://github.com/JuanFPaz' target='_blank' rel='noreferrer'>
-            <img id='logo-img' src={jpazLogo} alt='jp - logo home' />
-          </a>
-        </div>
-      </section>
-    </main>
+    <div>
+      <Header />
+      <Main />
+      <footer>
+        Miau 2023
+      </footer>
+    </div>
   )
 }
 
