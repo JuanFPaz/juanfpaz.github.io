@@ -10,6 +10,8 @@ import angular from '../../assets/angular.svg'
 import java from '../../assets/java.svg'
 import notion from '../../assets/notion.svg'
 import trello from '../../assets/trello.svg'
+import git from '../../assets/git.svg'
+import github from '../../assets/github.svg'
 
 function Skills ({ id }) {
   return (
@@ -31,6 +33,8 @@ function Skills ({ id }) {
             <div className='skills-items'><img src={java} alt='' /></div>
             <div className='skills-items'><img src={notion} alt='' /></div>
             <div className='skills-items'><img src={trello} alt='' /></div>
+            <div className='skills-items'><img src={git} alt='' /></div>
+            <div className='skills-items'><img src={github} alt='' /></div>
           </div>
         </div>
       </div>

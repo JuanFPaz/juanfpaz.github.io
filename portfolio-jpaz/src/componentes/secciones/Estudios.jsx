@@ -1,9 +1,9 @@
 import './Section.css'
 
-function MisEstudios ({ id }) {
+function Estudios ({ id }) {
   return (
     <section>
-      <div id={id} className='misEstudios-contenedor'>
+      <div id={id} className='estudios-contenedor'>
         <h1>{'{ Mis Estudios }'}</h1>
       </div>
 
@@ -11,4 +11,4 @@ function MisEstudios ({ id }) {
   )
 }
 
-export default MisEstudios
+export default Estudios

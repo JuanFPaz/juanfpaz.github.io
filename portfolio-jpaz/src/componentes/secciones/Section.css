@@ -7,7 +7,9 @@ section {
     margin-top: 50px;
   }
 section div#sobremi,
-section div#skills{
+section div#skills,
+section div#experiencia,
+section div#estudios{
     width: 50%;
     border: 1px solid #84a0fc;
     border-radius: 5px;
@@ -63,12 +65,13 @@ section .skills-contenido{
 section .skills-grid{
   width: 100%;
   display: grid;
-  grid-template-columns: 120px 120px 120px 120px 120px 120px 120px ;
-  grid-template-rows: 120px 120px;
+  grid-template-columns: auto auto auto auto auto auto ;
+  grid-template-rows: 140px 140px 140px;
   gap: 8px;
 }
 
 section .skills-items{
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,7 +79,7 @@ section .skills-items{
   background-color: #84a0fc41;
 }
 section .skills-items img{
-  width: 85%;
+  width: 75%;
 }
 
 
