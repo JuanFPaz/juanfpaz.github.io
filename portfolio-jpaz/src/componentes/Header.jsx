@@ -25,9 +25,7 @@ function Header () {
       </Button>
 
       <Offcanvas show={show} onHide={handleClose} backdrop responsive='sm' placement='end' name='end' className='d-flex'>
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Responsive offcanvas</Offcanvas.Title>
-        </Offcanvas.Header>
+        <Offcanvas.Header closeButton />
         <Offcanvas.Body>
           <nav>
             <ul>
@@ -38,10 +36,10 @@ function Header () {
                 <a href='#skills'>Skills</a>
               </li>
               <li>
-                <a href='#experiencia'>Mi Experiencia</a>
+                <a href='#experiencia'>Experiencia</a>
               </li>
               <li>
-                <a href='#estudios'>Mis Estudios</a>
+                <a href='#estudios'>Estudios</a>
               </li>
               <li>
                 <a href='#contacto'>Contacto</a>

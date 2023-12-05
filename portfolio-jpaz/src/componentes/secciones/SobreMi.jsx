@@ -1,6 +1,7 @@
 import './Section.css'
 import profile from '../../assets/profile.jpg'
 import cv from '../../assets/CV-JuanPaz-2023.pdf'
+
 function SobreMi ({ id }) {
   return (
     <section>

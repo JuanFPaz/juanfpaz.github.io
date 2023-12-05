@@ -9,7 +9,8 @@ section {
 section div#sobremi,
 section div#skills,
 section div#experiencia,
-section div#estudios{
+section div#estudios,
+section div#contacto{
     width: 50%;
     border: 1px solid #84a0fc;
     border-radius: 5px;
@@ -59,9 +60,38 @@ section .image-contenedor img:hover{
 
 section .skills-contenido{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+section .softSkills-contenedor{
+  width: 100%;
+}
+
+section .hardSkills-contenedor{
+  margin-top: 15px
+}
+
+section .skills-contenido ul{
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+section .skills-contenido li{
+  padding-bottom: 10px;
+  font-size: 1.5em;
+  color: #ccd6f6;
+}
+
+section .skills-contenido li::marker{
+  color: #ff2c2c
+}
+
 section .skills-grid{
   width: 100%;
   display: grid;
@@ -91,5 +121,4 @@ a{
 
 a:hover{
   text-shadow: 0 0 10px #84a0fc;
-
 }
