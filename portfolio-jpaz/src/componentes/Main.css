@@ -18,24 +18,50 @@ main {
   main p {
     color: #ccd6f6;
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.15em;
     font-weight: 500;
     line-height: 2;
     letter-spacing: 1px;
   }
   
+  main li{
+    font-size: 1.15em;
+    font-weight: 700;
+  }
+
   main p {
     margin-top: 1em !important; 
   }
     
   h1 {
-    font-size: 2em !important;
+    font-size: 1.25em !important;
   }
   
   h2 {
-    font-size: 6em !important;
+    font-size: 3.25em !important;
   }
   
   h3 {
-    font-size: 3.5em !important;
+    font-size: 2em !important;
+  }
+
+  @media screen and (max-width: 480px) {
+    main p {
+      font-size: 2em !important;
+      font-weight: 500;
+      line-height: 2;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: 2.25em !important;
+    }
+    
+    h2 {
+      font-size: 6em !important;
+    }
+    
+    h3 {
+      font-size: 3.5em !important;
+    }
   }

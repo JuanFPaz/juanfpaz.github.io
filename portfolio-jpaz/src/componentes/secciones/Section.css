@@ -82,13 +82,14 @@ section .skills-contenido ul{
   margin: 0;
 }
 
-section .skills-contenido li{
+section .skills-contenido li,
+section .asdd li{
   padding-bottom: 10px;
-  font-size: 1.5em;
   color: #ccd6f6;
 }
 
-section .skills-contenido li::marker{
+section .skills-contenido li::marker,
+section .asdd li::marker{
   color: #ff2c2c
 }
 
@@ -112,6 +113,46 @@ section .skills-items img{
   width: 75%;
 }
 
+section .experiencia-contenido{
+  display: flex;
+}
+
+/*
+  Section .asd y .asdd son provisorias
+  Son lso contenedores de experiencia laboral.
+*/
+section .asd{
+  width: 20%;
+  color: #ccd6f6;
+  height: 300px;
+}
+
+section .asd ul{
+  list-style: none;
+  height: 100%;
+  color: #ccd6f6;
+  padding: 0;
+  margin: 0;
+}
+
+section .asd li{
+  padding: 5px;
+  font-size: 1.5em;
+  border: 1px solid #84a0fc;
+}
+
+section .asdd{
+  width: 80%;
+  padding-left: 20px;
+}
+
+section .asdd h1,
+section .asdd h2,
+section .asdd h3{
+  color: #ccd6f6;
+  font-size: 1em !important;
+  margin-bottom: 15px ;
+}
 
 a{
   color: #84a0fc;
@@ -122,3 +163,39 @@ a{
 a:hover{
   text-shadow: 0 0 10px #84a0fc;
 }
+
+/*Falta teerminar MQ */
+@media screen and (max-width: 480px) {
+  section {
+    margin-top: 15px;
+    padding: 10px
+  }
+  section div#sobremi,
+  section div#skills,
+  section div#experiencia,
+  section div#estudios,
+  section div#contacto{
+    width: 100%;
+    padding: 10px;
+  }
+
+  section div.sobreMi-contenido{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  section .image-contenedor{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: #84a0fc;
+  }
+  section .image-contenedor img{
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+}
+

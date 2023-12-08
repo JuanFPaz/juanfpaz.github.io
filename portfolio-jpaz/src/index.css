@@ -1,14 +1,27 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 html {
+  font-size: 16px !important;
   scroll-padding-top: 136px; /* Ajusta esto según el tamaño de tu barra de navegación */
 }
 
 body {
-  font-size: 10px !important;
   font-family: 'Noto Sans JP', sans-serif !important;
   background-color: #0a192f;
   margin: 0;
+}
+
+/*MQ Para el fontsize xd*/
+@media screen and (max-width: 767px) {
+  html{
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html{
+    font-size: 8px !important;
+  }
 }
