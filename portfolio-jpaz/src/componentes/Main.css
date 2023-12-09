@@ -25,7 +25,7 @@ main {
   }
   
   main li{
-    font-size: 1.15em;
+    font-size: 1em;
     font-weight: 700;
   }
 
@@ -45,7 +45,39 @@ main {
     font-size: 2em !important;
   }
 
+
+  @media screen and (max-width: 767px){
+    main {
+      margin-top: 75px;
+    }
+    main p {
+      font-size: 1.75em !important;
+      font-weight: 500;
+      line-height: 2;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: 2em !important;
+    }
+    
+    h2 {
+      font-size: 5.75em !important;
+    }
+    
+    h3 {
+      font-size: 3.75em !important;
+    }
+    main li{
+      font-size: 1.60em;
+      font-weight: 700;
+    }
+  }
+
   @media screen and (max-width: 480px) {
+    main {
+      margin-top: 66px;
+    }
     main p {
       font-size: 2em !important;
       font-weight: 500;
@@ -63,5 +95,9 @@ main {
     
     h3 {
       font-size: 3.5em !important;
+    }
+    main li{
+      font-size: 1.80em;
+      font-weight: 700;
     }
   }

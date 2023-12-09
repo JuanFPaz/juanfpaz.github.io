@@ -17,11 +17,13 @@ body {
 @media screen and (max-width: 767px) {
   html{
     font-size: 10px !important;
+    scroll-padding-top: 100px; /* Ajusta esto según el tamaño de tu barra de navegación */
   }
 }
 
 @media screen and (max-width: 480px) {
   html{
     font-size: 8px !important;
+    scroll-padding-top: 91px; /* Ajusta esto según el tamaño de tu barra de navegación */
   }
 }

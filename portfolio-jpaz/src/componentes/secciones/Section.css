@@ -165,6 +165,51 @@ a:hover{
 }
 
 /*Falta teerminar MQ */
+@media screen and (max-width: 767px) {
+  section {
+    margin-top: 15px;
+    padding: 10px
+  }
+
+  section div#sobremi,
+  section div#skills,
+  section div#experiencia,
+  section div#estudios,
+  section div#contacto{
+    width: 100%;
+    padding: 10px;
+  }
+
+  section div.sobreMi-contenido{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  section .image-contenedor{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #84a0fc;
+  }
+  section .image-contenedor img{
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  section .skills-contenido ul{
+    height: 210px;
+    justify-content: center;
+  }
+  section .skills-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 140px 140px 140px 140px 140px ;
+    gap: 6px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   section {
     margin-top: 15px;
@@ -196,6 +241,16 @@ a:hover{
     height: 250px;
     margin: 0 auto;
     object-fit: cover;
+  }
+  section .skills-contenido ul{
+    height: 200px;
+    justify-content: center;
+  }
+  section .skills-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 140px 140px 140px 140px 140px 140px;
+    gap: 6px;
   }
 }
 
