@@ -38,6 +38,27 @@ section .sobreMi-main {
 section .sobreMi-aside {
   margin-top: 1em;
 }
+
+section .sobreMi-aside button{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px;
+  border: 2px solid #84a0fc;
+  color: #84a0fc;
+  border-radius: 20px;
+  transition: filter 0.5s ease-in-out
+}
+
+section .sobreMi-aside a,
+section .sobreMi-aside a:visited{
+  color: #84a0fc;
+  text-decoration: none;
+  transition: text-shadow 0.5s ease-in-out;
+}
+
+section .sobreMi-aside :hover{
+  text-shadow: 0 0 10px #84a0fc;
+}
 section .image-contenedor{
   width: 300px;
   height: 300px;
@@ -83,13 +104,15 @@ section .skills-contenido ul{
 }
 
 section .skills-contenido li,
-section .asdd li{
+section .experiencia-descripcion li,
+section .estudios-descripcion li{
   padding-bottom: 10px;
   color: #ccd6f6;
 }
 
 section .skills-contenido li::marker,
-section .asdd li::marker{
+section .experiencia-descripcion li::marker,
+section .estudios-descripcion li::marker{
   color: #ff2c2c
 }
 
@@ -113,45 +136,93 @@ section .skills-items img{
   width: 75%;
 }
 
-section .experiencia-contenido{
+section .experiencia-contenido,
+section .estudios-contenedor{
   display: flex;
+  flex-direction: column;
 }
 
-/*
-  Section .asd y .asdd son provisorias
-  Son lso contenedores de experiencia laboral.
-*/
-section .asd{
-  width: 20%;
-  color: #ccd6f6;
-  height: 300px;
-}
-
-section .asd ul{
+section .experiencia-botones ul,
+section .estudios-botones ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 0;
+  margin: 0;
   list-style: none;
-  height: 100%;
+  margin-top: 1em;
+}
+
+section .experiencia-botones li,
+section .estudios-botones li{
+  padding: 5px;
+  font-size: 0.90em;
+}
+
+section .experiencia-botones button,
+section .estudios-botones button{
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px;
+  border: 2px solid #84a0fc;
+  color: #84a0fc;
+  border-radius: 20px;
+  transition: filter 0.5s ease-in-out
+}
+
+section .experiencia-botones button#seleccionado,
+section .estudios-botones button#seleccionado{
+  background-color: #84a0fc;
+  padding: 5px;
+  border: 2px solid #84a0fc;
+  color: #fff;
+  border-radius: 20px;
+  transition: filter 0.5s ease-in-out
+}
+
+section .experiencia-botones button:hover,
+section .estudios-botones button:hover{
+  filter: drop-shadow(0 0px 10px #84a0fc);
+}
+
+
+section .experiencia-descripcion,
+section .estudios-descripcion{
+  margin-top: 1em;
+  width: 100%;
+  padding-left: 20px;
+}
+
+section .experiencia-descripcion h1,
+section .experiencia-descripcion h2,
+section .experiencia-descripcion h3,
+section .experiencia-descripcion h4{
   color: #ccd6f6;
+  font-size: 1em !important;
+  margin-bottom: 15px ;
+}
+
+section .experiencia-descripcion ul,
+section .estudios-descripcion ul{
+  margin: 0;
+}
+
+section .experiencia-descripcion ul#tec {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
-section .asd li{
-  padding: 5px;
-  font-size: 1.5em;
-  border: 1px solid #84a0fc;
-}
-
-section .asdd{
-  width: 80%;
-  padding-left: 20px;
-}
-
-section .asdd h1,
-section .asdd h2,
-section .asdd h3{
+section .experiencia-descripcion ul#tec li {
+  font-size: 0.75em;
   color: #ccd6f6;
-  font-size: 1em !important;
-  margin-bottom: 15px ;
+  background-color: #84a0fc41;
+  padding: 8px;
+  margin: 4px 8px 4px 8px;
+  border-radius: 10px;
 }
 
 a{

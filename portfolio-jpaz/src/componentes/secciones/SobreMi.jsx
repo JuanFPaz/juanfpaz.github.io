@@ -14,11 +14,14 @@ function SobreMi ({ id }) {
             <p>Mi interes por el desarrollo de Software nacio a mediados de 2019. En ese entonces, durante mis tiempos libres ,di mi primeros pasos con Java como autodidacta,adquiriendo una base solida sobre la programacion y desarrollando mi pensamiento logico</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi veniam sapiente fugiat, autem perspiciatis consequuntur delectus provident optio saepe maiores esse ducimus quod, recusandae non animi reiciendis laudantium voluptatem! Consequuntur?</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis maiores voluptas hic placeat rem animi blanditiis, cumque quaerat consequuntur eveniet! Illo cupiditate quidem quisquam incidunt consequuntur vero a eos laborum?</p>
-            <a href={cv} target='_blank' rel='noopener noreferrer'> CV </a>
           </div>
           <div className='sobreMi-aside'>
             <div className='image-contenedor'>
               <img src={profile} alt='mi-foto' />
+              {/* TODO: Hacer una mini ficha tecnica */}
+              <button>
+                <a href={cv} target='_blank' rel='noopener noreferrer'> CV </a>
+              </button>
             </div>
           </div>
         </div>

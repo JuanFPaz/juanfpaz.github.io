@@ -7,6 +7,9 @@ function Contacto ({ id }) {
         <h1>
           {'{ Contacto }'}
         </h1>
+        <div className='contacto-contenido'>
+          asd
+        </div>
       </div>
     </section>
 

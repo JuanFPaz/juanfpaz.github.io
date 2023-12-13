@@ -8,7 +8,8 @@ main {
   
   main h1,
   main h2,
-  main h3 {
+  main h3,
+  main h4 {
     color: #ff2c2c;
     margin: 0;
     font-weight: 700;
@@ -43,6 +44,10 @@ main {
   
   h3 {
     font-size: 2em !important;
+  }
+
+  h4{
+    font-size: 1.25em !important
   }
 
 
