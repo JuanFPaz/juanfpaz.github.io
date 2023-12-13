@@ -22,7 +22,7 @@ const experiencias = [
     id: 1,
     titulo: 'Desarrollador Front End',
     subtitulo: 'Portfolio jpaz.ar',
-    url: '',
+    url: 'https://github.com/JuanFPaz/juanfpaz.github.io',
     fechaToString: 'Octubre 2023 - Diciembre 2023',
     descripcion: [
       'Desarrolle mi portfolio web utilizando React Vite.',
@@ -47,7 +47,7 @@ const experiencias = [
       'Adquirí mi primera licencia de conducir y mi propio vehículo, que me garantiza movilidad propia.'
     ],
     tecnologias: [
-      'Trello', 'Google Drive Sheets', 'Google Calendar', 'Gmail'
+      'Trello', 'Google Drive Sheets', 'Google Calendar'
     ]
   }
 ]

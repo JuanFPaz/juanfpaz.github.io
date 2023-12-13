@@ -4,7 +4,7 @@
 
 html {
   font-size: 16px !important;
-  scroll-padding-top: 136px; /* Ajusta esto según el tamaño de tu barra de navegación */
+  scroll-padding-top: 136px;
 }
 
 body {
@@ -13,17 +13,23 @@ body {
   margin: 0;
 }
 
-/*MQ Para el fontsize xd*/
+@media screen and (max-width: 1199px) {
+  html{
+    font-size: 14px !important;
+    scroll-padding-top: 100px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   html{
     font-size: 10px !important;
-    scroll-padding-top: 100px; /* Ajusta esto según el tamaño de tu barra de navegación */
+    scroll-padding-top: 100px;
   }
 }
 
 @media screen and (max-width: 480px) {
   html{
     font-size: 8px !important;
-    scroll-padding-top: 91px; /* Ajusta esto según el tamaño de tu barra de navegación */
+    scroll-padding-top: 91px;
   }
 }

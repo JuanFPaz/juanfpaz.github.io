@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
+import { useState } from 'react'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
-import { useState } from 'react'
 import html from '../../assets/html-5.svg'
 import css from '../../assets/css-3.svg'
 import js from '../../assets/js.svg'

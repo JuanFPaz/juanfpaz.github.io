@@ -46,9 +46,9 @@ function Header () {
               <li>
                 <a href='#estudios' onClick={show ? handleClose : null}>Estudios</a>
               </li>
-              <li>
+              {/* <li>
                 <a href='#contacto' onClick={show ? handleClose : null}>Contacto</a>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </Offcanvas.Body>

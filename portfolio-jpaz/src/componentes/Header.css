@@ -59,7 +59,57 @@ div.offcanvas-header,
 div.offcanvas-body {
   background-color: #0a192f;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  header {
+    padding: 14px;
+  }
 
+  header button,
+  div.offcanvas-header button {
+    width: 60px;
+    height: 60px;
+  }
+
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  div.offcanvas-header,
+  div.offcanvas-body{
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+  }
+  div.offcanvas-body nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  div.offcanvas-body ul {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  div.offcanvas-body li {
+    font-size: 1.4em;
+  }
+
+  div.offcanvas-body li a {
+    color: #ccd6f6;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+  }
+  div.offcanvas-body li a:hover {
+    color: #84a0fc;
+    text-shadow: 0 0 15px #84a0fc;
+  }
+}
 @media screen and (max-width: 767px) {
   header {
     padding: 12px;
@@ -68,13 +118,6 @@ div.offcanvas-body {
   .logo-contenedor a#logo img {
     width: 80px;
     height: 50px;
-    filter: none;
-    transition: filter 0.5s ease-in-out;
-    /* Agrega una transición suave */
-  }
-
-  .logo-contenedor a#logo img:hover {
-    filter: drop-shadow(0 0px 10px #ff2c2c);
   }
 
   header button,
@@ -122,6 +165,17 @@ div.offcanvas-body {
     color: #84a0fc;
     text-shadow: 0 0 15px #84a0fc;
   }
+
+  
+  header nav ul {
+    width: 650px;
+    height: max-content;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -132,9 +186,6 @@ div.offcanvas-body {
   .logo-contenedor a#logo img {
     width: 75px;
     height: 45px;
-    filter: none;
-    transition: filter 0.5s ease-in-out;
-    /* Agrega una transición suave */
   }
 
   .logo-contenedor a#logo img:hover {
