@@ -1,9 +1,5 @@
-# JuanFPaz.github.io
+# jpaz.ar
 
-```
-Disculpe las molestias. En este momento me encuentro creando nuevo contenido.
-
-Nos vemos pronto
-
+```txt
 {JPaz}
 ```
