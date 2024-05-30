@@ -22,7 +22,7 @@ const estudios = [
     id: 2,
     institucion: 'Centro Universitario Vicente Lopez',
     ubicacion: 'Buenos Aires.',
-    titulo: 'Reparacion de PC',
+    titulo: 'Mantenimiento de PC',
     fechaToString: 'Agosto 2018 - Diciembre 2018',
     finalizado: true
   },

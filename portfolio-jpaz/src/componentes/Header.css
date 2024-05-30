@@ -18,6 +18,11 @@ header {
   filter: drop-shadow(0 0px 10px #ff2c2c);
 }
 
+.miLittleChinaGirl {
+  display: flex;
+  align-items: center;
+}
+
 /* header nav {
   display: flex;
   justify-content: end;

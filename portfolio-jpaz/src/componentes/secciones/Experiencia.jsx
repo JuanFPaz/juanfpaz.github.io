@@ -10,9 +10,10 @@ const experiencias = [
     url: '',
     fechaToString: 'Noviembre 2023 - Actualidad',
     descripcion: [
-      'Colabore con el dueño del proyecto, aportando mi conocimiento sobre Javascript Ası́ncrono.',
-      'Conseguı́ resultados positivos al realizar mi primer Fork y los pull request sin dañar el flujo del proyecto.',
-      'Resúmenes claros y concisos para introducir sobre la asincronia a nuevos usuarios.'
+      ''
+      // 'Colabore con el dueño del proyecto, aportando mi conocimiento sobre Javascript Ası́ncrono.',
+      // 'Conseguı́ resultados positivos al realizar mi primer Fork y los pull request sin dañar el flujo del proyecto.',
+      // 'Resúmenes claros y concisos para introducir sobre la asincronia a nuevos usuarios.'
     ],
     tecnologias: [
       'Javascript', 'HTML', 'CSS', 'NodeJs', 'Git', 'Github', 'Notion'
