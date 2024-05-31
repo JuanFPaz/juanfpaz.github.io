@@ -134,22 +134,172 @@ const arrayDeImagenes = [
   }
 ]
 
-function SoftSkills () {
+const softSkillsText = {
+  es: [
+    {
+      id: 0,
+      text: 'Gestion de proyectos'
+    },
+    {
+      id: 1,
+      text: 'Trabajo en equipo'
+    },
+
+    {
+      id: 2,
+      text: 'Comunicacion'
+    },
+    {
+      id: 3,
+      text: 'Resolucion de problemas'
+    },
+    {
+      id: 4,
+      text: 'Organizacion'
+    },
+    {
+      id: 5,
+      text: 'Colaboracion'
+    },
+    {
+      id: 6,
+      text: 'Pensamiento logico'
+    },
+    {
+      id: 7,
+      text: 'Rapido Aprendizaje'
+    },
+    {
+      id: 8,
+      text: 'Adaptabilidad'
+    },
+    {
+      id: 9,
+      text: 'Empatia'
+    },
+    {
+      id: 10,
+      text: 'Escucha activa'
+    },
+    {
+      id: 11,
+      text: 'Quejarme de rappi'
+    }
+  ],
+  br: [
+    {
+      id: 0,
+      text: 'Gestão de projetos'
+    },
+    {
+      id: 1,
+      text: 'Trabalho em equipe'
+    },
+
+    {
+      id: 2,
+      text: 'Comunicação'
+    },
+    {
+      id: 3,
+      text: 'Resolução de problemas'
+    },
+    {
+      id: 4,
+      text: 'Organizaçao'
+    },
+    {
+      id: 5,
+      text: 'Colaboração'
+    },
+    {
+      id: 6,
+      text: 'Pensamiento lógico'
+    },
+    {
+      id: 7,
+      text: 'Rapido Aprendizagem'
+    },
+    {
+      id: 8,
+      text: 'Adaptabilidade'
+    },
+    {
+      id: 9,
+      text: 'Empatia'
+    },
+    {
+      id: 10,
+      text: 'Escuta activa'
+    },
+    {
+      id: 11,
+      text: 'Quejarme de rappi'
+    }
+  ],
+  en: [
+    {
+      id: 0,
+      text: 'Project Management'
+    },
+    {
+      id: 1,
+      text: 'Teamwork'
+    },
+
+    {
+      id: 2,
+      text: 'Comunication'
+    },
+    {
+      id: 3,
+      text: 'Problem resolution'
+    },
+    {
+      id: 4,
+      text: 'Organization'
+    },
+    {
+      id: 5,
+      text: 'Collaboration'
+    },
+    {
+      id: 6,
+      text: 'Logical Thinking'
+    },
+    {
+      id: 7,
+      text: 'Fast Learning'
+    },
+    {
+      id: 8,
+      text: 'Adaptability'
+    },
+    {
+      id: 9,
+      text: 'Empathy'
+    },
+    {
+      id: 10,
+      text: 'Active listening'
+    },
+    {
+      id: 11,
+      text: 'Quejarme de rappi'
+    }
+  ]
+}
+
+function SoftSkills ({ lang }) {
+  const [langSoft, setLangSoft] = useState(softSkillsText[lang])
   return (
     <div className='softSkills-contenedor'>
       <ul>
-        <li>Gestion de proyectos</li>
-        <li>Trabajo en equipo</li>
-        <li>Comunicacion</li>
-        <li>Resolucion de problemas</li>
-        <li>Organizacion</li>
-        <li>Proactivo</li>
-        <li>Colaboracion</li>
-        <li>Pensamiento Logico</li>
-        <li>Rapido aprendizaje</li>
-        <li>Adaptabilidad</li>
-        <li>Empatia</li>
-        <li>Escucha Activa</li>
+        {langSoft.map(({ id, text }) => (
+          <li key={id}>
+            {text}
+          </li>
+        ))}
       </ul>
     </div>
   )
@@ -170,7 +320,7 @@ function HardSkills () {
   )
 }
 
-function Skills ({ id }) {
+function Skills ({ id, lang }) {
   return (
     <section>
       <div id={id} className='skills-contenedor'>
@@ -178,7 +328,7 @@ function Skills ({ id }) {
           <h1>{'{ Soft Skills }'}</h1>
         </div>
         <div className='skills-contenido'>
-          <SoftSkills />
+          <SoftSkills lang={lang} />
         </div>
         <div className='skills-encabezado'>
           <h1>{'{ Hard Skills }'}</h1>
