@@ -6,14 +6,14 @@ import Estudios from './secciones/Estudios'
 // import Contacto from './secciones/Contacto'
 import './Main.css'
 
-function Main () {
+function Main ({ lang }) {
   return (
     <main>
-      <Inicio id='inicio' />
-      <SobreMi id='sobremi' />
-      <Skills id='skills' />
-      <Experiencia id='experiencia' />
-      <Estudios id='estudios' />
+      <Inicio id='inicio' lang={lang} />
+      <SobreMi id='sobremi' lang={lang} />
+      <Skills id='skills' lang={lang} />
+      <Experiencia id='experiencia' lang={lang} />
+      <Estudios id='estudios' lang={lang} />
       {/* <Contacto id='contacto' /> */}
     </main>
   )

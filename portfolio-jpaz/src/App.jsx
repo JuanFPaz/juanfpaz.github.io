@@ -4,9 +4,8 @@ import Main from './componentes/Main'
 import { useEffect, useState } from 'react'
 
 function App () {
-  const [lang, setLang] = useState('es')
+  const [lang, setLang] = useState(null)
   useEffect(() => {
-    console.log('Holaa')
     const currentPath = window.location.pathname
     if (currentPath === '/') {
       document.querySelector('html').setAttribute('lang', 'es')
@@ -21,9 +20,13 @@ function App () {
   }, [])
   return (
     <>
-      <Header lang={lang} />
-      <Main />
-      <Footer />
+      {lang && (
+        <>
+          <Header lang={lang} />
+          <Main lang={lang} />
+          <Footer lang={lang} />
+        </>
+      )}
     </>
   )
 }

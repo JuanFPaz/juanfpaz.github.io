@@ -1,11 +1,22 @@
+import { useState, useEffect } from 'react'
 import './Footer.css'
 
-function Footer () {
+const footerText = {
+  es: ['Desarrollado por Juan Paz.', 'Desplegado con Github Pages'],
+  br: ['Desenvolvido por Juan Paz', 'Implementado com o GitHub Pages'],
+  en: ['Developed by Juan Paz', 'Deployed with GitHub Pages']
+}
+
+function Footer ({ lang }) {
+  const [langFooter, setFooter] = useState([])
+  useEffect(() => {
+    setFooter(footerText[lang])
+  }, [lang])
   return (
     <footer>
       <ul>
-        <li>Desarrollado por Juan Paz</li>
-        <li>Desplegado con Github Pages</li>
+        <li>{langFooter[0]}</li>
+        <li>{langFooter[1]}</li>
         <li>2023 - 2024</li>
       </ul>
     </footer>

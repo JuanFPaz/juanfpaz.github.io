@@ -1,42 +1,89 @@
 import { useEffect, useState } from 'react'
 import Offcanvas from 'react-bootstrap/Offcanvas'
+import DropdownIdioma from './secciones/DropdownIdioma'
 import jpazLogo from '../assets/jp-logo-home-10.png'
 import './Header.css'
-import Languaje from './secciones/Languaje'
 
-const headerText =
-  {
-    es:
+const navText =
       {
-        sobreMi: 'Sobre Mi',
-        skills: 'Skills',
-        experiencia: 'Experiencia',
-        estudios: 'Estudios'
-      },
-    en:
-      {
-        sobreMi: 'About Me',
-        skills: 'Skills',
-        experiencia: 'Experience',
-        estudios: 'Education'
-      },
-    br:
-      {
-        sobreMi: 'Sobre Mim',
-        skills: 'Skills',
-        experiencia: 'Experiência',
-        estudios: 'Educação'
+        es: [
+          {
+            id: 0,
+            href: '#sobremi',
+            list: 'Sobre Mi'
+          },
+          {
+            id: 1,
+            href: '#skills',
+            list: 'Skills'
+          },
+          {
+            id: 2,
+            href: '#experiencia',
+            list: 'Experiencia'
+          }, {
+            id: 3,
+            href: '#educacion',
+            list: 'Estudios'
+          }
+        ],
+        br: [
+          {
+            id: 0,
+            href: '#sobremi',
+            list: 'Sobre Mim'
+          },
+          {
+            id: 1,
+            href: '#skills',
+            list: 'Skills'
+          },
+          {
+            id: 2,
+            href: '#experiencia',
+            list: 'Experiência'
+          }, {
+            id: 3,
+            href: '#educacion',
+            list: 'Educação'
+          }
+        ],
+        en: [
+          {
+            id: 0,
+            href: '#sobremi',
+            list: 'About Me'
+          },
+          {
+            id: 1,
+            href: '#skills',
+            list: 'Skills'
+          },
+          {
+            id: 2,
+            href: '#experiencia',
+            list: 'Experience'
+          },
+          {
+            id: 3,
+            href: '#educacion',
+            list: 'Education'
+          }
+        ]
       }
-  }
 
 function Header ({ lang }) {
   const [show, setShow] = useState(false)
-  const [langHeader, setLangHeader] = useState({})
+  const [langNav, setLangNav] = useState([])
+
   useEffect(() => {
-    setLangHeader(headerText[lang])
+    setLangNav(navText[lang])
   }, [lang])
+
+  /* Eventos para el offcanvas del header */
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
+
   return (
     <header className='fixed-top'>
       <div className='logo-contenedor'>
@@ -47,7 +94,7 @@ function Header ({ lang }) {
 
       {/* Comeinza el offcanvas reactBootstrap del navlink */}
       <div className='miLittleChinaGirl'>
-        <Languaje />
+        <DropdownIdioma lang={lang} />
         <button className='d-lg-none' onClick={handleShow}>
           <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='#ff2c2c' className='bi bi-list' viewBox='0 0 16 16'>
             <path fillRule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5' />
@@ -64,18 +111,25 @@ function Header ({ lang }) {
           <Offcanvas.Body>
             <nav>
               <ul>
-                <li>
-                  <a href='#sobremi' onClick={show ? handleClose : null}>{langHeader.sobreMi}</a>
+                {langNav.map(({ id, href, list }) =>
+                  (
+                    <li key={id} onClick={show ? handleClose : null}>
+                      <a href={href}>{list}</a>
+                    </li>
+                  )
+                )}
+                {/* <li>
+                  <a href='#sobremi' onClick={show ? handleClose : null}>{langNav[0]}</a>
                 </li>
                 <li>
-                  <a href='#skills' onClick={show ? handleClose : null}>{langHeader.skills}</a>
+                  <a href='#skills' onClick={show ? handleClose : null}>{langNav[1]}</a>
                 </li>
                 <li>
-                  <a href='#experiencia' onClick={show ? handleClose : null}>{langHeader.experiencia}</a>
+                  <a href='#experiencia' onClick={show ? handleClose : null}>{langNav[2]}</a>
                 </li>
                 <li>
-                  <a href='#estudios' onClick={show ? handleClose : null}>{langHeader.estudios}</a>
-                </li>
+                  <a href='#estudios' onClick={show ? handleClose : null}>{langNav[3]}</a>
+                </li> */}
                 {/* <li>
                 <a href='#contacto' onClick={show ? handleClose : null}>Contacto</a>
               </li> */}
