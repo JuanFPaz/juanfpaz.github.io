@@ -18,8 +18,20 @@ section div#contacto{
     padding: 20px;
 }
 
+/*LO HICE CON GTP, POR ENDE TODAVIA NO ENTIENDO NADA XD*/
+/*Igual quedo, no tan mal, pero podria estar mejor.*/
+/* Me da paja ir a la plaza de mayo a sacar una foto en horizontal de la plaza xd*/
+section:has(> div.backgroundContainer) {
+  background-image: url('./background-1.jpg'), linear-gradient(#16386b, #16386b);
+  background-blend-mode: overlay; /* Aplica el modo de mezcla "overlay" para superponer el color */
+  height: 80vh;
+  background-position: center center; /* Centra la imagen */
+  background-size:cover; /* Ajusta el tamaño de la imagen al 50% del contenedor */
+  margin: 0
+}
+
 section div#inicio{
-  text-shadow: 0 0px 10px #ff2c2c;
+  text-shadow: 0 0 14px #ff2c2c;
 }
 
 section div#sobremi{

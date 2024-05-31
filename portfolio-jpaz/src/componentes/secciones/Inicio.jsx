@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from 'react'
 import './Section.css'
 
@@ -51,10 +52,12 @@ function Inicio ({ id, lang }) {
 
   return (
     <section>
-      <div id={id}>
-        <h1>{langInicio[0].message}</h1>
-        <h2>{langInicio[1].message}</h2>
-        <h3>{langInicio[2].message}</h3>
+      <div className='backgroundContainer'>
+        <div id={id}>
+          <h1>{langInicio[0].message}</h1>
+          <h2>{langInicio[1].message}</h2>
+          <h3>{langInicio[2].message}</h3>
+        </div>
       </div>
     </section>
   )
