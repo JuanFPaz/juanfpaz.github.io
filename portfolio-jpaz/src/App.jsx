@@ -1,34 +1,43 @@
+/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable import/no-absolute-path */
+/* eslint-disable react-hooks/exhaustive-deps */
 import Footer from './componentes/Footer'
 import Header from './componentes/Header'
-import Main from './componentes/Main'
-import { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Outlet, useLoaderData } from 'react-router-dom'
+import appConfig, { footerConfig, headerConfig } from './data/idiomaConfig.js'
+
+export function appLoader ({ request }) {
+  const url = new URL(request.url)
+
+  const langPath = url.pathname === '/' ? 'es' : url.pathname.replace(/\//g, '')
+
+  const [{ attribute, value }] = appConfig[langPath]
+  const footerText = footerConfig[langPath]
+  const { offCanvasConfig, dropDownConfig, flagConfig } = headerConfig
+
+  const offCanvasText = offCanvasConfig[langPath]
+  const dropDownText = dropDownConfig[langPath]
+  const flagImg = flagConfig[langPath]
+  const headerText = { offCanvasText, dropDownText, flagImg }
+
+  return { renderApp: true, attribute, value, footerText, headerText }
+}
 
 function App () {
-  const [lang, setLang] = useState(null)
-  const locationApp = useLocation()
+  const { renderApp, attribute, value, footerText, headerText } = useLoaderData()
 
   useEffect(() => {
-    const currentPath = locationApp.pathname
-    if (currentPath === '/') {
-      document.querySelector('html').setAttribute('lang', 'es')
-      setLang('es')
-    } else if (currentPath === '/br') {
-      document.querySelector('html').setAttribute('lang', 'pt')
-      setLang('br')
-    } else if (currentPath === '/en') {
-      document.querySelector('html').setAttribute('lang', 'en')
-      setLang('en')
-    }
-  }, [locationApp])
+    document.querySelector('html').setAttribute(attribute, value)
+  }, [attribute, value])
   return (
     <>
-      {lang && (
+      {renderApp && (
         <>
-          {console.log(lang)}
-          <Header lang={lang} />
-          <Main lang={lang} />
-          <Footer lang={lang} />
+          {console.log(headerText)}
+          <Header headerText={headerText} />
+          <Outlet />
+          <Footer footerText={footerText} />
         </>
       )}
     </>

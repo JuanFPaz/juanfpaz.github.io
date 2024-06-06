@@ -1,24 +1,12 @@
 /* eslint-disable import/no-absolute-path */
-import { useEffect, useState } from 'react'
 import Logo from './header-componentes/LogoHeader'
 import NavHeader from './header-componentes/NavHeader'
 import './Header.css'
-
-function Header ({ lang }) {
-  const [langHeader, setLangHeader] = useState(null)
-
-  useEffect(() => {
-    setLangHeader(lang)
-  }, [lang])
-
+function Header ({ headerText }) {
   return (
     <header className='fixed-top'>
-      {langHeader && (
-        <>
-          <Logo />
-          <NavHeader lang={langHeader} />
-        </>
-      )}
+      <Logo />
+      <NavHeader {...headerText} />
     </header>
   )
 }

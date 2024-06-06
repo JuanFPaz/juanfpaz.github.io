@@ -42,15 +42,6 @@ const CustomMenu = React.forwardRef(
 )
 
 export default function DropdownNav ({ dropDownText, flagDropDown }) {
-  /* Por defecto dejamos todo en español owo */
-  const [flag, setFlag] = useState(flagDropDown)
-  const [langDrop, setLangDrop] = useState(dropDownText)
-
-  useEffect(() => {
-    setLangDrop(dropDownText)
-    setFlag(flagDropDown)
-  }, [dropDownText, flagDropDown])
-
   return (
     <>
       <Dropdown>
@@ -59,10 +50,10 @@ export default function DropdownNav ({ dropDownText, flagDropDown }) {
           id='dropdown-custom-components'
           variant='success'
         >
-          <img src={flag} className='current-languaje' />
+          <img src={flagDropDown} className='current-languaje' />
         </Dropdown.Toggle>
         <Dropdown.Menu as={CustomMenu}>
-          {langDrop.map(({ id, flag, href, language }) =>
+          {dropDownText.map(({ id, flag, href, language }) =>
             (
               <Link to={href} key={id}>
                 {language}

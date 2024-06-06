@@ -1,22 +1,41 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
-import App from './App.jsx'
+import App, { appLoader } from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
+import Main, { mainLoader } from './componentes/Main.jsx'
 
 const root = createBrowserRouter([
   {
     path: '/',
-    element: <App />
+    element: <App />,
+    loader: appLoader,
+    children: [{
+      path: '',
+      element: <Main />,
+      loader: mainLoader
+    }]
   },
   {
     path: '/br',
-    element: <App />
+    element: <App />,
+    loader: appLoader,
+    children: [{
+      path: '',
+      element: <Main />,
+      loader: mainLoader
+    }]
   },
   {
     path: '/en',
-    element: <App />
+    element: <App />,
+    loader: appLoader,
+    children: [{
+      path: '',
+      element: <Main />,
+      loader: mainLoader
+    }]
   },
   {
     path: '/es',
