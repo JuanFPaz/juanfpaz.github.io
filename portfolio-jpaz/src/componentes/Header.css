@@ -18,7 +18,7 @@ header {
   filter: drop-shadow(0 0px 10px #ff2c2c);
 }
 
-.miLittleChinaGirl {
+.navHeader {
   display: flex;
   align-items: center;
 }

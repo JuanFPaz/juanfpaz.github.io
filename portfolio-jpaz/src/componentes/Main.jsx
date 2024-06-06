@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import SobreMi from './secciones/SobreMi'
 import Inicio from './secciones/Inicio'
 import Skills from './secciones/Skills'
@@ -7,14 +8,24 @@ import Estudios from './secciones/Estudios'
 import './Main.css'
 
 function Main ({ lang }) {
+  const [langMain, setLangMain] = useState(null)
+
+  useEffect(() => {
+    setLangMain(lang)
+  }, [lang])
+
   return (
     <main>
-      <Inicio id='inicio' lang={lang} />
-      <SobreMi id='sobremi' lang={lang} />
-      <Skills id='skills' lang={lang} />
-      <Experiencia id='experiencia' lang={lang} />
-      <Estudios id='estudios' lang={lang} />
-      {/* <Contacto id='contacto' /> */}
+      {langMain && (
+        <>
+          <Inicio id='inicio' lang={langMain} />
+          <SobreMi id='sobremi' lang={langMain} />
+          <Skills id='skills' lang={langMain} />
+          <Experiencia id='experiencia' lang={langMain} />
+          <Estudios id='estudios' lang={langMain} />
+          {/* <Contacto id='contacto' /> */}
+        </>
+      )}
     </main>
   )
 }

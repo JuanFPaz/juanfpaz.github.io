@@ -50,6 +50,10 @@ const inicioText = {
 function Inicio ({ id, lang }) {
   const [langInicio, setLangInicio] = useState(inicioText[lang])
 
+  useEffect(() => {
+    setLangInicio(inicioText[lang])
+  }, [lang])
+
   return (
     <section>
       <div className='backgroundContainer'>
