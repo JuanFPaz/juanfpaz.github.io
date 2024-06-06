@@ -5,7 +5,7 @@ let mensajes = ["Me encuentro creando nuevo contenido para mi sitio web.","Nos v
 
 titulo.textContent = `Disculpe las molestias`;
 
-var i = 0;
+let i = 0;
 
 parrafo.forEach((p)=>{
     p.textContent = mensajes[i++];

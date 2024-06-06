@@ -1,7 +1,8 @@
+/* eslint-disable import/no-absolute-path */
 import { useEffect, useState } from 'react'
 import Offcanvas from 'react-bootstrap/Offcanvas'
 import DropdownIdioma from './secciones/DropdownIdioma'
-import jpazLogo from '../assets/jp-logo-home-10.png'
+import jpazLogo from '/assets/jp-logo-home-10.png'
 import './Header.css'
 
 const navText =
