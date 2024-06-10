@@ -21,17 +21,23 @@ section div#contacto{
 /*LO HICE CON GTP, POR ENDE TODAVIA NO ENTIENDO NADA XD*/
 /*Igual quedo, no tan mal, pero podria estar mejor.*/
 /* Me da paja ir a la plaza de mayo a sacar una foto en horizontal de la plaza xd*/
-section:has(> div.backgroundContainer) {
+section:has(> div#inicio) {
   background-image: url('./background-1.jpg'), linear-gradient(#16386b, #16386b);
   background-blend-mode: overlay; /* Aplica el modo de mezcla "overlay" para superponer el color */
-  height: 80vh;
+  height: 90vh;
   background-position: center center; /* Centra la imagen */
   background-size:cover; /* Ajusta el tamaño de la imagen al 50% del contenedor */
   margin: 0
 }
 
 section div#inicio{
+  width: 60%;
   text-shadow: 0 0 14px #ff2c2c;
+}
+
+section div#inicio p{
+  color:#ccd6f6;
+  text-shadow: 0 0 14px #84a0fc;
 }
 
 section div#sobremi{
@@ -128,6 +134,7 @@ section .skills-contenido{
 
 section .softSkills-contenedor{
   width: 100%;
+  padding-top: 10px;
 }
 
 section .hardSkills-contenedor{
@@ -135,9 +142,9 @@ section .hardSkills-contenedor{
 }
 
 section .skills-contenido ul{
-  height: 130px;
+  height: 120px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
@@ -294,6 +301,10 @@ section .contacto-contenido li{
     padding: 10px;
   }
 
+  section div#inicio{
+    width: 75%;
+  }
+
   section div#sobremi,
   section div#skills,
   section div#experiencia,
@@ -321,6 +332,10 @@ section .contacto-contenido li{
   section {
     margin-top: 15px;
     padding: 10px
+  }
+
+  section div#inicio{
+    width: 100%;
   }
 
   section div#sobremi,
@@ -381,7 +396,7 @@ section .contacto-contenido li{
   }
   section .skills-contenido ul{
     height: 210px;
-    justify-content: center;
+    justify-content: flex-start;
   }
   section .skills-grid{
     display: grid;
@@ -415,6 +430,11 @@ section .experiencia-descripcion ul#tec li {
 }
 
 @media screen and (max-width: 480px) {
+
+  section div#inicio{
+    width: 100%;
+  }
+
   section {
     margin-top: 15px;
     padding: 10px;
@@ -467,8 +487,9 @@ section .experiencia-descripcion ul#tec li {
     object-fit: cover;
   }
   section .skills-contenido ul{
+
     height: 200px;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   section .skills-grid{

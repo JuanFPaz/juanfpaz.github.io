@@ -174,7 +174,11 @@ export const inicioConfig = {
     },
     {
       id: 2,
-      message: 'Te doy la bienvenida a mi sitio web.'
+      message: 'Bienvenido a mi sitio web.'
+    },
+    {
+      id: 3,
+      message: 'Soy un desarrollador web y actualmente me especializo creando aplicaciones Front end y Back end con Javascript, gestionando eficazmente mis proyectos y con conocimientos solidos utilizando diferentes herramientas de desarrollo y lenguajes de programacion. Actualmente estoy enfocado en crecer como profesional en el desarrollo de aplicaciones (no solo en el desarrollo web).'
     }
   ],
   br: [
@@ -188,7 +192,11 @@ export const inicioConfig = {
     },
     {
       id: 2,
-      message: 'Sejam bem-venidos ao meu site.'
+      message: 'Bem-venidos ao meu site.'
+    },
+    {
+      id: 3,
+      message: 'Sou um desenvolvedor web com experiência na criação de aplicações Frontend e Backend com Javascript, gerenciando eficazmente meus projetos e possuindo sólidos conhecimentos no uso de várias ferramentas de desenvolvimento e linguagens de programação. Atualmente, estou focado em crescer como profissional no desenvolvimento de aplicações (não apenas no desenvolvimento web). '
     }
   ],
   en: [
@@ -203,166 +211,14 @@ export const inicioConfig = {
     {
       id: 2,
       message: 'Welcome to my website.'
+    },
+    {
+      id: 3,
+      message: "I'm a web developer with experience creating Frontend and Backend applications with Javascript, effectively managing my projects, and possessing solid knowledge of various development tools and programming languages. Currently, I'm focused on growing as a professional in application development (not only in web development)."
+
     }
   ]
 }
-
-export const softSkillsConfig = {
-  es: [
-    {
-      id: 0,
-      text: 'Gestion de proyectos'
-    },
-    {
-      id: 1,
-      text: 'Trabajo en equipo'
-    },
-
-    {
-      id: 2,
-      text: 'Comunicacion'
-    },
-    {
-      id: 3,
-      text: 'Resolucion de problemas'
-    },
-    {
-      id: 4,
-      text: 'Organizacion'
-    },
-    {
-      id: 5,
-      text: 'Colaboracion'
-    },
-    {
-      id: 6,
-      text: 'Pensamiento logico'
-    },
-    {
-      id: 7,
-      text: 'Rapido Aprendizaje'
-    },
-    {
-      id: 8,
-      text: 'Adaptabilidad'
-    },
-    {
-      id: 9,
-      text: 'Empatia'
-    },
-    {
-      id: 10,
-      text: 'Escucha activa'
-    },
-    {
-      id: 11,
-      text: 'Quejarme de rappi'
-    }
-  ],
-  br: [
-    {
-      id: 0,
-      text: 'Gestão de projetos'
-    },
-    {
-      id: 1,
-      text: 'Trabalho em equipe'
-    },
-
-    {
-      id: 2,
-      text: 'Comunicação'
-    },
-    {
-      id: 3,
-      text: 'Resolução de problemas'
-    },
-    {
-      id: 4,
-      text: 'Organizaçao'
-    },
-    {
-      id: 5,
-      text: 'Colaboração'
-    },
-    {
-      id: 6,
-      text: 'Pensamiento lógico'
-    },
-    {
-      id: 7,
-      text: 'Rapido Aprendizagem'
-    },
-    {
-      id: 8,
-      text: 'Adaptabilidade'
-    },
-    {
-      id: 9,
-      text: 'Empatia'
-    },
-    {
-      id: 10,
-      text: 'Escuta activa'
-    },
-    {
-      id: 11,
-      text: 'Quejarme de rappi'
-    }
-  ],
-  en: [
-    {
-      id: 0,
-      text: 'Project Management'
-    },
-    {
-      id: 1,
-      text: 'Teamwork'
-    },
-
-    {
-      id: 2,
-      text: 'Comunication'
-    },
-    {
-      id: 3,
-      text: 'Problem resolution'
-    },
-    {
-      id: 4,
-      text: 'Organization'
-    },
-    {
-      id: 5,
-      text: 'Collaboration'
-    },
-    {
-      id: 6,
-      text: 'Logical Thinking'
-    },
-    {
-      id: 7,
-      text: 'Fast Learning'
-    },
-    {
-      id: 8,
-      text: 'Adaptability'
-    },
-    {
-      id: 9,
-      text: 'Empathy'
-    },
-    {
-      id: 10,
-      text: 'Active listening'
-    },
-    {
-      id: 11,
-      text: 'Quejarme de rappi'
-    }
-  ]
-}
-
 export const sobreMiConfig = {
   sobreMiTitleConfig: {
     es: ['{ Sobre Mi }'],
@@ -373,41 +229,55 @@ export const sobreMiConfig = {
     es: [
       {
         id: 0,
-        message: 'Mi interes por el desarrollo de Software nacio a mediados de 2018. En ese entonces, di mi primeros pasos con Java como autodidacta,adquiriendo una base solida sobre la programacion y desarrollando mi pensamiento logico.'
-      }, {
+        message: '¡Hola! Me llamo Juan Paz. Soy trabajador autónomo de aplicaciones de reparto y desarrollador web en mis tiempos libres. Me interesé por el desarrollo de aplicaciones en 2019 por la curiosidad de saber cómo se crearon los juegos, aplicaciones y sitios web que suelo recurrir frecuentemente.'
+      },
+      {
         id: 1,
-        message: 'Mi camino se expandio con la oportunidad de estudiar en Argentina Programa, que me ayudo a orientarme en el mundo del desarrollo, donde conoci lenguajes como Ruby, Javascript, Typescript y herramientas como Angular, React, Node, Git y Github.'
-      }, {
+        message: 'Comencé mi viaje en la programación con Java, adquiriendo una base sólida en conceptos básicos y exploré el desarrollo de videojuegos con Gamemaker y Unity. Más tarde, me inscribí en Argentina Programa, donde aprendí HTML, CSS, JavaScript, TypeScript, Ruby y frameworks como React, Angular y Springboot. También reforcé mis conocimientos en Java, diferentes paradigmas de programación, metodologías ágiles como SCRUM y el uso de herramientas como Git y GitHub, entre otras cosas.'
+      },
+      {
         id: 2,
-        message: 'Actualmente me especializo creando aplicaciones web dinamicas con React y Javascript, pero no me limito solo a una especializacion. Estoy comprometido con el aprendizaje continuo, y poder aportar en grupo de trabajo mi solida experiencia adquirida durante estos años.'
+        message: 'Mis habilidades principales como desarrollador incluyen el manejo de estructuras de datos, trabajar con arreglos y objetos en JavaScript, y crear código reutilizable y mantenible. Disfruto desarrollando aplicaciones dinámicas con React y recientemente he comenzado a utilizar Node.js para crear APIs y manipular datos, como archivos JSON por ejemplo, desde el backend para enviarlos al frontend. Sin embargo, reconozco que mi punto más débil es el diseño, y estoy comprometido a mejorar en ese aspecto.'
+      },
+      {
+        id: 3,
+        message: 'Actualmente, mis intereses se enfocan en aprender inglés y portugués, en la gestión de datos con MySQL para manipular grandes estructuras de datos, y en el desarrollo backend con Node.js, TypeScript, o Java.'
       }
     ],
     br: [
       {
         id: 0,
-        message: 'Meu interesse pelo desenvolviento de Software nasceu en meados de 2018. Nessa época, dei meus primeiros passos com Java como autodidata., adquirindo uma base sólida em programação e desemvolvendo meu pensamiento lógico.'
+        message: 'Olá! Meu nome é Juan Paz. Sou trabalhador autônomo de aplicativos de entrega e desenvolvedor web nos meus tempos livres. Interessei-me pelo desenvolvimento de aplicações em 2019 por curiosidade sobre como foram criados os jogos, aplicações e sites que costumo usar frequentemente.'
       },
       {
         id: 1,
-        message: 'Minha trajetoira se expandiu com a oportunidade de estudar no Argentina Programa, o que me ajudau a me orientar no mundo do desenvolvimento, onde aprendi sobre linguajes como Ruby, Javascript, Typescript e ferramenta como Angular, React, Vite, Node, Git y Github.'
+        message: 'Comecei minha jornada na programação com Java, adquirindo uma base sólida em conceitos básicos e explorando o desenvolvimento de jogos com Gamemaker e Unity. Mais tarde, inscrevi-me no programa Argentina Programa, onde aprendi HTML, CSS, JavaScript, TypeScript, Ruby e frameworks como React, Angular e Springboot. Também reforcei meus conhecimentos em Java, diferentes paradigmas de programação, metodologias ágeis como SCRUM e ferramentas como Git e GitHub, entre outras coisas.'
       },
       {
         id: 2,
-        message: 'Atualmente sou especialista em criação de aplicações web dinâmicas com React e Javascript, mas não me limito a apenas uma especialização. Estou comprometido com o aprendizado continuo e em poder contribuir com minha sólida experiência adquirida nesses anos para o grupo de trabalho.'
+        message: 'Minhas principais habilidades como desenvolvedor incluem o manuseio de estruturas de dados, trabalhar com arrays e objetos em JavaScript e criar código reutilizável e sustentável. Gosto de desenvolver aplicações dinâmicas com React e, recentemente, comecei a usar Node.js para criar APIs e manipular dados, como arquivos JSON, do backend para enviar ao frontend. No entanto, reconheço que meu ponto mais fraco é o design, e estou comprometido a melhorar nesse aspecto.'
+      },
+      {
+        id: 3,
+        message: 'Atualmente, meus interesses estão focados em aprender inglês e português, na gestão de dados com MySQL para manipular grandes estruturas de dados e no desenvolvimento backend com Node.js, TypeScript ou Java.'
       }
     ],
     en: [
       {
         id: 0,
-        message: 'My intereset in software developed was born in mid-2018. At the time, I took my first steps with Java as a self-taught person, acquiring a solid foundation in programming and developing my logical thinking.'
+        message: 'Hello! My name is Juan Paz. I am a freelance delivery app worker and a web developer in my free time. I became interested in application development in 2019 out of curiosity about how the games, applications, and websites I frequently use were created.'
       },
       {
         id: 1,
-        message: 'My path expanded with the opportunity to study in Argentina Programa, wich helped me orient myself in the world of development, where i learned about languages such Ruby, Javascript, Typescript and tools such as Angular, React, Vite, Node, Git and Github.'
+        message: 'I began my programming journey with Java, acquiring a solid foundation in basic concepts and exploring game development with Gamemaker and Unity. Later, I enrolled in Argentina Programa, where I learned HTML, CSS, JavaScript, TypeScript, Ruby, and frameworks such as React, Angular, and Springboot. I also reinforced my knowledge in Java, different programming paradigms, agile methodologies like SCRUM, and tools like Git and GitHub, among other things.'
       },
       {
         id: 2,
-        message: 'I currently specialize in creating dynamic web applications witch React and Javascript, but I do not limit myself to just one specialization. I am commited to continues learning and to be able to contribute my solid experience acquired during these years to the work group.'
+        message: 'My main skills as a developer include handling data structures, working with arrays and objects in JavaScript, and creating reusable and maintainable code. I enjoy developing dynamic applications with React, and I have recently started using Node.js to create APIs and manipulate data, such as JSON files, from the backend to send to the frontend. However, I recognize that my weakest point is design, and I am committed to improving in this area.'
+      },
+      {
+        id: 3,
+        message: 'Currently, my interests are focused on learning English and Portuguese, managing data with MySQL to handle large data structures, and backend development with Node.js, TypeScript, or Java.'
       }
     ]
   },
@@ -467,7 +337,7 @@ export const sobreMiConfig = {
       },
       {
         id: 2,
-        text: 'Nacionality: Argentino'
+        text: 'Nacionality: Argentinian'
       },
       {
         id: 3,
@@ -479,6 +349,150 @@ export const sobreMiConfig = {
       }
     ]
   }
+}
+
+export const softSkillsConfig = {
+  es: [
+    {
+      id: 0,
+      text: 'Gestion de proyectos'
+    },
+    {
+      id: 1,
+      text: 'Trabajo en equipo'
+    },
+
+    {
+      id: 2,
+      text: 'Comunicacion'
+    },
+    {
+      id: 3,
+      text: 'Resolucion de problemas'
+    },
+    {
+      id: 4,
+      text: 'Organizacion'
+    },
+    {
+      id: 5,
+      text: 'Colaboracion'
+    },
+    {
+      id: 6,
+      text: 'Pensamiento logico'
+    },
+    {
+      id: 7,
+      text: 'Rapido Aprendizaje'
+    },
+    {
+      id: 8,
+      text: 'Adaptabilidad'
+    },
+    {
+      id: 9,
+      text: 'Empatia'
+    },
+    {
+      id: 10,
+      text: 'Escucha activa'
+    }
+  ],
+  br: [
+    {
+      id: 0,
+      text: 'Gestão de projetos'
+    },
+    {
+      id: 1,
+      text: 'Trabalho em equipe'
+    },
+
+    {
+      id: 2,
+      text: 'Comunicação'
+    },
+    {
+      id: 3,
+      text: 'Resolução de problemas'
+    },
+    {
+      id: 4,
+      text: 'Organizaçao'
+    },
+    {
+      id: 5,
+      text: 'Colaboração'
+    },
+    {
+      id: 6,
+      text: 'Pensamiento lógico'
+    },
+    {
+      id: 7,
+      text: 'Rapido Aprendizagem'
+    },
+    {
+      id: 8,
+      text: 'Adaptabilidade'
+    },
+    {
+      id: 9,
+      text: 'Empatia'
+    },
+    {
+      id: 10,
+      text: 'Escuta activa'
+    }
+  ],
+  en: [
+    {
+      id: 0,
+      text: 'Project Management'
+    },
+    {
+      id: 1,
+      text: 'Teamwork'
+    },
+
+    {
+      id: 2,
+      text: 'Comunication'
+    },
+    {
+      id: 3,
+      text: 'Problem resolution'
+    },
+    {
+      id: 4,
+      text: 'Organization'
+    },
+    {
+      id: 5,
+      text: 'Collaboration'
+    },
+    {
+      id: 6,
+      text: 'Logical Thinking'
+    },
+    {
+      id: 7,
+      text: 'Fast Learning'
+    },
+    {
+      id: 8,
+      text: 'Adaptability'
+    },
+    {
+      id: 9,
+      text: 'Empathy'
+    },
+    {
+      id: 10,
+      text: 'Active listening'
+    }
+  ]
 }
 
 export default appConfig
