@@ -46,7 +46,7 @@ export const headerConfig = {
         list: 'Experiencia'
       }, {
         id: 3,
-        href: '#educacion',
+        href: '#estudios',
         list: 'Estudios'
       }
     ],
@@ -67,7 +67,7 @@ export const headerConfig = {
         list: 'Experiência'
       }, {
         id: 3,
-        href: '#educacion',
+        href: '#estudios',
         list: 'Educação'
       }
     ],

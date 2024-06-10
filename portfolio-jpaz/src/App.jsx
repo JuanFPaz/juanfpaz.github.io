@@ -34,7 +34,6 @@ function App () {
     <>
       {renderApp && (
         <>
-          {console.log(headerText)}
           <Header headerText={headerText} />
           <Outlet />
           <Footer footerText={footerText} />
