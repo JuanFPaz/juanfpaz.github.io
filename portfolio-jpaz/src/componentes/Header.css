@@ -23,12 +23,6 @@ header {
   align-items: center;
 }
 
-/* header nav {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-} */
-
 header nav ul {
   width: 650px;
   height: max-content;
@@ -188,24 +182,8 @@ div.offcanvas-body {
     padding: 10px;
   }
 
-  .logo-contenedor a#logo img {
-    width: 75px;
-    height: 45px;
-  }
-
   .logo-contenedor a#logo img:hover {
     filter: drop-shadow(0 0px 10px #ff2c2c);
-  }
-
-  header button,
-  div.offcanvas-header button {
-    width: 40px;
-    height: 40px;
-  }
-
-  svg {
-    width: 28px;
-    height: 28px;
   }
 
   div.offcanvas-header,

@@ -7,7 +7,7 @@ import Estudios from './main-componentes/Estudios'
 // import Contacto from './secciones/Contacto'
 import './Main.css'
 import { useLoaderData } from 'react-router-dom'
-import { inicioConfig, sobreMiConfig, softSkillsConfig } from '../data/idiomaConfig'
+import { inicioConfig, sobreMiConfig, softSkillsConfig, experienciaConfig, educacionConfig } from '../data/idiomaConfig'
 
 export function mainLoader ({ request }) {
   const url = new URL(request.url)
@@ -20,11 +20,25 @@ export function mainLoader ({ request }) {
   const sobreMiAsideText = sobreMiAsideConfig[langPath]
   const sobreMiText = { sobreMiTitle, sobreMiMainText, sobreMiAsideText }
 
-  return { renderMain: true, inicioText: inicioConfig[langPath], sobreMiText, softSkillsText: softSkillsConfig[langPath] }
+  // EXPERIENCIAAS
+
+  const { experienciaTitleConfig, experienciaListConfig } = experienciaConfig
+  const experienciaTitle = experienciaTitleConfig[langPath]
+  const experienciaList = experienciaListConfig[langPath]
+  const experienciaText = { experienciaTitle, experienciaList }
+
+  // ESTUDIOS
+
+  const { educacionTitleConfig, educacionListConfig } = educacionConfig
+  const educacionTitle = educacionTitleConfig[langPath]
+  const educacionList = educacionListConfig[langPath]
+  const educacionText = { educacionTitle, educacionList }
+
+  return { renderMain: true, inicioText: inicioConfig[langPath], sobreMiText, softSkillsText: softSkillsConfig[langPath], experienciaText, educacionText }
 }
 
 function Main () {
-  const { renderMain, inicioText, sobreMiText, softSkillsText } = useLoaderData()
+  const { renderMain, inicioText, sobreMiText, softSkillsText, experienciaText, educacionText } = useLoaderData()
 
   return (
     <main>
@@ -34,8 +48,8 @@ function Main () {
             <Inicio id='inicio' inicioText={inicioText} />
             <SobreMi id='sobremi' sobreMiText={sobreMiText} />
             <Skills id='skills' softSkillsText={softSkillsText} />
-            <Experiencia id='experiencia' lang='es' />
-            <Estudios id='estudios' lang='es' />
+            <Experiencia id='experiencia' experienciaText={experienciaText} />
+            <Estudios id='educacion' educacionText={educacionText} />
           </>
         )}
         {/* <Contacto id='contacto' /> */}

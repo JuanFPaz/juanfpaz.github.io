@@ -3,28 +3,25 @@ const appConfig = {
     {
       attribute: 'lang',
       value: 'es',
-      lang: 'es'
+      lang: 'es',
+      title: 'Juan Paz : { Desarrollador Web }'
     }
   ],
   br: [
     {
       attribute: 'lang',
       value: 'pt',
-      lang: 'br'
+      lang: 'br',
+      title: 'Juan Paz : { Desenvolvedor Web }'
     }],
   en: [
     {
       attribute: 'lang',
       value: 'en',
-      lang: 'en'
+      lang: 'en',
+      title: 'Juan Paz : { Web Developer } '
     }
   ]
-}
-
-export const footerConfig = {
-  es: ['Desarrollado por Juan Paz.', 'Desplegado con Github Pages'],
-  br: ['Desenvolvido por Juan Paz', 'Implementado com o GitHub Pages'],
-  en: ['Developed by Juan Paz', 'Deployed with GitHub Pages']
 }
 
 export const headerConfig = {
@@ -35,19 +32,21 @@ export const headerConfig = {
         href: '#sobremi',
         list: 'Sobre Mi'
       },
+
       {
-        id: 1,
+        id: 2,
         href: '#skills',
         list: 'Skills'
       },
       {
-        id: 2,
+        id: 3,
         href: '#experiencia',
         list: 'Experiencia'
-      }, {
-        id: 3,
-        href: '#estudios',
-        list: 'Estudios'
+      },
+      {
+        id: 4,
+        href: '#educacion',
+        list: 'Educacion'
       }
     ],
     br: [
@@ -67,7 +66,7 @@ export const headerConfig = {
         list: 'Experiência'
       }, {
         id: 3,
-        href: '#estudios',
+        href: '#educacion',
         list: 'Educação'
       }
     ],
@@ -89,7 +88,7 @@ export const headerConfig = {
       },
       {
         id: 3,
-        href: '#estudios',
+        href: '#educacion',
         list: 'Education'
       }
     ]
@@ -229,7 +228,7 @@ export const sobreMiConfig = {
     es: [
       {
         id: 0,
-        message: '¡Hola! Me llamo Juan Paz. Soy trabajador autónomo de aplicaciones de reparto y desarrollador web en mis tiempos libres. Me interesé por el desarrollo de aplicaciones en 2019 por la curiosidad de saber cómo se crearon los juegos, aplicaciones y sitios web que suelo recurrir frecuentemente.'
+        message: '¡Hola! Me llamo Juan Paz. Soy trabajador autónomo en aplicaciones de reparto y desarrollador web en mis tiempos libres. Me interesé por el desarrollo de aplicaciones en 2019 por la curiosidad de saber cómo se crearon los juegos, aplicaciones y sitios web que suelo recurrir frecuentemente.'
       },
       {
         id: 1,
@@ -247,7 +246,7 @@ export const sobreMiConfig = {
     br: [
       {
         id: 0,
-        message: 'Olá! Meu nome é Juan Paz. Sou trabalhador autônomo de aplicativos de entrega e desenvolvedor web nos meus tempos livres. Interessei-me pelo desenvolvimento de aplicações em 2019 por curiosidade sobre como foram criados os jogos, aplicações e sites que costumo usar frequentemente.'
+        message: 'Olá! Meu nome é Juan Paz. Sou trabalhador autônomo em aplicativos de entrega e desenvolvedor web nos meus tempos livres. Interessei-me pelo desenvolvimento de aplicações em 2019 por curiosidade sobre como foram criados os jogos, aplicações e sites que costumo usar frequentemente.'
       },
       {
         id: 1,
@@ -265,7 +264,7 @@ export const sobreMiConfig = {
     en: [
       {
         id: 0,
-        message: 'Hello! My name is Juan Paz. I am a freelance delivery app worker and a web developer in my free time. I became interested in application development in 2019 out of curiosity about how the games, applications, and websites I frequently use were created.'
+        message: 'Hello! My name is Juan Paz. I am self-employed in delivery applications and a web developer in my free time. I became interested in application development in 2019 out of curiosity about how the games, applications, and websites I frequently use were created.'
       },
       {
         id: 1,
@@ -493,6 +492,248 @@ export const softSkillsConfig = {
       text: 'Active listening'
     }
   ]
+}
+
+export const experienciaConfig = {
+  experienciaTitleConfig: {
+    es: ['{ Experiencia }'],
+    br: ['{ Experiência }'],
+    en: ['{ Experience }']
+  },
+  experienciaListConfig: {
+    es: [
+      {
+        id: 0,
+        titulo: 'Desarrollador Web',
+        subtitulo: 'Portfolio jpaz.ar',
+        fechaToString: 'Octubre 2023 - Actualidad',
+        descripcion: [
+          'Incluyo el desarrollo de mi Portfolio como experiencia porque es una representación de mis conocimientos adquiridos en estos años.',
+          'Configuré mi dominio web Cloudflare, desplegué mi portfolio con éxito utilizando Github Pages e implementé mejoras continuas sin dañar el flujo de mi proyecto.',
+          'Adquirí la habilidad de gestionar mis proyectos, implementado metodologías agiles de trabajo como SCRUM y adaptándolas a mis necesidades.'
+        ],
+        tecnologias: [
+          'Javascript', 'HTML', 'CSS', 'Figma', 'React', 'Vite', 'Nodejs', 'Git', 'Github', 'Cloudflare', 'Notion'
+        ]
+      },
+      {
+        id: 1,
+        titulo: 'Trabajo autónomo',
+        subtitulo: 'Aplicaciones de reparto',
+        fechaToString: 'Septiembre 2020 - Actualidad',
+        descripcion: [
+          'Realizo tareas de reparto en la Ciudad de Buenos Aires y GBA Zona Norte, utilizando plataformas como Pedidos Ya y Rappi.',
+          'Desarrollo la habilidad para gestionar, planificar y organizar mi trabajo para cumplir con mis obligaciones financieras de manera consistente.',
+          'Capaz de adaptar mis objetivos en situaciones imprevistas en un entorno de trabajo dinámico.',
+          'Obtuve mi primera licencia de conducir y adquirí mi primer vehículo motorizado, no solo mejorando la eficiencia de las entregas, sino que también me brinda seguridad al tener una cobertura ante cualquier tipo de siniestro.'
+        ],
+        tecnologias: [
+          'Trello', 'Google Drive Sheets', 'Google Calendar'
+        ]
+      },
+      {
+        id: 2,
+        titulo: 'Ejecutivo de Telemarketing ',
+        subtitulo: 'Dyktel S.A.',
+        fechaToString: 'Marzo 2017 - Septiembre 2020',
+        descripcion: [
+          'Contactaba clientes para ofrecer los servicios de tarjetas de crédito del Banco Santander Río.',
+          'Me adapte progresivamente con el tiempo, mejorando mis números de ventas, posicionándome entre los cinco mejores vendedores de la empresa.',
+          'Implemente una eficaz gestión de datos utilizando Excel, para gestionar la información de clientes interesados que no aplicaban y posteriormente poder concretar las ventas.'
+        ]
+      }
+    ],
+    br: [
+      {
+        id: 0,
+        titulo: 'Desenvolvedor Web',
+        subtitulo: 'Portfólio jpaz.ar',
+        fechaToString: 'Outubro 2023 - Atualidade',
+        descripcion: [
+          'Incluo o desenvolvimento do meu portfólio como experiência porque é uma representação dos conhecimentos adquiridos ao longo desses anos.',
+          'Configurei meu domínio web no Cloudflare, implantei meu portfólio com sucesso usando o Github Pages e implementei melhorias contínuas sem prejudicar o fluxo do meu projeto.',
+          'Adquiri a habilidade de gerenciar meus projetos, implementando metodologias ágeis de trabalho como SCRUM e adaptando-as às minhas necessidades.'
+        ],
+        tecnologias: [
+          'Javascript', 'HTML', 'CSS', 'React', 'Vite', 'Git', 'Github', 'Cloudflare', 'Notion'
+        ]
+      },
+      {
+        id: 1,
+        titulo: 'Trabalhador autônomo',
+        subtitulo: 'Aplicativos de entrega',
+        fechaToString: 'Setembro 2020 - Atualidade',
+        descripcion: [
+          'Realizo entregas na Cidade de Buenos Aires e na região metropolitana Norte, utilizando plataformas como Pedidos Ya e Rappi.',
+          'Desenvolvi habilidades para gerenciar, planejar e organizar meu trabalho para cumprir minhas obrigações financeiras de maneira consistente.',
+          'Capaz de adaptar meus objetivos em situações imprevistas em um ambiente de trabalho dinâmico.',
+          'Obtive minha primeira habilitação para conduzir e adquiri meu primeiro veículo motorizado, melhorando não apenas a eficiência das entregas, mas também me proporcionando segurança ao ter cobertura para qualquer tipo de sinistro.'
+        ],
+        tecnologias: [
+          'Trello', 'Google Drive Sheets', 'Google Calendar'
+        ]
+      },
+      {
+        id: 2,
+        titulo: 'Operador  de Telemarketing',
+        subtitulo: 'Dyktel S.A.',
+        fechaToString: 'Março 2017 - Setembro 2020',
+        descripcion: [
+          'Contactaba clientes para ofrecer los servicios de tarjetas de crédito del Banco Santander Río.',
+          'Me adapte progresivamente con el tiempo, mejorando mis números de ventas, posicionándome entre los cinco mejores vendedores de la empresa.',
+          'Implemente una eficaz gestión de datos utilizando Excel, para gestionar la información de clientes interesados que no aplicaban y posteriormente poder concretar las ventas.'
+        ]
+      }
+    ],
+    en: [
+      {
+        id: 0,
+        titulo: 'Web Developer',
+        subtitulo: 'Portfolio jpaz.ar',
+        fechaToString: 'October 2023 - Present',
+        descripcion: [
+          'I include the development of my Portfolio as an experience because it is a representation of the knowledge I have acquired over these years.',
+          'Configured my web domain using Cloudflare, successfully deployed my portfolio using GitHub Pages, and implemented continuous improvements without disrupting the flow of my project.',
+          'I acquired the ability to manage my projects, implementing agile work methodologies such as SCRUM and adapting them to my needs.'
+        ],
+        tecnologias: [
+          'Javascript', 'HTML', 'CSS', 'Figma', 'React', 'Vite', 'Nodejs', 'Git', 'Github', 'Cloudflare', 'Notion'
+        ]
+      },
+      {
+        id: 1,
+        titulo: 'Self-Employed Worker',
+        subtitulo: 'Delivery Applications',
+        fechaToString: 'September 2020 - Present',
+        descripcion: [
+          'I perform delivery tasks in Buenos Aires City and GBA North using platforms such as Pedidos Ya and Rappi.',
+          'Developed the ability to manage, plan, and organize my work to consistently meet my financial obligations.',
+          'Capable of adjusting my goals in unforeseen situations in a dynamic work environment.',
+          "Obtained my first driver's license and acquired my first motor vehicle, not only improving delivery efficiency but also providing security with coverage for any type of accident."
+        ],
+        tecnologias: [
+          'Trello', 'Google Drive Sheets', 'Google Calendar'
+        ]
+      },
+      {
+        id: 2,
+        titulo: 'Telemarketing Executive',
+        subtitulo: 'Dyktel S.A.',
+        fechaToString: 'March 2017 - September 2020',
+        descripcion: [
+          'Contacted clients to offer Bank Santander Río credit card services',
+          'Adapted progressively over time, improving my sales numbers, positioning myself among the top five sellers in the company.',
+          "Implemented an effective data management system using Excel to handle information from interested clients who didn't apply initially and subsequently closing sales."
+        ]
+      }
+    ]
+  }
+}
+
+export const educacionConfig = {
+  educacionTitleConfig: {
+    es: ['{ Educacion }'],
+    br: ['{ Educação }'],
+    en: ['{ Education }']
+  },
+  educacionListConfig: {
+    es: [
+      {
+        id: 0,
+        institucion: 'Universidad Tecnologica Nacional - Argentina Programa',
+        ubicacion: 'Ubicacion: Buenos Aires.',
+        titulo: 'Titulo: Desarrollador Front End React',
+        fechaToString: 'Periodo: Febrero 2023 - Diciembre 2023'
+      },
+      {
+        id: 1,
+        institucion: 'Instituto Nacional de Tecnologia Industrial - Argentina Programa',
+        ubicacion: 'Ubicacion: Buenos Aires.',
+        titulo: 'Titulo: Desarrollador Full Stack',
+        fechaToString: 'Periodo: Septiembre 2022 - Diciembre 2022'
+      },
+      {
+        id: 2,
+        institucion: 'Centro Universitario Vicente Lopez',
+        ubicacion: 'Ubicacion: Buenos Aires.',
+        titulo: 'Titulo: Mantenimiento de PC',
+        fechaToString: 'Periodo: Agosto 2018 - Diciembre 2018'
+      },
+      {
+        id: 3,
+        institucion: 'Colegio Julio Argentino Roca Nº8 DE 10',
+        ubicacion: 'Ubicacion: Ciudad de Buenos Aires.',
+        titulo: 'Titulo: Bachiller',
+        fechaToString: 'Periodo: Marzo 2010 - Diciembre 2014'
+      }
+    ],
+    br: [
+      {
+        id: 0,
+        institucion: 'Universidad Tecnologica Nacional - Argentina Programa',
+        ubicacion: 'Localizaçao: Buenos Aires.',
+        titulo: 'Certificado: Desenvolvedor Front End React',
+        fechaToString: 'Periodo: Fevreiro 2023 - Dezembro 2023'
+      },
+      {
+        id: 1,
+        institucion: 'Instituto Nacional de Tecnologia Industrial - Argentina Programa',
+        ubicacion: 'Localizaçao: Buenos Aires.',
+        titulo: 'Certificado: Desenvolvedor Full Stack',
+        fechaToString: 'Periodo: Setembro  2022 - Dezembro 2022'
+      },
+      {
+        id: 2,
+        institucion: 'Centro Universitario Vicente Lopez',
+        ubicacion: 'Localizaçao: Buenos Aires.',
+        titulo: 'Certificado: Manutenção de PC',
+        fechaToString: 'Periodo: Agosto 2018 - Dezembro  2018'
+      },
+      {
+        id: 3,
+        institucion: 'Colegio Julio Argentino Roca Nº8 DE 10',
+        ubicacion: 'Localizaçao: Ciudad de Buenos Aires.',
+        titulo: 'Certificado: Ensino Médio',
+        fechaToString: 'Periodo: Março 2010 - Dezembro 2014'
+      }
+    ],
+    en: [
+      {
+        id: 0,
+        institucion: 'Universidad Tecnologica Nacional - Argentina Programa',
+        ubicacion: 'Location: Buenos Aires.',
+        titulo: 'Certificate: Front End React Developer',
+        fechaToString: 'Period: February 2023 - December 2023'
+      },
+      {
+        id: 1,
+        institucion: 'Instituto Nacional de Tecnologia Industrial - Argentina Programa',
+        ubicacion: 'Location: Buenos Aires.',
+        titulo: 'Certificate: Full Stack Developer',
+        fechaToString: 'Period: September 2022 - December 2022'
+      },
+      {
+        id: 2,
+        institucion: 'Centro Universitario Vicente Lopez',
+        ubicacion: 'Location: Buenos Aires.',
+        titulo: 'Certificate: PC Maintenance',
+        fechaToString: 'Period: Agosto 2018 - Dezembro 2018'
+      },
+      {
+        id: 3,
+        institucion: 'Colegio Julio Argentino Roca Nº8 DE 10',
+        ubicacion: 'Location: Ciudad de Buenos Aires.',
+        titulo: 'Certificate: High School Diploma',
+        fechaToString: 'Period: Março 2010 - Dezembro 2014'
+      }
+    ]
+  }
+}
+
+export const footerConfig = {
+  es: ['Desarrollado por Juan Paz.', 'Desplegado con Github Pages'],
+  br: ['Desenvolvido por Juan Paz', 'Implementado com o GitHub Pages'],
+  en: ['Developed by Juan Paz', 'Deployed with GitHub Pages']
 }
 
 export default appConfig

@@ -12,7 +12,7 @@ export function appLoader ({ request }) {
 
   const langPath = url.pathname === '/' ? 'es' : url.pathname.replace(/\//g, '')
 
-  const [{ attribute, value }] = appConfig[langPath]
+  const [{ attribute, value, title }] = appConfig[langPath]
   const footerText = footerConfig[langPath]
   const { offCanvasConfig, dropDownConfig, flagConfig } = headerConfig
 
@@ -21,14 +21,15 @@ export function appLoader ({ request }) {
   const flagImg = flagConfig[langPath]
   const headerText = { offCanvasText, dropDownText, flagImg }
 
-  return { renderApp: true, attribute, value, footerText, headerText }
+  return { renderApp: true, attribute, value, title, footerText, headerText }
 }
 
 function App () {
-  const { renderApp, attribute, value, footerText, headerText } = useLoaderData()
+  const { renderApp, attribute, value, title, footerText, headerText } = useLoaderData()
 
   useEffect(() => {
     document.querySelector('html').setAttribute(attribute, value)
+    document.querySelector('title').textContent = title
   }, [attribute, value])
   return (
     <>

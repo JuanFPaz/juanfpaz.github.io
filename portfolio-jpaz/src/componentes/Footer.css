@@ -7,11 +7,14 @@ footer{
 }
 
 footer ul{
-    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     color: #84a0fc;
     text-align: center;
 }
 
 footer li{
+    list-style: none;
     padding: 10px 0 10px 0;
 }

@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import Dropdown from 'react-bootstrap/Dropdown'
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './Languaje.css'
 
 const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
@@ -13,33 +13,11 @@ const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
     }}
   >
     {children}
-    <span className='toggleIcon'>
+    <div className='toggleIcon'>
       &#x25bc;
-    </span>
+    </div>
   </button>
 ))
-
-const CustomMenu = React.forwardRef(
-  ({ children, style, className, 'aria-labelledby': labeledBy }, ref) => {
-    // eslint-disable-next-line no-unused-vars
-    const [value, setValue] = useState('')
-
-    return (
-      <div
-        ref={ref}
-        style={style}
-        className={className}
-        aria-labelledby={labeledBy}
-      >
-        <ul className='list-unstyled'>
-          {React.Children.toArray(children).filter(
-            (child) => !value || child.props.children.toLowerCase().startsWith(value)
-          )}
-        </ul>
-      </div>
-    )
-  }
-)
 
 export default function DropdownNav ({ dropDownText, flagDropDown }) {
   return (
@@ -47,23 +25,26 @@ export default function DropdownNav ({ dropDownText, flagDropDown }) {
       <Dropdown>
         <Dropdown.Toggle
           as={CustomToggle}
-          id='dropdown-custom-components'
-          variant='success'
+          id='dropdown-custom-components dropdown-autoclose-true'
         >
-          <img src={flagDropDown} className='current-languaje' />
+          <img src={flagDropDown} className='current-language' />
         </Dropdown.Toggle>
-        <Dropdown.Menu as={CustomMenu}>
-          {dropDownText.map(({ id, flag, href, language }) =>
-            (
-              <Link to={href} key={id}>
-                {language}
-                <img
-                  src={flag}
-                  className='select-languaje'
-                />
-              </Link>
-            )
-          )}
+        <Dropdown.Menu>
+          <ul className='listLanguage'>
+            {dropDownText.map(({ id, flag, href, language }) =>
+              (
+                <li key={id}>
+                  <NavLink to={href}>
+                    {language}
+                    <img
+                      src={flag}
+                      className='select-language'
+                    />
+                  </NavLink>
+                </li>
+              )
+            )}
+          </ul>
         </Dropdown.Menu>
       </Dropdown>
     </>

@@ -9,18 +9,25 @@ section {
 section div#sobremi,
 section div#skills,
 section div#experiencia,
-section div#estudios,
+section div#educacion,
 section div#contacto{
-    width: 954px;
+    scroll-margin-top: 120px; /* Ajusta este valor según sea necesario */
+    width: 1200px;
     border: 1px solid #84a0fc;
     border-radius: 10px;
     box-shadow: 1px 1px 15px -5px #84a0fc;
     padding: 20px;
 }
 
-/*LO HICE CON GTP, POR ENDE TODAVIA NO ENTIENDO NADA XD*/
-/*Igual quedo, no tan mal, pero podria estar mejor.*/
-/* Me da paja ir a la plaza de mayo a sacar una foto en horizontal de la plaza xd*/
+
+section .sobremi-encabezado h1,
+section .skills-encabezado h1,
+section .experiencia-encabezado h1,
+section .educacion-encabezado h1 {
+  text-shadow: 0 0 14px #ff2c2c;
+}
+
+
 section:has(> div#inicio) {
   background-image: url('./background-1.jpg'), linear-gradient(#16386b, #16386b);
   background-blend-mode: overlay; /* Aplica el modo de mezcla "overlay" para superponer el color */
@@ -31,6 +38,7 @@ section:has(> div#inicio) {
 }
 
 section div#inicio{
+  scroll-margin-top: 90vh; /* Ajusta este valor según sea necesario */
   width: 60%;
   text-shadow: 0 0 14px #ff2c2c;
 }
@@ -88,7 +96,6 @@ section .ficha-contenedor ul{
   border-top: 1px solid #84a0fc;
   border-bottom: 2px solid #84a0fc;
 }
-
 
 section .ficha-contenedor li{
   font-size: 0.9em !important;
@@ -173,6 +180,7 @@ section .skills-grid{
 
 section .skills-items{
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,7 +188,8 @@ section .skills-items{
   background-color: #84a0fc41;
 }
 section .skills-items img{
-  width: 75%;
+  width: 50%;
+  height: auto;
 }
 
 section .experiencia-contenido,
@@ -243,18 +252,31 @@ section .estudios-descripcion{
 }
 
 section .experiencia-descripcion h1,
+section .estudios-descripcion h1{
+  color: #84a0fc;
+  text-shadow: 0 0 14px #84a0fc;
+  font-size: 1.2em !important;
+  margin-bottom: 15px ;
+}
 section .experiencia-descripcion h2,
-section .experiencia-descripcion h3,
-section .experiencia-descripcion h4{
+section .estudios-descripcion h2,
+section .experiencia-descripcion h3{
   color: #ccd6f6;
   font-size: 1em !important;
-  margin-bottom: 15px ;
+  margin: 15px 0 15px 0 ;
 }
 
 section .experiencia-descripcion ul,
 section .estudios-descripcion ul{
   margin: 0;
 }
+
+section .experiencia-descripcion li,
+section .estudios-descripcion li{
+  font-weight: 0;
+  letter-spacing: 2;
+}
+
 
 section .experiencia-descripcion ul#tec {
   width: 100%;
@@ -305,10 +327,49 @@ section .contacto-contenido li{
     width: 75%;
   }
 
+  section div.sobreMi-contenido{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  section .sobreMi-aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  section .ficha-contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 0 0.7em; 
+  }
+
+  section .sobreMi-aside li{
+    font-size: 1em !important;
+  }
+
+  section .sobreMi-aside a{
+    font-size: 1em !important;
+  }
+
+  section .image-contenedor{
+    width: 250px;
+    height: 250px;
+    background-color: #84a0fc;
+  }
+  section .image-contenedor img{
+    display: block;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+
   section div#sobremi,
   section div#skills,
   section div#experiencia,
-  section div#estudios,
+  section div#educacion,
   section div#contacto{
     max-width: 954px;
     width: 100%;
@@ -341,7 +402,7 @@ section .contacto-contenido li{
   section div#sobremi,
   section div#skills,
   section div#experiencia,
-  section div#estudios,
+  section div#educacion,
   section div#contacto{
     width: 100%;
     padding: 10px;
@@ -352,11 +413,6 @@ section .contacto-contenido li{
     flex-direction: column-reverse;
   }
 
-  section div.sobreMi-contenido{
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  
   section .sobreMi-main{
     padding: 0;
   }
@@ -412,20 +468,26 @@ section .contacto-contenido li{
   
 section .experiencia-botones button,
 section .estudios-botones button{
-  font-size: 1.5em !important;
+  font-size: 1.2em !important;
 }
 
 section .experiencia-descripcion h1,
+section .estudios-descripcion h1{
+  color: #84a0fc;
+  text-shadow: 0 0 14px #84a0fc;
+  font-size: 1.7em !important;
+  margin-bottom: 15px ;
+}
 section .experiencia-descripcion h2,
-section .experiencia-descripcion h3,
-section .experiencia-descripcion h4{
+section .estudios-descripcion h2,
+section .experiencia-descripcion h3{
   color: #ccd6f6;
   font-size: 1.5em !important;
-  margin-bottom: 15px ;
+  margin: 15px 0 15px 0 ;
 }
 
 section .experiencia-descripcion ul#tec li {
-  font-size: 1.15em !important;
+  font-size: 1.1em !important;
 }
 }
 
@@ -444,13 +506,11 @@ section .experiencia-descripcion ul#tec li {
   section div#sobremi,
   section div#skills,
   section div#experiencia,
-  section div#estudios,
+  section div#educacion,
   section div#contacto{
-    min-width: 400px;
     width: 100%;
     padding: 10px;
   }
-
   section div.sobreMi-contenido{
     display: flex;
     flex-direction: column-reverse;
@@ -468,27 +528,25 @@ section .experiencia-descripcion ul#tec li {
   }
   
   section .sobreMi-aside li{
-    font-size: 1.5em !important;
+    font-size: 1.3em !important;
   }
 
   section .sobreMi-aside a{
-    font-size: 1.5em !important;
+    font-size: 1.3em !important;
   }
 
   section .image-contenedor{
-    width: 200px;
-    height: 200px;
+    width:150px;
+    height:150px;
     background-color: #84a0fc;
   }
   section .image-contenedor img{
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height:150px;
     object-fit: cover;
   }
   section .skills-contenido ul{
-
-    height: 200px;
     justify-content: flex-start;
   }
 
@@ -505,20 +563,26 @@ section .experiencia-descripcion ul#tec li {
 
 section .experiencia-botones button,
 section .estudios-botones button{
-  font-size: 0.9em !important;
+  font-size: 0.7em !important;
 }
 
-section .experiencia-descripcion h1,
+section .experiencia-descripcion h1
+section .estudios-descripcion h1{
+  color: #84a0fc;
+  text-shadow: 0 0 14px #84a0fc;
+  font-size: 2.2em !important;
+  margin-bottom: 15px ;
+}
 section .experiencia-descripcion h2,
-section .experiencia-descripcion h3,
-section .experiencia-descripcion h4{
+section .estudios-descripcion h2,
+section .experiencia-descripcion h3{
   color: #ccd6f6;
   font-size: 2em !important;
-  margin-bottom: 15px ;
+  margin: 15px 0 15px 0 ;
 }
 
 section .experiencia-descripcion ul#tec li {
-  font-size: 1.5em !important;
+  font-size: 1.1em !important;
 }
 
 }

@@ -4,7 +4,6 @@
 
 html {
   font-size: 16px !important;
-  scroll-padding-top: 136px;
   background-color: #0a192f;
 }
 
@@ -17,20 +16,20 @@ body {
 @media screen and (max-width: 1199px) {
   html{
     font-size: 14px !important;
-    scroll-padding-top: 100px;
+    /* scroll-padding-top: 100px; */
   }
 }
 
 @media screen and (max-width: 767px) {
   html{
     font-size: 10px !important;
-    scroll-padding-top: 100px;
+    /* scroll-padding-top: 100px; */
   }
 }
 
 @media screen and (max-width: 480px) {
   html{
     font-size: 8px !important;
-    scroll-padding-top: 91px;
+    /* scroll-padding-top: 91px; */
   }
 }
