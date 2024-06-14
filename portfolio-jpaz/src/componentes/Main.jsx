@@ -4,6 +4,7 @@ import Inicio from './main-componentes/Inicio'
 import Skills from './main-componentes/Skills'
 import Experiencia from './main-componentes/Experiencia'
 import Estudios from './main-componentes/Estudios'
+import Proyectos from './main-componentes/Proyectos'
 // import Contacto from './secciones/Contacto'
 import './Main.css'
 import { useLoaderData } from 'react-router-dom'
@@ -47,6 +48,7 @@ function Main () {
           <>
             <Inicio id='inicio' inicioText={inicioText} />
             <SobreMi id='sobremi' sobreMiText={sobreMiText} />
+            <Proyectos id='proyectos' />
             <Skills id='skills' softSkillsText={softSkillsText} />
             <Experiencia id='experiencia' experienciaText={experienciaText} />
             <Estudios id='educacion' educacionText={educacionText} />

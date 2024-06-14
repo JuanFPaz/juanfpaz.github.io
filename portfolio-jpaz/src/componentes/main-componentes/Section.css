@@ -1,59 +1,106 @@
 section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/**
+**CSS DE PRUEBA
+**/
+
+.proyectos-text,
+.proyectos-img{
+  position: relative;
+}
+
+.proyectos-text{
+  z-index: 1;
+}
+
+.proyectos-img{
+  z-index: 2;
+}
+
+.js{
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.js::after  {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  position: absolute;
+  z-index: -1;
+  filter: drop-shadow(0px 0px) blur(14px);
+}
+
+.js.unity::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  position: absolute;
+  z-index: -1;
+  filter: drop-shadow(0 0 14px rgb(255, 255, 255));
+}
+
+
 section div#sobremi,
 section div#skills,
 section div#experiencia,
 section div#educacion,
-section div#contacto{
-    scroll-margin-top: 120px; /* Ajusta este valor según sea necesario */
-    width: 1200px;
-    border: 1px solid #84a0fc;
-    border-radius: 10px;
-    box-shadow: 1px 1px 15px -5px #84a0fc;
-    padding: 20px;
+section div#proyectos {
+  scroll-margin-top: 120px; /* Ajusta este valor según sea necesario */
+  width: 1200px;
+  border: 1px solid #84a0fc;
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px -5px #84a0fc;
+  padding: 20px;
 }
-
 
 section .sobremi-encabezado h1,
 section .skills-encabezado h1,
 section .experiencia-encabezado h1,
-section .educacion-encabezado h1 {
+section .educacion-encabezado h1,
+section .proyectos-encabezado h1 {
   text-shadow: 0 0 14px #ff2c2c;
 }
 
-
 section:has(> div#inicio) {
-  background-image: url('./background-1.jpg'), linear-gradient(#16386b, #16386b);
+  background-image: url("https://raw.githubusercontent.com/JuanFPaz/juanfpaz.github.io/main/portfolio-jpaz/public/background-1.jpg"),
+    linear-gradient(#16386b, #16386b);
   background-blend-mode: overlay; /* Aplica el modo de mezcla "overlay" para superponer el color */
   height: 90vh;
   background-position: center center; /* Centra la imagen */
-  background-size:cover; /* Ajusta el tamaño de la imagen al 50% del contenedor */
-  margin: 0
+  background-size: cover; /* Ajusta el tamaño de la imagen al 50% del contenedor */
+  margin: 0;
 }
 
-section div#inicio{
+section div#inicio {
   scroll-margin-top: 90vh; /* Ajusta este valor según sea necesario */
   width: 60%;
   text-shadow: 0 0 14px #ff2c2c;
 }
 
-section div#inicio p{
-  color:#ccd6f6;
+section div#inicio p {
+  color: #ccd6f6;
   text-shadow: 0 0 14px #84a0fc;
 }
 
-section div#sobremi{
+section div#sobremi {
   display: flex;
   flex-direction: column;
 }
 
-section .sobreMi-contenido{
+section .sobreMi-contenido {
   display: flex;
 }
 
@@ -65,14 +112,14 @@ section .sobreMi-aside {
   margin-top: 1em;
 }
 
-section .image-contenedor{
+section .image-contenedor {
   width: 300px;
   height: 300px;
   border-radius: 5px;
   background-color: #84a0fc;
 }
-section .image-contenedor img{
-  opacity: 0.50;
+section .image-contenedor img {
+  opacity: 0.5;
   display: block;
   border-radius: 5px;
   width: 300px;
@@ -81,74 +128,74 @@ section .image-contenedor img{
   transition: opacity ease-in-out 0.5s;
 }
 
-section .image-contenedor img:hover{
+section .image-contenedor img:hover {
   opacity: 1;
 }
 
-section .ficha-contenedor{
+section .ficha-contenedor {
   width: 100%;
   margin: 0.7em 0 0.7em 0;
 }
 
-section .ficha-contenedor ul{
+section .ficha-contenedor ul {
   padding: 0;
   list-style: none;
   border-top: 1px solid #84a0fc;
   border-bottom: 2px solid #84a0fc;
 }
 
-section .ficha-contenedor li{
+section .ficha-contenedor li {
   font-size: 0.9em !important;
   color: #ccd6f6;
   padding: 0.5em 0 0.5em 0;
   border-top: 1px solid #84a0fc;
 }
 
-section .ficha-contenedor button{
+section .ficha-contenedor button {
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid #84a0fc;
   border-radius: 20px;
-  transition: background-color 0.5s ease-in-out, 0.5s ease-in-out 
+  transition: background-color 0.5s ease-in-out, 0.5s ease-in-out;
 }
 
-section .ficha-contenedor button:hover{
+section .ficha-contenedor button:hover {
   background-color: #84a0fc;
-  filter: drop-shadow(0 0px 10px #84a0fc);
+  filter: drop-shadow(0 0 10px #84a0fc);
 }
 
-section .ficha-contenedor  a,
-section .ficha-contenedor  a:visited{
+section .ficha-contenedor a,
+section .ficha-contenedor a:visited {
   font-size: 0.9em !important;
   display: block;
   width: 100%;
   padding: 5px;
   color: #84a0fc;
   text-decoration: none;
-  transition: color 0.5s ease-in-out,  text-shadow 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
 }
 
-section .sobreMi-aside a:hover{
+section .sobreMi-aside a:hover {
   color: #fff;
   text-shadow: 0 0 5px #84a0fc;
 }
-section .skills-contenido{
+section .skills-contenido {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-section .softSkills-contenedor{
+section .softSkills-contenedor {
   width: 100%;
   padding-top: 10px;
 }
 
-section .hardSkills-contenedor{
-  margin-top: 15px
+section .hardSkills-contenedor {
+  margin-top: 15px;
 }
 
-section .skills-contenido ul{
+section .skills-contenido ul {
   height: 120px;
   display: flex;
   justify-content: flex-start;
@@ -159,26 +206,26 @@ section .skills-contenido ul{
 
 section .skills-contenido li,
 section .experiencia-descripcion li,
-section .estudios-descripcion li{
+section .estudios-descripcion li {
   padding-bottom: 10px;
   color: #ccd6f6;
 }
 
 section .skills-contenido li::marker,
 section .experiencia-descripcion li::marker,
-section .estudios-descripcion li::marker{
-  color: #ff2c2c
+section .estudios-descripcion li::marker {
+  color: #ff2c2c;
 }
 
-section .skills-grid{
+section .skills-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto ;
+  grid-template-columns: auto auto auto auto auto auto;
   grid-template-rows: 140px 140px 140px;
   gap: 8px;
 }
 
-section .skills-items{
+section .skills-items {
   width: 100%;
   height: auto;
   display: flex;
@@ -187,19 +234,19 @@ section .skills-items{
   border-radius: 5px;
   background-color: #84a0fc41;
 }
-section .skills-items img{
+section .skills-items img {
   width: 50%;
   height: auto;
 }
 
 section .experiencia-contenido,
-section .estudios-contenedor{
+section .estudios-contenedor {
   display: flex;
   flex-direction: column;
 }
 
 section .experiencia-botones ul,
-section .estudios-botones ul{
+section .estudios-botones ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
@@ -210,32 +257,31 @@ section .estudios-botones ul{
 }
 
 section .experiencia-botones li,
-section .estudios-botones li{
+section .estudios-botones li {
   padding: 5px;
-  font-size: 0.90em;
+  font-size: 0.9em;
 }
 
 section .experiencia-botones button,
-section .estudios-botones button{
+section .estudios-botones button {
   background-color: rgba(0, 0, 0, 0);
   padding: 5px;
   border: 2px solid #84a0fc;
   color: #84a0fc;
   border-radius: 20px;
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, 0.5s ease-in-out
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    0.5s ease-in-out;
 }
 
-
 section .experiencia-botones button:hover,
-section .estudios-botones button:hover{
+section .estudios-botones button:hover {
   background-color: #84a0fc;
   color: #fff;
   filter: drop-shadow(0 0px 10px #84a0fc);
 }
 
-
 section .experiencia-botones button#seleccionado,
-section .estudios-botones button#seleccionado{
+section .estudios-botones button#seleccionado {
   background-color: #84a0fc;
   padding: 5px;
   border: 2px solid #84a0fc;
@@ -243,40 +289,38 @@ section .estudios-botones button#seleccionado{
   border-radius: 20px;
 }
 
-
 section .experiencia-descripcion,
-section .estudios-descripcion{
+section .estudios-descripcion {
   margin-top: 1em;
   width: 100%;
   padding-left: 20px;
 }
 
 section .experiencia-descripcion h1,
-section .estudios-descripcion h1{
+section .estudios-descripcion h1 {
   color: #84a0fc;
   text-shadow: 0 0 14px #84a0fc;
   font-size: 1.2em !important;
-  margin-bottom: 15px ;
+  margin-bottom: 15px;
 }
 section .experiencia-descripcion h2,
 section .estudios-descripcion h2,
-section .experiencia-descripcion h3{
+section .experiencia-descripcion h3 {
   color: #ccd6f6;
   font-size: 1em !important;
-  margin: 15px 0 15px 0 ;
+  margin: 15px 0 15px 0;
 }
 
 section .experiencia-descripcion ul,
-section .estudios-descripcion ul{
+section .estudios-descripcion ul {
   margin: 0;
 }
 
 section .experiencia-descripcion li,
-section .estudios-descripcion li{
+section .estudios-descripcion li {
   font-weight: 0;
   letter-spacing: 2;
 }
-
 
 section .experiencia-descripcion ul#tec {
   width: 100%;
@@ -297,13 +341,13 @@ section .experiencia-descripcion ul#tec li {
   border-radius: 10px;
 }
 
-section .contacto-contenido{
+section .contacto-contenido {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section .contacto-contenido ul{
+section .contacto-contenido ul {
   width: 70%;
   display: flex;
   list-style: none;
@@ -311,7 +355,7 @@ section .contacto-contenido ul{
   align-items: center;
 }
 
-section .contacto-contenido li{
+section .contacto-contenido li {
   background-color: #84a0fc;
   width: 100px;
   height: 100px;
@@ -323,43 +367,43 @@ section .contacto-contenido li{
     padding: 10px;
   }
 
-  section div#inicio{
+  section div#inicio {
     width: 75%;
   }
 
-  section div.sobreMi-contenido{
+  section div.sobreMi-contenido {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  section .sobreMi-aside{
+  section .sobreMi-aside {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
   }
 
-  section .ficha-contenedor{
+  section .ficha-contenedor {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    margin: 0 0 0 0.7em; 
+    margin: 0 0 0 0.7em;
   }
 
-  section .sobreMi-aside li{
+  section .sobreMi-aside li {
     font-size: 1em !important;
   }
 
-  section .sobreMi-aside a{
+  section .sobreMi-aside a {
     font-size: 1em !important;
   }
 
-  section .image-contenedor{
+  section .image-contenedor {
     width: 250px;
     height: 250px;
     background-color: #84a0fc;
   }
-  section .image-contenedor img{
+  section .image-contenedor img {
     display: block;
     width: 250px;
     height: 250px;
@@ -370,32 +414,31 @@ section .contacto-contenido li{
   section div#skills,
   section div#experiencia,
   section div#educacion,
-  section div#contacto{
+  section div#proyectos {
     max-width: 954px;
     width: 100%;
     padding: 10px;
   }
 
-  section .skills-grid{
+  section .skills-grid {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     grid-template-rows: 115px 115px 115px;
     gap: 6px;
   }
 
-  section .skills-items img{
+  section .skills-items img {
     width: 50%;
   }
-
 }
 
 @media screen and (max-width: 767px) {
   section {
     margin-top: 15px;
-    padding: 10px
+    padding: 10px;
   }
 
-  section div#inicio{
+  section div#inicio {
     width: 100%;
   }
 
@@ -403,97 +446,95 @@ section .contacto-contenido li{
   section div#skills,
   section div#experiencia,
   section div#educacion,
-  section div#contacto{
+  section div#proyectos {
     width: 100%;
     padding: 10px;
   }
 
-  section div.sobreMi-contenido{
+  section div.sobreMi-contenido {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  section .sobreMi-main{
+  section .sobreMi-main {
     padding: 0;
   }
 
-  section .sobreMi-aside{
+  section .sobreMi-aside {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
   }
 
-  section .ficha-contenedor{
+  section .ficha-contenedor {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    margin: 0 0 0 0.7em; 
+    margin: 0 0 0 0.7em;
   }
 
-  section .sobreMi-aside li{
+  section .sobreMi-aside li {
     font-size: 1.2em !important;
   }
 
-  section .sobreMi-aside a{
+  section .sobreMi-aside a {
     font-size: 1.2em !important;
   }
 
-  section .image-contenedor{
+  section .image-contenedor {
     width: 200px;
     height: 200px;
     background-color: #84a0fc;
   }
-  section .image-contenedor img{
+  section .image-contenedor img {
     display: block;
     width: 200px;
     height: 200px;
     object-fit: cover;
   }
-  section .skills-contenido ul{
+  section .skills-contenido ul {
     height: 210px;
     justify-content: flex-start;
   }
-  section .skills-grid{
+  section .skills-grid {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     grid-template-rows: 80px 80px 80px;
     gap: 6px;
   }
 
-  section .skills-items img{
+  section .skills-items img {
     width: 50%;
   }
 
-  
-section .experiencia-botones button,
-section .estudios-botones button{
-  font-size: 1.2em !important;
-}
+  section .experiencia-botones button,
+  section .estudios-botones button {
+    font-size: 1.2em !important;
+  }
 
-section .experiencia-descripcion h1,
-section .estudios-descripcion h1{
-  color: #84a0fc;
-  text-shadow: 0 0 14px #84a0fc;
-  font-size: 1.7em !important;
-  margin-bottom: 15px ;
-}
-section .experiencia-descripcion h2,
-section .estudios-descripcion h2,
-section .experiencia-descripcion h3{
-  color: #ccd6f6;
-  font-size: 1.5em !important;
-  margin: 15px 0 15px 0 ;
-}
+  section .experiencia-descripcion h1,
+  section .estudios-descripcion h1 {
+    color: #84a0fc;
+    text-shadow: 0 0 14px #84a0fc;
+    font-size: 1.7em !important;
+    margin-bottom: 15px;
+  }
+  section .experiencia-descripcion h2,
+  section .estudios-descripcion h2,
+  section .experiencia-descripcion h3 {
+    color: #ccd6f6;
+    font-size: 1.5em !important;
+    margin: 15px 0 15px 0;
+  }
 
-section .experiencia-descripcion ul#tec li {
-  font-size: 1.1em !important;
-}
+  section .experiencia-descripcion ul#tec li {
+    font-size: 1.1em !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
-
-  section div#inicio{
+  section div#inicio {
     width: 100%;
   }
 
@@ -507,83 +548,80 @@ section .experiencia-descripcion ul#tec li {
   section div#skills,
   section div#experiencia,
   section div#educacion,
-  section div#contacto{
+  section div#proyectos {
     width: 100%;
     padding: 10px;
   }
-  section div.sobreMi-contenido{
+  section div.sobreMi-contenido {
     display: flex;
     flex-direction: column-reverse;
   }
-  
-  section .sobreMi-aside{
+
+  section .sobreMi-aside {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
   }
-  
-  section .ficha-contenedor{
+
+  section .ficha-contenedor {
     width: 100%;
-    margin: 0 0 0 0.7em; 
+    margin: 0 0 0 0.7em;
   }
-  
-  section .sobreMi-aside li{
+
+  section .sobreMi-aside li {
     font-size: 1.3em !important;
   }
 
-  section .sobreMi-aside a{
+  section .sobreMi-aside a {
     font-size: 1.3em !important;
   }
 
-  section .image-contenedor{
-    width:150px;
-    height:150px;
+  section .image-contenedor {
+    width: 150px;
+    height: 150px;
     background-color: #84a0fc;
   }
-  section .image-contenedor img{
+  section .image-contenedor img {
     display: block;
     width: 150px;
-    height:150px;
+    height: 150px;
     object-fit: cover;
   }
-  section .skills-contenido ul{
+  section .skills-contenido ul {
     justify-content: flex-start;
   }
 
-  section .skills-grid{
+  section .skills-grid {
     display: grid;
-    grid-template-columns: auto auto auto auto  auto auto ;
+    grid-template-columns: auto auto auto auto auto auto;
     grid-template-rows: 60px 60px 60px;
     gap: 4px;
   }
 
-  section .skills-items img{
+  section .skills-items img {
     width: 50%;
   }
 
-section .experiencia-botones button,
-section .estudios-botones button{
-  font-size: 0.7em !important;
-}
+  section .experiencia-botones button,
+  section .estudios-botones button {
+    font-size: 0.7em !important;
+  }
 
-section .experiencia-descripcion h1
-section .estudios-descripcion h1{
-  color: #84a0fc;
-  text-shadow: 0 0 14px #84a0fc;
-  font-size: 2.2em !important;
-  margin-bottom: 15px ;
-}
-section .experiencia-descripcion h2,
-section .estudios-descripcion h2,
-section .experiencia-descripcion h3{
-  color: #ccd6f6;
-  font-size: 2em !important;
-  margin: 15px 0 15px 0 ;
-}
+  section .experiencia-descripcion h1 section .estudios-descripcion h1 {
+    color: #84a0fc;
+    text-shadow: 0 0 14px #84a0fc;
+    font-size: 2.2em !important;
+    margin-bottom: 15px;
+  }
+  section .experiencia-descripcion h2,
+  section .estudios-descripcion h2,
+  section .experiencia-descripcion h3 {
+    color: #ccd6f6;
+    font-size: 2em !important;
+    margin: 15px 0 15px 0;
+  }
 
-section .experiencia-descripcion ul#tec li {
-  font-size: 1.1em !important;
+  section .experiencia-descripcion ul#tec li {
+    font-size: 1.1em !important;
+  }
 }
-
-}
-

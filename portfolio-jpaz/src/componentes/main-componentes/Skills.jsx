@@ -50,6 +50,12 @@ const arrayDeImagenes = [
     id: self.crypto.randomUUID()
   },
   {
+    nombre: 'Java',
+    url: java,
+    alt: 'Logo Java',
+    id: self.crypto.randomUUID()
+  },
+  {
     nombre: 'React',
     url: react,
     alt: 'Logo React',
@@ -83,12 +89,6 @@ const arrayDeImagenes = [
     nombre: 'Node.js',
     url: node,
     alt: 'Logo Node.js',
-    id: self.crypto.randomUUID()
-  },
-  {
-    nombre: 'Java',
-    url: java,
-    alt: 'Logo Java',
     id: self.crypto.randomUUID()
   },
   {
