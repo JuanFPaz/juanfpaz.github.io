@@ -23,6 +23,7 @@ import vscode from '/assets/vs-code.svg'
 import netbeans from '/assets/apache-netbeans.svg'
 import cloudflare from '/assets/cloudflare.svg'
 import './Section.css'
+import './styles/Skills.css'
 
 const arrayDeImagenes = [
   {
@@ -157,7 +158,10 @@ function HardSkills () {
       <div className='skills-grid'>
         {img.map((i) => (
           <OverlayTrigger key={i.id} overlay={<Tooltip id='tooltip-disabled'>{i.nombre}</Tooltip>}>
-            <div className='skills-items'><img src={i.url} alt={i.alt} /></div>
+            {/* <div className='skills-items'>1</div> */}
+            <div className='skills-items'>
+              <img src={i.url} alt={i.alt} />
+            </div>
           </OverlayTrigger>))}
       </div>
     </div>

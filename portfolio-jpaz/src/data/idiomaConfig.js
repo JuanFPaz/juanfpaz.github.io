@@ -4,7 +4,7 @@ const appConfig = {
       attribute: 'lang',
       value: 'es',
       lang: 'es',
-      title: 'Juan Paz : { Desarrollador Web }'
+      title: 'Juan Paz : Desarrollador Web'
     }
   ],
   br: [
@@ -12,14 +12,14 @@ const appConfig = {
       attribute: 'lang',
       value: 'pt',
       lang: 'br',
-      title: 'Juan Paz : { Desenvolvedor Web }'
+      title: 'Juan Paz : Desenvolvedor Web'
     }],
   en: [
     {
       attribute: 'lang',
       value: 'en',
       lang: 'en',
-      title: 'Juan Paz : { Web Developer } '
+      title: 'Juan Paz : Web Developer'
     }
   ]
 }
@@ -177,7 +177,12 @@ export const inicioConfig = {
     },
     {
       id: 3,
-      message: 'Soy un desarrollador web y actualmente me especializo creando aplicaciones Front end y Back end con Javascript, gestionando eficazmente mis proyectos y con conocimientos solidos utilizando diferentes herramientas de desarrollo y lenguajes de programacion. Actualmente estoy enfocado en crecer como profesional en el desarrollo de aplicaciones (no solo en el desarrollo web).'
+      html: `
+      <p>
+        Soy un desarrollador web especializado en Javascript creando aplicaciones Front end y Back end, gestionando eficazmente mis proyectos y con conocimientos solidos utilizando diferentes herramientas de desarrollo y lenguajes de programacion. Actualmente estoy enfocado en crecer como profesional en el desarrollo de aplicaciones (no solo en el desarrollo web).
+      </p>
+      `
+      // html: 'Soy un desarrollador web y actualmente me especializo creando aplicaciones Front end y Back end con Javascript, gestionando eficazmente mis proyectos y con conocimientos solidos utilizando diferentes herramientas de desarrollo y lenguajes de programacion. Actualmente estoy enfocado en crecer como profesional en el desarrollo de aplicaciones (no solo en el desarrollo web).'
     }
   ],
   br: [
@@ -195,7 +200,7 @@ export const inicioConfig = {
     },
     {
       id: 3,
-      message: 'Sou um desenvolvedor web com experiência na criação de aplicações Frontend e Backend com Javascript, gerenciando eficazmente meus projetos e possuindo sólidos conhecimentos no uso de várias ferramentas de desenvolvimento e linguagens de programação. Atualmente, estou focado em crescer como profissional no desenvolvimento de aplicações (não apenas no desenvolvimento web). '
+      html: 'Sou um desenvolvedor web com experiência na criação de aplicações Frontend e Backend com Javascript, gerenciando eficazmente meus projetos e possuindo sólidos conhecimentos no uso de várias ferramentas de desenvolvimento e linguagens de programação. Atualmente, estou focado em crescer como profissional no desenvolvimento de aplicações (não apenas no desenvolvimento web). '
     }
   ],
   en: [
@@ -213,7 +218,7 @@ export const inicioConfig = {
     },
     {
       id: 3,
-      message: "I'm a web developer with experience creating Frontend and Backend applications with Javascript, effectively managing my projects, and possessing solid knowledge of various development tools and programming languages. Currently, I'm focused on growing as a professional in application development (not only in web development)."
+      html: "I'm a web developer with experience creating Frontend and Backend applications with Javascript, effectively managing my projects, and possessing solid knowledge of various development tools and programming languages. Currently, I'm focused on growing as a professional in application development (not only in web development)."
 
     }
   ]
@@ -228,15 +233,15 @@ export const sobreMiConfig = {
     es: [
       {
         id: 0,
-        message: '¡Hola! Me llamo Juan Paz. Soy trabajador autónomo en aplicaciones de reparto y desarrollador web en mis tiempos libres. Me interesé por el desarrollo de aplicaciones en 2019 por la curiosidad de saber cómo se crearon los juegos, aplicaciones y sitios web que suelo recurrir frecuentemente.'
+        message: 'Soy trabajador autónomo en aplicaciones de reparto y desarrollador web en mis tiempos libres. Me interesé por el desarrollo de aplicaciones en 2019 por la curiosidad de saber cómo se crearon los juegos, aplicaciones y sitios web que suelo recurrir frecuentemente.'
       },
       {
         id: 1,
-        message: 'Comencé mi viaje en la programación con Java, adquiriendo una base sólida en conceptos básicos y exploré el desarrollo de videojuegos con Gamemaker y Unity. Más tarde, me inscribí en Argentina Programa, donde aprendí HTML, CSS, JavaScript, TypeScript, Ruby y frameworks como React, Angular y Springboot. También reforcé mis conocimientos en Java, diferentes paradigmas de programación, metodologías ágiles como SCRUM y el uso de herramientas como Git y GitHub, entre otras cosas.'
+        message: 'Comencé mi viaje en la programación con Java, adquiriendo una base sólida en conceptos básicos y exploré el desarrolo de videojuegos con Gamemaker y Unity. Más tarde, me inscribí en Argentina Programa, donde reforce mis conocimientos con nuevas tecnologias como Javascript, React, Vite, Node, Git, Github y metodologias de trabajo como Scrum.'
       },
       {
         id: 2,
-        message: 'Mis habilidades principales como desarrollador incluyen el manejo de estructuras de datos, trabajar con arreglos y objetos en JavaScript, y crear código reutilizable y mantenible. Disfruto desarrollando aplicaciones dinámicas con React y recientemente he comenzado a utilizar Node.js para crear APIs y manipular datos, como archivos JSON por ejemplo, desde el backend para enviarlos al frontend. Sin embargo, reconozco que mi punto más débil es el diseño, y estoy comprometido a mejorar en ese aspecto.'
+        message: 'Mis habilidades principales como desarrollador incluyen el manejo de estructuras de datos, crear código reutilizable y mantenible. Ademas desarrolle una solida gestion de proyectos y tareas, lo que me permite mantener un equilibrio entre mi responsabilidades y mi actual pasatiempo. Sin embargo, reconozco que mi punto más débil es el diseño, y estoy comprometido a mejorar en ese aspecto.'
       },
       {
         id: 3,

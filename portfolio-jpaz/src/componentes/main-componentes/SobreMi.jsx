@@ -1,6 +1,7 @@
 /* eslint-disable import/no-absolute-path */
 /* eslint-disable no-unused-vars */
 import './Section.css'
+import './styles/SobreMi.css'
 import profile from '/assets/profile.jpg'
 import cv from '/assets/CV-JuanPaz-2024.pdf'
 
@@ -30,6 +31,8 @@ function SobreMi ({ id, sobreMiText: { sobreMiTitle, sobreMiMainText, sobreMiAsi
                 <li>{sobreMiAsideText[2].text}</li>
                 <li>{sobreMiAsideText[3].text}</li>
               </ul>
+            </div>
+            <div className='button-contenedor'>
               <button>
                 <a href={cv} target='_blank' rel='noopener noreferrer'> {sobreMiAsideText[4].text} </a>
               </button>

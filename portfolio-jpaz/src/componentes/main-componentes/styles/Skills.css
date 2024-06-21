@@ -1,0 +1,51 @@
+#skills h1 {
+  font-size: 1.8em;
+  color: #ff2c2c;
+  text-shadow: 0 0 14px #ff2c2c;
+}
+
+#skills .softSkills-contenedor {
+  width: 100%;
+  overflow-y: auto;
+}
+
+#skills .softSkills-contenedor,
+#skills .hardSkills-contenedor {
+  margin-top: 15px;
+}
+
+#skills .skills-contenido ul {
+  border-radius: 2px;
+  height: 180px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+#skills .skills-contenido li {
+  text-overflow: ellipsis;
+  color: #ccd6f6;
+  padding-bottom: 10px;
+}
+
+#skills .skills-contenido li::marker {
+  color: #ff2c2c;
+}
+
+#skills .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1vw;
+}
+
+#skills .skills-items {
+  background-color: #16386b;
+  border-radius: 2px;
+  padding: 8px;
+}
+
+#skills img {
+  width: 100%;
+}

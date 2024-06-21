@@ -1,9 +1,9 @@
-section {
+section{
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  padding: 10px;
   margin-top: 50px;
 }
 
@@ -11,47 +11,22 @@ section {
 **CSS DE PRUEBA
 **/
 
-.proyectos-text,
-.proyectos-img{
-  position: relative;
+b{
+  font-weight: 600;
 }
 
-.proyectos-text{
-  z-index: 1;
+img#unity{
+  filter: drop-shadow(0 0 1px white);
 }
 
-.proyectos-img{
-  z-index: 2;
+button:hover img#javita{
+  filter: drop-shadow(0 0 1px #16386b);
 }
 
-.js{
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 200px;
-  height: 200px;
-  position: relative;
-}
-
-.js::after  {
-  content: '';
+section div#inicio {
+  scroll-margin-top: 90vh; /* Ajusta este valor según sea necesario */
   width: 100%;
-  height: 100%;
-  background: inherit;
-  position: absolute;
-  z-index: -1;
-  filter: drop-shadow(0px 0px) blur(14px);
 }
-
-.js.unity::after{
-  content: '';
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  position: absolute;
-  z-index: -1;
-  filter: drop-shadow(0 0 14px rgb(255, 255, 255));
-}
-
 
 section div#sobremi,
 section div#skills,
@@ -59,19 +34,10 @@ section div#experiencia,
 section div#educacion,
 section div#proyectos {
   scroll-margin-top: 120px; /* Ajusta este valor según sea necesario */
-  width: 1200px;
   border: 1px solid #84a0fc;
   border-radius: 10px;
   box-shadow: 1px 1px 15px -5px #84a0fc;
-  padding: 20px;
-}
-
-section .sobremi-encabezado h1,
-section .skills-encabezado h1,
-section .experiencia-encabezado h1,
-section .educacion-encabezado h1,
-section .proyectos-encabezado h1 {
-  text-shadow: 0 0 14px #ff2c2c;
+  padding: 10px;
 }
 
 section:has(> div#inicio) {
@@ -84,160 +50,17 @@ section:has(> div#inicio) {
   margin: 0;
 }
 
-section div#inicio {
-  scroll-margin-top: 90vh; /* Ajusta este valor según sea necesario */
-  width: 60%;
-  text-shadow: 0 0 14px #ff2c2c;
-}
-
-section div#inicio p {
-  color: #ccd6f6;
-  text-shadow: 0 0 14px #84a0fc;
-}
-
-section div#sobremi {
-  display: flex;
-  flex-direction: column;
-}
-
-section .sobreMi-contenido {
-  display: flex;
-}
-
-section .sobreMi-main {
-  padding-right: 20px;
-}
-
-section .sobreMi-aside {
-  margin-top: 1em;
-}
-
-section .image-contenedor {
-  width: 300px;
-  height: 300px;
-  border-radius: 5px;
-  background-color: #84a0fc;
-}
-section .image-contenedor img {
-  opacity: 0.5;
-  display: block;
-  border-radius: 5px;
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  transition: opacity ease-in-out 0.5s;
-}
-
-section .image-contenedor img:hover {
-  opacity: 1;
-}
-
-section .ficha-contenedor {
-  width: 100%;
-  margin: 0.7em 0 0.7em 0;
-}
-
-section .ficha-contenedor ul {
-  padding: 0;
-  list-style: none;
-  border-top: 1px solid #84a0fc;
-  border-bottom: 2px solid #84a0fc;
-}
-
-section .ficha-contenedor li {
-  font-size: 0.9em !important;
-  color: #ccd6f6;
-  padding: 0.5em 0 0.5em 0;
-  border-top: 1px solid #84a0fc;
-}
-
-section .ficha-contenedor button {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #84a0fc;
-  border-radius: 20px;
-  transition: background-color 0.5s ease-in-out, 0.5s ease-in-out;
-}
-
-section .ficha-contenedor button:hover {
-  background-color: #84a0fc;
-  filter: drop-shadow(0 0 10px #84a0fc);
-}
-
-section .ficha-contenedor a,
-section .ficha-contenedor a:visited {
-  font-size: 0.9em !important;
-  display: block;
-  width: 100%;
-  padding: 5px;
-  color: #84a0fc;
-  text-decoration: none;
-  transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
-}
-
-section .sobreMi-aside a:hover {
-  color: #fff;
-  text-shadow: 0 0 5px #84a0fc;
-}
-section .skills-contenido {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-section .softSkills-contenedor {
-  width: 100%;
-  padding-top: 10px;
-}
-
-section .hardSkills-contenedor {
-  margin-top: 15px;
-}
-
-section .skills-contenido ul {
-  height: 120px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 0;
-}
-
-section .skills-contenido li,
 section .experiencia-descripcion li,
 section .estudios-descripcion li {
   padding-bottom: 10px;
   color: #ccd6f6;
 }
 
-section .skills-contenido li::marker,
 section .experiencia-descripcion li::marker,
 section .estudios-descripcion li::marker {
   color: #ff2c2c;
 }
 
-section .skills-grid {
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  grid-template-rows: 140px 140px 140px;
-  gap: 8px;
-}
-
-section .skills-items {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  background-color: #84a0fc41;
-}
-section .skills-items img {
-  width: 50%;
-  height: auto;
-}
 
 section .experiencia-contenido,
 section .estudios-contenedor {
@@ -361,7 +184,7 @@ section .contacto-contenido li {
   height: 100px;
 }
 
-@media screen and (max-width: 1199px) {
+/* @media screen and (max-width: 1199px) {
   section {
     margin-top: 15px;
     padding: 10px;
@@ -560,6 +383,7 @@ section .contacto-contenido li {
   section .sobreMi-aside {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
   }
 
@@ -568,25 +392,11 @@ section .contacto-contenido li {
     margin: 0 0 0 0.7em;
   }
 
-  section .sobreMi-aside li {
-    font-size: 1.3em !important;
-  }
-
   section .sobreMi-aside a {
     font-size: 1.3em !important;
   }
 
-  section .image-contenedor {
-    width: 150px;
-    height: 150px;
-    background-color: #84a0fc;
-  }
-  section .image-contenedor img {
-    display: block;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-  }
+
   section .skills-contenido ul {
     justify-content: flex-start;
   }
@@ -624,4 +434,4 @@ section .contacto-contenido li {
   section .experiencia-descripcion ul#tec li {
     font-size: 1.1em !important;
   }
-}
+} */

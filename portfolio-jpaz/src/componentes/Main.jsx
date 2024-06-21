@@ -7,6 +7,7 @@ import Estudios from './main-componentes/Estudios'
 import Proyectos from './main-componentes/Proyectos'
 // import Contacto from './secciones/Contacto'
 import './Main.css'
+import './main-componentes/Section.css'
 import { useLoaderData } from 'react-router-dom'
 import { inicioConfig, sobreMiConfig, softSkillsConfig, experienciaConfig, educacionConfig } from '../data/idiomaConfig'
 

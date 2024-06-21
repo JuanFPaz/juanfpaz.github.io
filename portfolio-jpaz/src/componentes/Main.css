@@ -1,128 +1,30 @@
 main {
   margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   }
-  
+
   main h1,
   main h2,
   main h3,
   main h4 {
-    color: #ff2c2c;
-    margin: 0;
     font-weight: 700;
+    margin: 0;
     line-height: 1.5;
   }
   
   main p {
-    color: #ccd6f6;
-    margin: 0;
-    font-size: 1.05em;
-    font-weight: 500;
-    line-height: 2;
-    letter-spacing: 1px;
+    margin: 12px 0 0 0;
+    font-size: 1.4em;
+    line-height: 1.4;
   }
   
   main li{
-    font-size: 1em;
-    font-weight: 700;
+    font-size: 1.2em;
   }
 
-  main p {
-    margin-top: 0.90em !important; 
-  }
-    
-  h1 {
-    font-size: 1.25em !important;
-  }
-  
-  h2 {
-    font-size: 3.25em !important;
-  }
-  
-  h3 {
-    font-size: 2em !important;
-  }
-
-  h4{
-    font-size: 1.25em !important
-  }
-
-  @media screen and (max-width: 1199px){
-    main {
-      margin-top: 81px;
-    }
-
-    main p {
-      font-size: 1.1em !important;
-    }
-
-    h1 {
-      font-size: 1.75em !important;
-    }
-    
-    h2 {
-      font-size: 4em !important;
-    }
-    
-    h3 {
-      font-size: 2.75em !important;
-    }
-    main li{
-      font-size: 1.1em;
-      font-weight: 700;
-    }
-  }
-
-  @media screen and (max-width: 767px){
-    main {
-      margin-top: 75px;
-    }
-    main p {
-      font-size: 1.5em !important;
-    }
-
-    h1 {
-      font-size: 2em !important;
-    }
-    
-    h2 {
-      font-size: 5.75em !important;
-    }
-    
-    h3 {
-      font-size: 3.75em !important;
-    }
-    main li{
-      font-size: 1.4em;
-      font-weight: 700;
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    main {
-      margin-top: 66px;
-    }
-    main p {
-      justify-content: start;
-      font-size: 1.7em !important;
-    }
-
-    h1 {
-      font-size: 2.25em !important;
-    }
-    
-    h2 {
-      font-size: 6em !important;
-    }
-    
-    h3 {
-      font-size: 3.5em !important;
-    }
-    main li{
-      font-size: 1.7em !important;
-      font-weight: 700;
-    }
+  main a{
+    font-size: 1.2em;
   }

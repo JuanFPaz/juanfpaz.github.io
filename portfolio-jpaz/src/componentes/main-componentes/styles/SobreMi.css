@@ -1,0 +1,93 @@
+#sobremi h1 {
+    font-size: 1.8em;
+  color: #ff2c2c;
+  text-shadow: 0 0 14px #ff2c2c;
+}
+
+#sobremi p {
+  color: #ccd6f6;
+}
+
+#sobremi li {
+  font-weight: 400;
+}
+
+#sobremi .image-contenedor {
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #84a0fc;
+}
+
+#sobremi .image-contenedor img {
+  opacity: 0.5;
+  border-radius: 5px;
+  object-fit: cover;
+  max-width: 300px;
+  max-height: 300px;
+  width: 60vw;
+  height: 60vw;
+  transition: opacity ease-in-out 0.5s;
+}
+
+#sobremi .image-contenedor img:hover {
+  opacity: 1;
+}
+
+#sobremi .sobreMi-contenido {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#sobremi .sobreMi-aside {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+#sobremi .ficha-contenedor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#sobremi .ficha-contenedor ul {
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #84a0fc;
+  border-bottom: 2px solid #84a0fc;
+}
+
+#sobremi .ficha-contenedor li {
+  padding: 2px 0 5px 2px;
+  color: #ccd6f6;
+  border-top: 1px solid #84a0fc;
+}
+
+#sobremi .button-contenedor button {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #84a0fc;
+  border-radius: 20px;
+  transition: background-color 0.5s ease-in-out, 0.5s ease-in-out;
+}
+
+#sobremi .button-contenedor button:hover {
+  background-color: #84a0fc;
+  filter: drop-shadow(0 0 10px #84a0fc);
+}
+
+#sobremi .button-contenedor a,
+#sobremi .button-contenedor a:visited {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  color: #84a0fc;
+  text-decoration: none;
+  transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+}
+
+#sobremi .sobreMi-aside a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #84a0fc;
+}

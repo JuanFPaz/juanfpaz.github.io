@@ -1,0 +1,113 @@
+.proyectos-contenido,
+.proyectos-img {
+  position: relative;
+}
+
+.proyectos-contenido {
+  z-index: 1;
+}
+
+.proyectos-img {
+  z-index: 2;
+}
+
+
+.js {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 100px;
+  position: relative;
+}
+
+.js::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  position: absolute;
+  z-index: -1;
+  filter: drop-shadow(0px 0px) blur(5px);
+}
+
+.js.unity::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  position: absolute;
+  z-index: -1;
+  filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+
+/* lo bueno - lo d arriba tenemos que ajustarlo a este estilo.*/
+#proyectos h1 {
+  font-size: 1.8em;
+  color: #ff2c2c;
+  text-shadow: 0 0 14px #ff2c2c;
+}
+
+#proyectos p {
+  color: #ccd6f6;
+}
+
+#proyectos .proyectos-botones ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+}
+
+#proyectos .proyectos-botones li {
+  display: block;
+  padding: 5px;
+  font-size: 1em;
+}
+
+#proyectos .proyectos-botones button {
+  width: max-content;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px;
+  border: 2px solid #84a0fc;
+  color: #84a0fc;
+  border-radius: 20px;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    0.5s ease-in-out;
+}
+
+#proyectos .proyectos-botones button:hover {
+  background-color: #84a0fc;
+  color: #fff;
+  filter: drop-shadow(0 0px 10px #84a0fc);
+}
+
+#proyectos .proyectos-botones button#seleccionado{
+  background-color: #84a0fc;
+  padding: 5px;
+  border: 2px solid #84a0fc;
+  color: #fff;
+  border-radius: 20px;
+}
+
+#proyectos .proyectos-tool {
+  display: flex;
+  flex-direction: column;
+}
+
+#proyectos .ficha-contenedor {
+  width: 100%;
+}
+
+#proyectos .ficha-contenedor ul {
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #84a0fc;
+  border-bottom: 2px solid #84a0fc;
+}
+
+#proyectos .ficha-contenedor li {
+  color: #ccd6f6;
+  border-top: 1px solid #84a0fc;
+}
