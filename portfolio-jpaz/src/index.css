@@ -17,15 +17,27 @@ body {
 
 ::-webkit-scrollbar {
   width: 10px;
-  height: 5px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #84a0fc; 
 }
 
+@media (min-width: 768px) { 
+  html{
+    font-size: 11px !important;
+  }
+}
+
+@media (min-width: 992px) { 
+  html{
+    font-size: 12px !important;
+  }
+}
+
 @media (min-width: 1200px) { 
   html{
-    font-size: 13px !important;
+    font-size: 14px !important;
   }
 }

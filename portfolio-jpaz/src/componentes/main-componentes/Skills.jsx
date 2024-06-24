@@ -7,9 +7,9 @@ import Tooltip from 'react-bootstrap/Tooltip'
 import html from '/assets/html-5.svg'
 import css from '/assets/css-3.svg'
 import js from '/assets/js.svg'
-import ts from '/assets/ts.svg'
+import express from '/assets/express.svg'
 import react from '/assets/react.svg'
-import angular from '/assets/angular.svg'
+import maven from '/assets/maven.svg'
 import vite from '/assets/vite.svg'
 import bootstrap from '/assets/bootstrap.svg'
 import figma from '/assets/figma.svg'
@@ -22,6 +22,8 @@ import github from '/assets/github.svg'
 import vscode from '/assets/vs-code.svg'
 import netbeans from '/assets/apache-netbeans.svg'
 import cloudflare from '/assets/cloudflare.svg'
+import unity from '/assets/unity.svg'
+import csharp from '/assets/CSharp.svg'
 import './Section.css'
 import './styles/Skills.css'
 
@@ -39,21 +41,15 @@ const arrayDeImagenes = [
     id: self.crypto.randomUUID()
   },
   {
+    nombre: 'Bootstrap',
+    url: bootstrap,
+    alt: 'Logo Bootstrap',
+    id: self.crypto.randomUUID()
+  },
+  {
     nombre: 'JavaScript',
     url: js,
     alt: 'Logo JavaScript',
-    id: self.crypto.randomUUID()
-  },
-  {
-    nombre: 'TypeScript',
-    url: ts,
-    alt: 'Logo TypeScript',
-    id: self.crypto.randomUUID()
-  },
-  {
-    nombre: 'Java',
-    url: java,
-    alt: 'Logo Java',
     id: self.crypto.randomUUID()
   },
   {
@@ -63,33 +59,51 @@ const arrayDeImagenes = [
     id: self.crypto.randomUUID()
   },
   {
-    nombre: 'Angular',
-    url: angular,
-    alt: 'Logo Angular',
-    id: self.crypto.randomUUID()
-  },
-  {
     nombre: 'Vite',
     url: vite,
     alt: 'Logo Vite',
     id: self.crypto.randomUUID()
   },
   {
-    nombre: 'Bootstrap',
-    url: bootstrap,
-    alt: 'Logo Bootstrap',
+    nombre: 'Java',
+    url: java,
+    alt: 'Logo Java',
     id: self.crypto.randomUUID()
   },
   {
-    nombre: 'Figma',
-    url: figma,
-    alt: 'Logo Figma',
+    nombre: 'Apacahe Maven',
+    url: maven,
+    alt: 'Logo Apache Maven',
     id: self.crypto.randomUUID()
   },
   {
     nombre: 'Node.js',
     url: node,
     alt: 'Logo Node.js',
+    id: self.crypto.randomUUID()
+  },
+  {
+    nombre: 'Express.js',
+    url: express,
+    alt: 'Logo Express.js',
+    id: self.crypto.randomUUID()
+  },
+  {
+    nombre: 'Unity Engine',
+    url: unity,
+    alt: 'Logo Unity',
+    id: self.crypto.randomUUID()
+  },
+  {
+    nombre: 'C# (CSharp)',
+    url: csharp,
+    alt: 'Logo CSharp',
+    id: self.crypto.randomUUID()
+  },
+  {
+    nombre: 'Figma',
+    url: figma,
+    alt: 'Logo Figma',
     id: self.crypto.randomUUID()
   },
   {
@@ -160,7 +174,9 @@ function HardSkills () {
           <OverlayTrigger key={i.id} overlay={<Tooltip id='tooltip-disabled'>{i.nombre}</Tooltip>}>
             {/* <div className='skills-items'>1</div> */}
             <div className='skills-items'>
-              <img src={i.url} alt={i.alt} />
+              <div className='skills-img-container'>
+                <img src={i.url} alt={i.alt} />
+              </div>
             </div>
           </OverlayTrigger>))}
       </div>

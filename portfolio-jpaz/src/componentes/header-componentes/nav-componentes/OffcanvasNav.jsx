@@ -14,12 +14,12 @@ export default function OffcanvasNav ({ offCanvasText }) {
 
   return (
     <>
-      <button className='d-lg-none' onClick={handleShow}>
+      <button className='d-xl-none' onClick={handleShow}>
         <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='#ff2c2c' className='bi bi-list' viewBox='0 0 16 16'>
           <path fillRule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5' />
         </svg>
       </button>
-      <Offcanvas show={show} backdrop responsive='lg' placement='end' name='end' className='d-flex'>
+      <Offcanvas show={show} backdrop responsive='xl' placement='end' name='end' className='d-flex'>
         <Offcanvas.Header>
           <button onClick={handleClose}>
             <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='#ff2c2c' className='bi bi-x-lg' viewBox='0 0 16 16'>
@@ -27,7 +27,7 @@ export default function OffcanvasNav ({ offCanvasText }) {
             </svg>
           </button>
         </Offcanvas.Header>
-        <Offcanvas.Body>
+        <Offcanvas.Body className='d-flex justify-content-xl-center'>
           <nav>
             <ul>
               {langOffCanvas.map(({ id, href, list }) =>

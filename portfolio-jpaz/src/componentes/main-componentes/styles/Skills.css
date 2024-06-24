@@ -36,8 +36,8 @@
 
 #skills .skills-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 1vw;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
 }
 
 #skills .skills-items {
@@ -49,3 +49,10 @@
 #skills img {
   width: 100%;
 }
+
+@media (min-width: 768px) { 
+  #skills .skills-img-container{
+    width: 100px;
+    margin: 0 auto;
+  }
+ }

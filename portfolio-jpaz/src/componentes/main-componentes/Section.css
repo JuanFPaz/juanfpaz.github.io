@@ -1,4 +1,4 @@
-section{
+section {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -11,21 +11,12 @@ section{
 **CSS DE PRUEBA
 **/
 
-b{
+b {
   font-weight: 600;
-}
-
-img#unity{
-  filter: drop-shadow(0 0 1px white);
-}
-
-button:hover img#javita{
-  filter: drop-shadow(0 0 1px #16386b);
 }
 
 section div#inicio {
   scroll-margin-top: 90vh; /* Ajusta este valor según sea necesario */
-  width: 100%;
 }
 
 section div#sobremi,
@@ -41,6 +32,8 @@ section div#proyectos {
 }
 
 section:has(> div#inicio) {
+  display: flex;
+  align-items: center;
   background-image: url("https://raw.githubusercontent.com/JuanFPaz/juanfpaz.github.io/main/portfolio-jpaz/public/background-1.jpg"),
     linear-gradient(#16386b, #16386b);
   background-blend-mode: overlay; /* Aplica el modo de mezcla "overlay" para superponer el color */
@@ -48,6 +41,7 @@ section:has(> div#inicio) {
   background-position: center center; /* Centra la imagen */
   background-size: cover; /* Ajusta el tamaño de la imagen al 50% del contenedor */
   margin: 0;
+  width: 100%;
 }
 
 section .experiencia-descripcion li,
@@ -59,13 +53,6 @@ section .estudios-descripcion li {
 section .experiencia-descripcion li::marker,
 section .estudios-descripcion li::marker {
   color: #ff2c2c;
-}
-
-
-section .experiencia-contenido,
-section .estudios-contenedor {
-  display: flex;
-  flex-direction: column;
 }
 
 section .experiencia-botones ul,
@@ -356,82 +343,19 @@ section .contacto-contenido li {
   }
 }
 
-@media screen and (max-width: 480px) {
-  section div#inicio {
-    width: 100%;
-  }
+*/
 
-  section {
-    margin-top: 15px;
-    padding: 10px;
-    align-items: start;
-  }
-  section div#inicio,
-  section div#sobremi,
-  section div#skills,
-  section div#experiencia,
-  section div#educacion,
-  section div#proyectos {
-    width: 100%;
-    padding: 10px;
-  }
-  section div.sobreMi-contenido {
-    display: flex;
-    flex-direction: column-reverse;
-  }
+  @media (min-width: 1200px) {
+    section{
+      width: auto;
+    }
 
-  section .sobreMi-aside {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    section div#inicio,
+    section div#sobremi,
+    section div#skills,
+    section div#experiencia,
+    section div#educacion,
+    section div#proyectos {
+      width: 1200px;
+    }
   }
-
-  section .ficha-contenedor {
-    width: 100%;
-    margin: 0 0 0 0.7em;
-  }
-
-  section .sobreMi-aside a {
-    font-size: 1.3em !important;
-  }
-
-
-  section .skills-contenido ul {
-    justify-content: flex-start;
-  }
-
-  section .skills-grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    grid-template-rows: 60px 60px 60px;
-    gap: 4px;
-  }
-
-  section .skills-items img {
-    width: 50%;
-  }
-
-  section .experiencia-botones button,
-  section .estudios-botones button {
-    font-size: 0.7em !important;
-  }
-
-  section .experiencia-descripcion h1 section .estudios-descripcion h1 {
-    color: #84a0fc;
-    text-shadow: 0 0 14px #84a0fc;
-    font-size: 2.2em !important;
-    margin-bottom: 15px;
-  }
-  section .experiencia-descripcion h2,
-  section .estudios-descripcion h2,
-  section .experiencia-descripcion h3 {
-    color: #ccd6f6;
-    font-size: 2em !important;
-    margin: 15px 0 15px 0;
-  }
-
-  section .experiencia-descripcion ul#tec li {
-    font-size: 1.1em !important;
-  }
-} */

@@ -6,8 +6,7 @@ img.select-language {
 
   img.current-language {
     border-radius: 3px;
-    width: 32px;
-    height: 24px;
+    width: 40px;
   }
 
 .dropdown{
@@ -26,8 +25,8 @@ img.select-language {
     color:#ccd6f6;
     border: 2px solid #ccd6f6;
     border-radius: 5px !important;
-    width: max-content;
-    height: 48px;
+    width: 70px;
+    height: 60x;
     transition: filter 0.5s ease-in-out, border 0.5s ease-in-out, color 0.5s ease-in-out
 }
 
@@ -37,8 +36,6 @@ img.select-language {
     border: 2px solid #84a0fc;
     color:#84a0fc;
     border-radius: 5px !important;
-    width: max-content;
-    height: 48px;
     filter: drop-shadow(0 0px 10px #84a0fc);
 }
 

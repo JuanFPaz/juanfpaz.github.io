@@ -12,7 +12,7 @@ function SobreMi ({ id, sobreMiText: { sobreMiTitle, sobreMiMainText, sobreMiAsi
         <div className='sobreMi-encabezado'>
           <h1>{sobreMiTitle}</h1>
         </div>
-        <div className='sobreMi-contenido'>
+        <div className='sobreMi-contenido d-flex flex-lg-row'>
           <div className='sobreMi-main'>
             {sobreMiMainText.map(({ id, message }) => (
               <p key={id}>

@@ -20,9 +20,9 @@ function Experiencia ({ id, experienciaText: { experienciaTitle, experienciaList
         <div className='experiencia-encabezado'>
           <h1>{experienciaTitle}</h1>
         </div>
-        <div className='experiencia-contenido'>
+        <div className='experiencia-contenido d-lg-flex'>
           <div className='experiencia-botones'>
-            <ul>
+            <ul className='d-flex flex-lg-column'>
               {experienciaList.map(exps => (
                 <li key={exps.id}> <button id={boton === exps.id ? 'seleccionado' : ''} onClick={() => { handleButton(exps.id) }}>{`${exps.id + 1}. ${exps.subtitulo}`}</button> </li>
               ))}
@@ -36,16 +36,6 @@ function Experiencia ({ id, experienciaText: { experienciaTitle, experienciaList
                 <li key={idx}>{desc}</li>
               ))}
             </ul>
-            {exp.tecnologias && (
-              <>
-                <h3>Habilidades Tecnicas</h3>
-                <ul id='tec'>
-                  {exp.tecnologias.map((tec, idx) => (
-                    <li key={idx}>{tec}</li>
-                  ))}
-                </ul>
-              </>
-            )}
           </div>
         </div>
       </div>

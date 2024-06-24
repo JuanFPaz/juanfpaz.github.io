@@ -32,7 +32,11 @@ export const headerConfig = {
         href: '#sobremi',
         list: 'Sobre Mi'
       },
-
+      {
+        id: 1,
+        href: '#proyectos',
+        list: 'Proyectos'
+      },
       {
         id: 2,
         href: '#skills',
