@@ -10,7 +10,7 @@ import js from '/assets/js.svg'
 import reactFootballito from '/reactFootballito.png'
 import apiFootballito from '/api.png'
 import nasa from '/nasa.png'
-import musica from '/image2.png'
+import musica from '/image-2.png'
 import sistema from '/sistemav.png'
 import jumpingGuy from '/jumpingGuy.png'
 import './styles/Proyectos.css'
@@ -194,7 +194,7 @@ function Proyectos ({ id }) {
         <div className='proyectos-encabezado'>
           <h1>{'{ Proyectos }'}</h1>
         </div>
-        <div className='proyectos-contenido d-lg-flex'>
+        <div className='proyectos-contenido d-lg-flex flex-lg-row-reverse'>
           <div className='proyectos-botones'>
             <ul className='d-flex flex-lg-column'>
               {proyectosBotones.es.map(b => (
@@ -217,7 +217,7 @@ function Proyectos ({ id }) {
             <div className='proyectos-encabezado'>
               <h1>{proyectosContenido.es[boton].titulo}</h1>
             </div>
-            <div className='proyectos-contenido d-lg-flex flex-md-row-reverse'>
+            <div className='proyectos-contenido'>
               <div className='proyectos-tool'>
                 <div className='proyectos-img'>
                   <figure>

@@ -21,12 +21,13 @@ function SobreMi ({ id, sobreMiText: { sobreMiTitle, sobreMiMainText, sobreMiAsi
             ))}
           </div>
           <div className='sobreMi-aside'>
-            <div className='image-contenedor'>
-              <img src={profile} alt='mi-foto' />
+            <div className='sobreMi-foto'>
+              <figure>
+                <img src={profile} alt='mi-foto' />
+              </figure>
             </div>
             <div className='ficha-contenedor'>
               <ul>
-                <li>{sobreMiAsideText[0].text}</li>
                 <li>{sobreMiAsideText[1].text}</li>
                 <li>{sobreMiAsideText[2].text}</li>
                 <li>{sobreMiAsideText[3].text}</li>

@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App, { appLoader } from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
@@ -12,36 +12,24 @@ const root = createBrowserRouter([
     element: <App />,
     loader: appLoader,
     children: [{
-      path: '',
+      index: true,
       element: <Main />,
       loader: mainLoader
-    }]
-  },
-  {
-    path: '/br',
-    element: <App />,
-    loader: appLoader,
-    children: [{
-      path: '',
+    },
+    {
+      path: 'br',
       element: <Main />,
       loader: mainLoader
-    }]
-  },
-  {
-    path: '/en',
-    element: <App />,
-    loader: appLoader,
-    children: [{
-      path: '',
+    },
+    {
+      path: 'en',
       element: <Main />,
       loader: mainLoader
-    }]
-  },
-  {
-    path: '/es',
-    element: <Navigate to='/' />
+    }
+    ]
   }
-])
+]
+)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -1,5 +1,5 @@
 .proyectos-img {
-  width: 400px;
+  width: 100%;
   margin: 0 auto;
   border: 2px solid #84a0fc;
   border-bottom: 0;
@@ -19,7 +19,7 @@
   color: #0a192f;
 }
 
-.js {
+/* .js {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -45,7 +45,7 @@
   position: absolute;
   z-index: -1;
   filter: drop-shadow(0 0 10px rgb(255, 255, 255));
-}
+} */
 
 /* lo bueno - lo d arriba tenemos que ajustarlo a este estilo.*/
 #proyectos h1 {
@@ -65,7 +65,6 @@
 #proyectos .proyectos-botones ul {
   list-style: none;
   display: flex;
-  width: 100%;
   padding: 0;
   margin: 0;
   overflow-y: auto;
@@ -110,7 +109,7 @@
 
 
 #proyectos .ficha-contenedor {
-  width: 400px;
+  width: 100%;
   margin: 0 auto;
   border: 2px solid #84a0fc;
   border-top: 0;
@@ -151,8 +150,10 @@
   #proyectos .proyectos-encabezado h1{
     text-align: start;
   }
-  #proyectos .proyectos-botones button {width: 200px;}
-  #proyectos p:first-child{
-    margin-top: 0;
+  #proyectos .proyectos-botones {margin-top: 35px;}
+  #proyectos .proyectos-botones button {width: 300px;}
+
+  .proyectos-img img{
+    height: 300px;
   }
 }

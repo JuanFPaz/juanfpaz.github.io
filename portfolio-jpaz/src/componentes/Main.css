@@ -6,6 +6,10 @@ main {
   align-items: center;
   }
 
+  figure{
+    margin: 0;
+  }
+
   main h1,
   main h2,
   main h3,

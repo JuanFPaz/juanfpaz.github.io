@@ -48,8 +48,8 @@ function Main () {
         {renderMain && (
           <>
             <Inicio id='inicio' inicioText={inicioText} />
-            <SobreMi id='sobremi' sobreMiText={sobreMiText} />
             <Proyectos id='proyectos' />
+            <SobreMi id='sobremi' sobreMiText={sobreMiText} />
             <Skills id='skills' softSkillsText={softSkillsText} />
             <Experiencia id='experiencia' experienciaText={experienciaText} />
             <Estudios id='educacion' educacionText={educacionText} />

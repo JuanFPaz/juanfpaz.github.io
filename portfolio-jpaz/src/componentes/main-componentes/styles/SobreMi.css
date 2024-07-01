@@ -12,25 +12,20 @@
   font-weight: 400;
 }
 
-#sobremi .image-contenedor {
+#sobremi .sobreMi-foto {
+  width: 100%;
   margin: 0 auto;
-  border-radius: 5px;
-  background-color: #84a0fc;
+  border: 2px solid #84a0fc;
+  border-bottom: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-#sobremi .image-contenedor img {
-  opacity: 0.5;
+#sobremi img {
   border-radius: 5px;
-  object-fit: cover;
-  max-width: 300px;
-  max-height: 300px;
-  width: 60vw;
-  height: 60vw;
-  transition: opacity ease-in-out 0.5s;
-}
-
-#sobremi .image-contenedor img:hover {
-  opacity: 1;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
 }
 
 #sobremi .sobreMi-contenido {
@@ -46,16 +41,17 @@
 
 #sobremi .ficha-contenedor {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  margin: 0 auto;
+  border: 2px solid #84a0fc;
+  border-top: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 #sobremi .ficha-contenedor ul {
   padding: 0;
+  margin: 0;
   list-style: none;
-  border-top: 1px solid #84a0fc;
-  border-bottom: 2px solid #84a0fc;
 }
 
 #sobremi .ficha-contenedor li {
@@ -90,4 +86,11 @@
 #sobremi .sobreMi-aside a:hover {
   color: #fff;
   text-shadow: 0 0 5px #84a0fc;
+}
+
+
+@media (min-width:992px) {
+  #sobremi .sobreMi-aside .button-contenedor{
+    width: 300px;
+  }
 }

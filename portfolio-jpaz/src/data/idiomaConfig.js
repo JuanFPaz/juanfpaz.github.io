@@ -29,13 +29,13 @@ export const headerConfig = {
     es: [
       {
         id: 0,
-        href: '#sobremi',
-        list: 'Sobre Mi'
+        href: '#proyectos',
+        list: 'Proyectos'
       },
       {
         id: 1,
-        href: '#proyectos',
-        list: 'Proyectos'
+        href: '#sobremi',
+        list: 'Sobre Mi'
       },
       {
         id: 2,
