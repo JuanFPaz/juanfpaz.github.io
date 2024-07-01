@@ -6,6 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 import Main, { mainLoader } from './componentes/Main.jsx'
 
+/*
+De todas formas dejo configurado el router,
+para cuando encuentre una solucion para esto,
+y este listo para traducir mi porfolio :)
+*/
 const root = createBrowserRouter([
   {
     path: '/',
@@ -13,16 +18,6 @@ const root = createBrowserRouter([
     loader: appLoader,
     children: [{
       index: true,
-      element: <Main />,
-      loader: mainLoader
-    },
-    {
-      path: 'br',
-      element: <Main />,
-      loader: mainLoader
-    },
-    {
-      path: 'en',
       element: <Main />,
       loader: mainLoader
     }

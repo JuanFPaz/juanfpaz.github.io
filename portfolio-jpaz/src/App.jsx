@@ -14,12 +14,10 @@ export function appLoader ({ request }) {
 
   const [{ attribute, value, title }] = appConfig[langPath]
   const footerText = footerConfig[langPath]
-  const { offCanvasConfig, dropDownConfig, flagConfig } = headerConfig
+  const { offCanvasConfig } = headerConfig
 
   const offCanvasText = offCanvasConfig[langPath]
-  const dropDownText = dropDownConfig[langPath]
-  const flagImg = flagConfig[langPath]
-  const headerText = { offCanvasText, dropDownText, flagImg }
+  const headerText = { offCanvasText }
 
   return { renderApp: true, attribute, value, title, footerText, headerText }
 }
