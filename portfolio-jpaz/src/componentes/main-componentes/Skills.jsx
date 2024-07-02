@@ -4,26 +4,26 @@
 import { useState } from 'react'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
-import html from '/assets/html-5.svg'
-import css from '/assets/css-3.svg'
-import js from '/assets/js.svg'
-import express from '/assets/express.svg'
-import react from '/assets/react.svg'
-import maven from '/assets/maven.svg'
-import vite from '/assets/vite.svg'
-import bootstrap from '/assets/bootstrap.svg'
-import figma from '/assets/figma.svg'
-import node from '/assets/node.svg'
-import java from '/assets/java.svg'
-import notion from '/assets/notion.svg'
-import trello from '/assets/trello.svg'
-import git from '/assets/git.svg'
-import github from '/assets/github.svg'
-import vscode from '/assets/vs-code.svg'
-import netbeans from '/assets/apache-netbeans.svg'
-import cloudflare from '/assets/cloudflare.svg'
-import unity from '/assets/unity.svg'
-import csharp from '/assets/CSharp.svg'
+import html from '/icons/html-5.svg'
+import css from '/icons/css-3.svg'
+import js from '/icons/js.svg'
+import express from '/icons/express.svg'
+import react from '/icons/react.svg'
+import maven from '/icons/maven.svg'
+import vite from '/icons/vite.svg'
+import bootstrap from '/icons/bootstrap.svg'
+import figma from '/icons/figma.svg'
+import node from '/icons/node.svg'
+import java from '/icons/java.svg'
+import notion from '/icons/notion.svg'
+import trello from '/icons/trello.svg'
+import git from '/icons/git.svg'
+import github from '/icons/github.svg'
+import vscode from '/icons/vs-code.svg'
+import netbeans from '/icons/apache-netbeans.svg'
+import cloudflare from '/icons/cloudflare.svg'
+import unity from '/icons/unity.svg'
+import csharp from '/icons/CSharp.svg'
 import './Section.css'
 import './styles/Skills.css'
 
@@ -150,7 +150,55 @@ const arrayDeImagenes = [
   }
 ]
 
-function SoftSkills ({ softSkillsText }) {
+const softSkillsText = [
+  {
+    id: 0,
+    text: 'Gestion de proyectos'
+  },
+  {
+    id: 1,
+    text: 'Trabajo en equipo'
+  },
+
+  {
+    id: 2,
+    text: 'Comunicacion'
+  },
+  {
+    id: 3,
+    text: 'Resolucion de problemas'
+  },
+  {
+    id: 4,
+    text: 'Organizacion'
+  },
+  {
+    id: 5,
+    text: 'Colaboracion'
+  },
+  {
+    id: 6,
+    text: 'Pensamiento logico'
+  },
+  {
+    id: 7,
+    text: 'Rapido Aprendizaje'
+  },
+  {
+    id: 8,
+    text: 'Adaptabilidad'
+  },
+  {
+    id: 9,
+    text: 'Empatia'
+  },
+  {
+    id: 10,
+    text: 'Escucha activa'
+  }
+]
+
+function SoftSkills () {
   return (
     <div className='softSkills-contenedor'>
       <ul>
@@ -172,7 +220,6 @@ function HardSkills () {
       <div className='skills-grid'>
         {img.map((i) => (
           <OverlayTrigger key={i.id} overlay={<Tooltip id='tooltip-disabled'>{i.nombre}</Tooltip>}>
-            {/* <div className='skills-items'>1</div> */}
             <div className='skills-items'>
               <div className='skills-img-container'>
                 <img src={i.url} alt={i.alt} />
@@ -184,7 +231,7 @@ function HardSkills () {
   )
 }
 
-function Skills ({ id, softSkillsText }) {
+function Skills ({ id }) {
   return (
     <section>
       <div id={id} className='skills-contenedor'>
@@ -192,7 +239,7 @@ function Skills ({ id, softSkillsText }) {
           <h1>{'{ Soft Skills }'}</h1>
         </div>
         <div className='skills-contenido'>
-          <SoftSkills softSkillsText={softSkillsText} />
+          <SoftSkills />
         </div>
         <div className='skills-encabezado'>
           <h1>{'{ Hard Skills }'}</h1>

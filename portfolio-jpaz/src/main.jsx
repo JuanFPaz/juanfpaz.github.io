@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import App, { appLoader } from './App.jsx'
+import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
-import Main, { mainLoader } from './componentes/Main.jsx'
+import Main from './componentes/Main.jsx'
 
 /*
 De todas formas dejo configurado el router,
@@ -15,11 +15,9 @@ const root = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    loader: appLoader,
     children: [{
       index: true,
-      element: <Main />,
-      loader: mainLoader
+      element: <Main />
     }
     ]
   }

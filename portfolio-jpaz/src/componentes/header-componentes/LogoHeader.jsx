@@ -1,5 +1,5 @@
 /* eslint-disable import/no-absolute-path */
-import jpazLogo from '/assets/jp-logo-home-10.png'
+import jpazLogo from '/img/jp-logo-home-10.png'
 
 export default function Logo () {
   return (

@@ -16,6 +16,7 @@
   width: 100%;
   margin: 0 auto;
   border: 2px solid #84a0fc;
+  background-color: #1d1d1d;
   border-bottom: 0;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -58,6 +59,10 @@
   padding: 2px 0 5px 2px;
   color: #ccd6f6;
   border-top: 1px solid #84a0fc;
+}
+
+#sobremi .button-contenedor{
+  margin-top: 25px;
 }
 
 #sobremi .button-contenedor button {

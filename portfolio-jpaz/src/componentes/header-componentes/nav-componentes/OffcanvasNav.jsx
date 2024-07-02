@@ -1,16 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Offcanvas from 'react-bootstrap/Offcanvas'
 
-export default function OffcanvasNav ({ offCanvasText }) {
+export default function OffcanvasNav () {
   const [show, setShow] = useState(false)
-  const [langOffCanvas, setLangOffCanvas] = useState(offCanvasText)
   /* Eventos para el offcanvas del header */
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
-
-  useEffect(() => {
-    setLangOffCanvas(offCanvasText)
-  }, [offCanvasText])
 
   return (
     <>
@@ -30,13 +25,21 @@ export default function OffcanvasNav ({ offCanvasText }) {
         <Offcanvas.Body className='d-flex justify-content-xl-center'>
           <nav>
             <ul>
-              {langOffCanvas.map(({ id, href, list }) =>
-                (
-                  <li key={id} onClick={show ? handleClose : null}>
-                    <a href={href}>{list}</a>
-                  </li>
-                )
-              )}
+              <li onClick={show ? handleClose : null}>
+                <a href='#proyectos'>Proyectos</a>
+              </li>
+              <li onClick={show ? handleClose : null}>
+                <a href='#sobremi'>Sobre Mi</a>
+              </li>
+              <li onClick={show ? handleClose : null}>
+                <a href='#skills'>Skills</a>
+              </li>
+              <li onClick={show ? handleClose : null}>
+                <a href='#experiencia'>Experiencia</a>
+              </li>
+              <li onClick={show ? handleClose : null}>
+                <a href='#educacion'>Educacion</a>
+              </li>
             </ul>
           </nav>
         </Offcanvas.Body>

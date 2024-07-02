@@ -1,25 +1,19 @@
 /* eslint-disable no-unused-vars */
-import { useRef, useEffect, useState } from 'react'
 import './styles/Inicio.css'
 
-function Inicio ({ id, inicioText }) {
-  const refInicio = useRef(null)
-  useEffect(() => {
-    console.log(inicioText)
-    refInicio.current.innerHTML = inicioText[3].html
-  }, [inicioText])
+function Inicio ({ id }) {
   return (
     <>
-      {refInicio && (
-        <section>
-          <div id={id}>
-            <h1>{inicioText[0].message}</h1>
-            <h2>{inicioText[1].message}</h2>
-            <h3>{inicioText[2].message}</h3>
-            <span className='refInicio' ref={refInicio} />
-          </div>
-        </section>
-      )}
+      <section>
+        <div id={id}>
+          <h1>Hola, mi nombre es</h1>
+          <h2>Juan Paz ☮</h2>
+          <h3>Bienvenido a mi sitio web.</h3>
+          <p>
+            Soy un desarrollador web especializado en Javascript creando aplicaciones Front end y Back end, gestionando eficazmente mis proyectos y con conocimientos solidos utilizando diferentes herramientas de desarrollo y lenguajes de programacion. Actualmente estoy enfocado en crecer como profesional en el desarrollo de aplicaciones (no solo en el desarrollo web).
+          </p>
+        </div>
+      </section>
     </>
   )
 }

@@ -1,0 +1,107 @@
+#experiencia h1 {
+    font-size: 1.8em;
+    color: #ff2c2c;
+    text-shadow: 0 0 14px #ff2c2c;
+  }
+
+
+section .experiencia-descripcion li,
+section .estudios-descripcion li {
+  padding-bottom: 10px;
+  color: #ccd6f6;
+}
+
+section .experiencia-descripcion li::marker,
+section .estudios-descripcion li::marker {
+  color: #ff2c2c;
+}
+
+section .experiencia-botones ul,
+section .estudios-botones ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+}
+
+section .experiencia-botones li,
+section .estudios-botones li {
+    display: block;
+    padding: 5px;
+    font-size: 1em;
+}
+
+section .experiencia-botones button,
+section .estudios-botones button {
+    width: max-content;
+    text-align: start;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 5px;
+    border: 2px solid #84a0fc;
+    color: #84a0fc;
+    border-radius: 20px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+      0.5s ease-in-out;
+}
+
+section .experiencia-botones button span{
+    margin: 0 5px 0 5px;
+}
+
+section .experiencia-botones button:hover,
+section .estudios-botones button:hover {
+    background-color: #84a0fc;
+    color: #fff;
+    filter: drop-shadow(0 0px 10px #84a0fc);
+}
+
+section .experiencia-botones button#seleccionado,
+section .estudios-botones button#seleccionado {
+  background-color: #84a0fc;
+  padding: 5px;
+  border: 2px solid #84a0fc;
+  color: #fff;
+  border-radius: 20px;
+}
+
+section .experiencia-descripcion,
+section .estudios-descripcion {
+  margin-top: 1em;
+  width: 100%;
+  padding-left: 20px;
+}
+
+section .experiencia-descripcion h1,
+section .estudios-descripcion h1 {
+  color: #84a0fc;
+  text-shadow: 0 0 14px #84a0fc;
+  font-size: 1.2em !important;
+  margin-bottom: 15px;
+}
+section .experiencia-descripcion h2,
+section .estudios-descripcion h2,
+section .experiencia-descripcion h3 {
+  color: #ccd6f6;
+  font-size: 1em !important;
+  margin: 15px 0 15px 0;
+}
+
+section .experiencia-descripcion ul,
+section .estudios-descripcion ul {
+  margin: 0;
+}
+
+section .experiencia-descripcion li,
+section .estudios-descripcion li {
+  font-weight: 0;
+  letter-spacing: 2;
+}
+
+
+@media (min-width:992px) {
+    #experiencia .experiencia-encabezado h1{
+      text-align: start;
+    }
+    #experiencia .experiencia-botones button {width: 300px;}
+  }

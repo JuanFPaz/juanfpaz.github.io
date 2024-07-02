@@ -2,6 +2,7 @@
   width: 100%;
   margin: 0 auto;
   border: 2px solid #84a0fc;
+  background-color: #1d1d1d;
   border-bottom: 0;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -19,24 +20,20 @@
   color: #0a192f;
 }
 
-/* .js {
+.iconTec {
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  height: 100px;
-  position: relative;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px 0 5px;
+  filter: drop-shadow(0 0 1px black);
 }
 
-.js::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  position: absolute;
-  z-index: -1;
-  filter: drop-shadow(0px 0px) blur(5px);
+.iconTec.unity-icon {
+  filter: drop-shadow(0 0 1px rgb(255, 255, 255));
 }
 
+/*
 .js.unity::after {
   content: "";
   width: 100%;
@@ -78,6 +75,7 @@
 
 #proyectos .proyectos-botones button {
   width: max-content;
+  display: flex;
   background-color: rgba(0, 0, 0, 0);
   padding: 5px;
   border: 2px solid #84a0fc;
@@ -105,8 +103,6 @@
   display: flex;
   flex-direction: column;
 }
-
-
 
 #proyectos .ficha-contenedor {
   width: 100%;

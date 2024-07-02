@@ -2,11 +2,11 @@
 import Logo from './header-componentes/LogoHeader'
 import NavHeader from './header-componentes/NavHeader'
 import './Header.css'
-function Header ({ headerText }) {
+function Header () {
   return (
     <header className='fixed-top'>
       <Logo />
-      <NavHeader {...headerText} />
+      <NavHeader />
     </header>
   )
 }
