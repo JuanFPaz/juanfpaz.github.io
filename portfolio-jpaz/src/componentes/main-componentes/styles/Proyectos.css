@@ -33,27 +33,12 @@
   filter: drop-shadow(0 0 1px rgb(255, 255, 255));
 }
 
-/*
-.js.unity::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  position: absolute;
-  z-index: -1;
-  filter: drop-shadow(0 0 10px rgb(255, 255, 255));
-} */
-
-/* lo bueno - lo d arriba tenemos que ajustarlo a este estilo.*/
 #proyectos h1 {
   font-size: 1.8em;
   color: #ff2c2c;
   text-shadow: 0 0 14px #ff2c2c;
 }
 
-#proyectos .proyectos-encabezado h1{
-  text-align: center;
-}
 
 #proyectos p {
   color: #ccd6f6;
@@ -62,7 +47,7 @@
 #proyectos .proyectos-botones ul {
   list-style: none;
   display: flex;
-  padding: 0;
+  padding: 12px 0 12px 0;
   margin: 0;
   overflow-y: auto;
 }
@@ -143,7 +128,11 @@
 }
 
 @media (min-width:992px) {
-  #proyectos .proyectos-encabezado h1{
+  #proyectos .proyectos-botones ul{
+    padding: 0;
+  }
+
+  #proyectos h1{
     text-align: start;
   }
   #proyectos .proyectos-botones {margin-top: 35px;}

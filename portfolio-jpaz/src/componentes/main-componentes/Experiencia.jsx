@@ -11,11 +11,8 @@ const experienciaList = [
     fechaToString: 'Octubre 2023 - Actualidad',
     descripcion: [
       'Incluyo el desarrollo de mi Portfolio como experiencia porque es una representación de mis conocimientos adquiridos en estos años.',
-      'Configuré mi dominio web Cloudflare, desplegué mi portfolio con éxito utilizando Github Pages e implementé mejoras continuas sin dañar el flujo de mi proyecto.',
-      'Adquirí la habilidad de gestionar mis proyectos, implementado metodologías agiles de trabajo como SCRUM y adaptándolas a mis necesidades.'
-    ],
-    tecnologias: [
-      'Javascript', 'HTML', 'CSS', 'Figma', 'React', 'Vite', 'Nodejs', 'Git', 'Github', 'Cloudflare', 'Notion'
+      'Incluye una sección con unos breves resúmenes sobre mis proyectos, repasando los objetivos, y aspectos positivo y a mejorar de cada uno.',
+      'Desarrolle mi Portfolio utilizando React y Javascript, configure mi dominio web personalizado y adquirí la habilidad para gestionar mis proyectos implementando metodologías de trabajo como SCRUM.'
     ]
   },
   {
@@ -25,12 +22,8 @@ const experienciaList = [
     fechaToString: 'Septiembre 2020 - Actualidad',
     descripcion: [
       'Realizo tareas de reparto en la Ciudad de Buenos Aires y GBA Zona Norte, utilizando plataformas como Pedidos Ya y Rappi.',
-      'Desarrollo la habilidad para gestionar, planificar y organizar mi trabajo para cumplir con mis obligaciones financieras de manera consistente.',
-      'Capaz de adaptar mis objetivos en situaciones imprevistas en un entorno de trabajo dinámico.',
-      'Obtuve mi primera licencia de conducir y adquirí mi primer vehículo motorizado, no solo mejorando la eficiencia de las entregas, sino que también me brinda seguridad al tener una cobertura ante cualquier tipo de siniestro.'
-    ],
-    tecnologias: [
-      'Trello', 'Google Drive Sheets', 'Google Calendar'
+      'Desarrolle y mejore progresivamente la habilidad para gestionar, planificar y organizar mi trabajo, para cumplir con mis obligaciones financieras de manera consistente.',
+      'Capaz de adaptar mis objetivos y solucionar problemas en situaciones imprevistas en un entorno de trabajo dinámico.'
     ]
   },
   {
@@ -67,7 +60,7 @@ function Experiencia ({ id }) {
           <div className='experiencia-botones'>
             <ul className='d-flex flex-lg-column'>
               {experienciaList.map(exps => (
-                <li key={exps.id}> <button id={boton === exps.id ? 'seleccionado' : ''} onClick={() => { handleButton(exps.id) }}><span>{`${exps.id + 1}. ${exps.subtitulo}`}</span></button> </li>
+                <li key={exps.id}> <button id={boton === exps.id ? 'seleccionado' : ''} onClick={() => { handleButton(exps.id) }}><span>{`${exps.id + 1}. ${exps.titulo}`}</span></button> </li>
               ))}
             </ul>
           </div>

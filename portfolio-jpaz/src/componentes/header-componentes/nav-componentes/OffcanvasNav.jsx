@@ -38,7 +38,7 @@ export default function OffcanvasNav () {
                 <a href='#experiencia'>Experiencia</a>
               </li>
               <li onClick={show ? handleClose : null}>
-                <a href='#educacion'>Educacion</a>
+                <a href='#contacto'>Contacto</a>
               </li>
             </ul>
           </nav>

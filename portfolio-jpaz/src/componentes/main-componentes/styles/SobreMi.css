@@ -95,6 +95,9 @@
 
 
 @media (min-width:992px) {
+  #sobremi .sobreMi-main {
+    margin-right: 10px;
+  }
   #sobremi .sobreMi-aside .button-contenedor{
     width: 300px;
   }

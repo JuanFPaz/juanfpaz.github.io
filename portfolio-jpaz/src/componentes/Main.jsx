@@ -4,8 +4,7 @@ import Inicio from './main-componentes/Inicio'
 import Skills from './main-componentes/Skills'
 import Experiencia from './main-componentes/Experiencia'
 import Proyectos from './main-componentes/Proyectos'
-// import Estudios from './main-componentes/Estudios'
-// import Contacto from './secciones/Contacto'
+import Contacto from './main-componentes/Contacto'
 import './Main.css'
 import './main-componentes/Section.css'
 
@@ -17,6 +16,7 @@ function Main () {
       <SobreMi id='sobremi' />
       <Skills id='skills' />
       <Experiencia id='experiencia' />
+      <Contacto id='contacto' />
     </main>
   )
 }

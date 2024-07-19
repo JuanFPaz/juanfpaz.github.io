@@ -22,7 +22,7 @@ section div#inicio {
 section div#sobremi,
 section div#skills,
 section div#experiencia,
-section div#educacion,
+section div#contacto,
 section div#proyectos {
   scroll-margin-top: 120px; /* Ajusta este valor según sea necesario */
   border: 1px solid #84a0fc;
@@ -31,10 +31,19 @@ section div#proyectos {
   padding: 10px;
 }
 
+
+section div#sobremi h1,
+section div#skills h1,
+section div#experiencia h1,  section div#experiencia h2,
+section div#contacto h1,
+section div#proyectos h1 {
+  text-align: center;
+}
+
 section:has(> div#inicio) {
   display: flex;
   align-items: center;
-  background-image: url("../../../public/background/background-1.jpg"),
+  background-image: url("/background/background-1.jpg"),
     linear-gradient(#16386b, #16386b);
   background-blend-mode: overlay; /* Aplica el modo de mezcla "overlay" para superponer el color */
   height: 90vh;
@@ -42,6 +51,17 @@ section:has(> div#inicio) {
   background-size: cover; /* Ajusta el tamaño de la imagen al 50% del contenedor */
   margin: 0;
   width: 100%;
+}
+
+@media (min-width:992px) {
+  section div#sobremi h1,
+  section div#skills h1,
+  section div#experiencia h1,  section div#experiencia h2,
+  section div#contacto h1,
+  section div#proyectos h1 {
+    text-align: start;
+  }
+
 }
 
   @media (min-width: 1200px) {
@@ -53,7 +73,7 @@ section:has(> div#inicio) {
     section div#sobremi,
     section div#skills,
     section div#experiencia,
-    section div#educacion,
+    section div#contacto,
     section div#proyectos {
       width: 1200px;
     }

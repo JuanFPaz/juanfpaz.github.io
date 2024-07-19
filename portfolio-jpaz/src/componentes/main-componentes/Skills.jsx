@@ -137,7 +137,7 @@ const arrayDeImagenes = [
     id: self.crypto.randomUUID()
   },
   {
-    nombre: 'NetBeans',
+    nombre: 'Apache NetBeans',
     url: netbeans,
     alt: 'Logo Apache NetBeans',
     id: self.crypto.randomUUID()
@@ -195,6 +195,10 @@ const softSkillsText = [
   {
     id: 10,
     text: 'Escucha activa'
+  },
+  {
+    id: 11,
+    text: 'Compromiso'
   }
 ]
 
