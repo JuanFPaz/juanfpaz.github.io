@@ -1,7 +1,6 @@
 #skills h1 {
-  font-size: 1.8em;
-  color: #ff2c2c;
-  text-shadow: 0 0 14px #ff2c2c;
+  font-size: 2.5em;
+  color: #84a0fc;
 }
 
 #skills .softSkills-contenedor {
@@ -31,7 +30,7 @@
 }
 
 #skills .skills-contenido li::marker {
-  color: #ff2c2c;
+  color: #84a0fc;
 }
 
 #skills .skills-grid {

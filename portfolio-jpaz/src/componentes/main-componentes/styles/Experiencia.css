@@ -1,7 +1,6 @@
 #experiencia h1 {
-    font-size: 1.8em;
-    color: #ff2c2c;
-    text-shadow: 0 0 14px #ff2c2c;
+  font-size: 2.5em;
+  color: #84a0fc;
   }
 
 
@@ -13,7 +12,7 @@ section .estudios-descripcion li {
 
 section .experiencia-descripcion li::marker,
 section .estudios-descripcion li::marker {
-  color: #ff2c2c;
+  color: #84a0fc;
 }
 
 section .experiencia-botones ul,
@@ -22,7 +21,6 @@ section .estudios-botones ul {
     display: flex;
     padding: 0;
     margin: 0;
-    overflow-y: auto;
 }
 
 section .experiencia-botones li,

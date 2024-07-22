@@ -44,7 +44,7 @@ section:has(> div#inicio) {
   display: flex;
   align-items: center;
   background-image: url("/background/background-1.jpg"),
-    linear-gradient(#16386b, #16386b);
+    linear-gradient(#00172bbe, #00172bbe);
   background-blend-mode: overlay; /* Aplica el modo de mezcla "overlay" para superponer el color */
   height: 90vh;
   background-position: center center; /* Centra la imagen */
