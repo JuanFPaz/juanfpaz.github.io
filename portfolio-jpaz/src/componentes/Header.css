@@ -4,7 +4,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px 10px 10px;
-  border-bottom: 1px #84a0fc solid;
+  border-bottom: 1px #839ffc solid;
   box-shadow: 1px 1px 30px -10px #84a0fc;
 }
 .logo-contenedor a#logo img {
@@ -72,7 +72,7 @@ div.offcanvas-body ul {
 }
 
 div.offcanvas-body a {
-  color: #ccd6f6;
+  color: #f2f5ff;
   text-decoration: none;
   font-size: 2em;
   transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;

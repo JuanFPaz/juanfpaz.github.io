@@ -240,15 +240,10 @@ function Skills ({ id }) {
     <section>
       <div id={id} className='skills-contenedor'>
         <div className='skills-encabezado'>
-          <h1>{'{ Soft Skills }'}</h1>
+          <h1>{'{ Skills }'}</h1>
         </div>
         <div className='skills-contenido'>
           <SoftSkills />
-        </div>
-        <div className='skills-encabezado'>
-          <h1>{'{ Hard Skills }'}</h1>
-        </div>
-        <div className='skills-contenido'>
           <HardSkills />
         </div>
       </div>

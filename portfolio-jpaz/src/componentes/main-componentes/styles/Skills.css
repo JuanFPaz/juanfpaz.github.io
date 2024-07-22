@@ -1,6 +1,15 @@
 #skills h1 {
   font-size: 2.5em;
-  color: #84a0fc;
+  color: #f2f5ff;
+}
+
+#skills .skills-encabezado{
+  padding: 10px;
+  border-bottom: 1px #839ffc solid;
+}
+
+#skills .skills-contenido{
+  padding:10px;
 }
 
 #skills .softSkills-contenedor {
@@ -15,7 +24,7 @@
 
 #skills .skills-contenido ul {
   border-radius: 2px;
-  height: 120px;
+  height: 180px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -25,7 +34,7 @@
 
 #skills .skills-contenido li {
   text-overflow: ellipsis;
-  color: #ccd6f6;
+  color: #f2f5ff;
   padding-bottom: 10px;
 }
 
@@ -58,8 +67,15 @@
 }
 
 @media (min-width: 768px) { 
+
+  #skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+  }
+
   #skills .skills-img-container{
-    width: 100px;
+    width: 100%;
     margin: 0 auto;
   }
   #skills .skills-contenido ul {

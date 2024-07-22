@@ -2,7 +2,6 @@
 #inicio h2,
 #inicio h3{
     color: #84a0fc;
-    text-shadow:0 0 10px #84a0fc;
 }
 
 #inicio h2 {
@@ -14,7 +13,11 @@
 }
 
 #inicio p{
-    color:#ccd6f6 ;
+    color:#f2f5ff ;
     font-weight: 300;
+}
+
+#inicio b{
+    color:#84a0fc ;
 }
 

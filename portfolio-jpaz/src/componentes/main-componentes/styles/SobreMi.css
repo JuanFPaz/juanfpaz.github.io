@@ -1,24 +1,33 @@
 #sobremi h1 {
     font-size: 2.5em;
-  color: #84a0fc;
+    color: #f2f5ff;
 }
 
 #sobremi p {
-  color: #ccd6f6;
+  color: #f2f5ff;
 }
 
 #sobremi li {
   font-weight: 400;
 }
 
+#sobremi .sobreMi-encabezado{
+  padding: 10px;
+  border-bottom: 1px #839ffc solid;
+}
+
+#sobremi .sobreMi-contenido{
+  padding: 10px;
+}
+
 #sobremi .sobreMi-foto {
   width: 100%;
   margin: 0 auto;
-  border: 2px solid #84a0fc;
+  border: 1px solid #84a0fc;
   background-color: #1d1d1d;
   border-bottom: 0;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 #sobremi img {
@@ -42,10 +51,10 @@
 #sobremi .ficha-contenedor {
   width: 100%;
   margin: 0 auto;
-  border: 2px solid #84a0fc;
+  border: 1px solid #84a0fc;
   border-top: 0;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 #sobremi .ficha-contenedor ul {
@@ -55,49 +64,53 @@
 }
 
 #sobremi .ficha-contenedor li {
-  padding: 2px 0 5px 2px;
-  color: #ccd6f6;
+  padding: 0 0 0 5px;
+  color: #f2f5ff;
   border-top: 1px solid #84a0fc;
 }
 
-#sobremi .button-contenedor{
-  margin-top: 25px;
+#sobremi .ficha-contenedor li.liButton {
+  padding: 0;
 }
 
-#sobremi .button-contenedor button {
+#sobremi button {
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #84a0fc;
-  border-radius: 20px;
-  transition: background-color 0.5s ease-in-out, 0.5s ease-in-out;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: background-color 0.5s ease-in-out;
 }
 
-#sobremi .button-contenedor button:hover {
+#sobremi button:hover {
   background-color: #84a0fc;
   filter: drop-shadow(0 0 10px #84a0fc);
 }
 
-#sobremi .button-contenedor a,
-#sobremi .button-contenedor a:visited {
+#sobremi  a,
+#sobremi  a:visited {
   display: block;
   width: 100%;
-  padding: 5px;
+  padding: 2px;
   color: #84a0fc;
   text-decoration: none;
-  transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
 }
 
 #sobremi .sobreMi-aside a:hover {
-  color: #fff;
-  text-shadow: 0 0 5px #84a0fc;
+  color: #f2f5ff;
+
 }
 
 
 @media (min-width:992px) {
-  #sobremi .sobreMi-main {
-    margin-right: 10px;
+  #sobremi .ficha-contenedor ul {
+    width: 310px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
   }
-  #sobremi .sobreMi-aside .button-contenedor{
-    width: 300px;
+  #sobremi .sobreMi-main {
+    margin-right: 50px;
   }
 }

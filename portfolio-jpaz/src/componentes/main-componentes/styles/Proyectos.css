@@ -1,11 +1,11 @@
 .proyectos-img {
   width: 100%;
   margin: 0 auto;
-  border: 2px solid #84a0fc;
+  border: 1px solid #84a0fc;
   background-color: #1d1d1d;
   border-bottom: 0;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;
 }
 
 .proyectos-img img{
@@ -35,12 +35,26 @@
 
 #proyectos h1 {
   font-size: 2.5em;
-  color: #84a0fc;
+  color: #f2f5ff;
 }
 
+#proyectos h2{
+  font-size: 2em;
+  color: #f2f5ff;
+  padding: 10px 0 10px 0;
+}
 
 #proyectos p {
-  color: #ccd6f6;
+  color: #f2f5ff;
+}
+
+#proyectos .proyectos-encabezado{
+  padding: 10px;
+  border-bottom: 1px #839ffc solid;
+}
+
+#proyectos .proyectos-contenido{
+  padding: 0 10px 10px 10px;
 }
 
 #proyectos .proyectos-botones ul {
@@ -71,7 +85,7 @@
 
 #proyectos .proyectos-botones button:hover {
   background-color: #84a0fc;
-  color: #fff;
+  color: #f2f5ff;
   filter: drop-shadow(0 0px 10px #84a0fc);
 }
 
@@ -79,7 +93,7 @@
   background-color: #84a0fc;
   padding: 5px;
   border: 2px solid #84a0fc;
-  color: #fff;
+  color: #f2f5ff;
   border-radius: 20px;
 }
 
@@ -91,10 +105,10 @@
 #proyectos .ficha-contenedor {
   width: 100%;
   margin: 0 auto;
-  border: 2px solid #84a0fc;
+  border: 1px solid #84a0fc;
   border-top: 0;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 #proyectos .ficha-contenedor ul {
@@ -105,7 +119,7 @@
 }
 
 #proyectos .ficha-contenedor li {
-  color: #ccd6f6;
+  color: #f2f5ff;
   border-top: 1px solid #84a0fc;
 }
 
@@ -129,12 +143,10 @@
 @media (min-width:992px) {
   #proyectos .proyectos-botones ul{
     padding: 0;
+   overflow-y: visible; /*Para "desactivar" el overflow-y y no se note ese contenedor invisible cuando hovereamos los botones de la lista de proyectos.*/
   }
 
-  #proyectos h1{
-    text-align: start;
-  }
-  #proyectos .proyectos-botones {margin-top: 35px;}
+  #proyectos .proyectos-botones {margin-top: 62px;}
   #proyectos .proyectos-botones button {width: 300px;}
 
   .proyectos-img img{

@@ -30,12 +30,12 @@ function SobreMi ({ id }) {
                 <li><b>Fecha de Nacimiento:</b> 25/11/1994</li>
                 <li><b>Nacionalidad:</b> Argentino</li>
                 <li><b>Domicilio:</b> Ciudad de Buenos Aires</li>
+                <li className='liButton'>
+                  <button>
+                    <a href={cv} target='_blank' rel='noopener noreferrer'> Ver Curriculum Vitae </a>
+                  </button>
+                </li>
               </ul>
-            </div>
-            <div className='button-contenedor'>
-              <button>
-                <a href={cv} target='_blank' rel='noopener noreferrer'> Ver Curriculum Vitae </a>
-              </button>
             </div>
           </div>
         </div>

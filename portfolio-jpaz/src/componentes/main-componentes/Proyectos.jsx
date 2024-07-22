@@ -197,23 +197,21 @@ function Proyectos ({ id }) {
             </ul>
           </div>
           <div className='proyectos-descripcion'>
-            <div className='proyectos-encabezado'>
-              <h1>{proyectosContenido[boton].titulo}</h1>
+            <div className='proyectos-titulo'>
+              <h2>{proyectosContenido[boton].titulo}</h2>
             </div>
-            <div className='proyectos-contenido'>
+            <div className='proyectos-resumen'>
               <div className='proyectos-tool'>
                 <div className='proyectos-img'>
                   <figure>
                     <img src={proyectosContenido[boton].background} />
-                    <figcaption><i>{proyectosContenido[boton].figDesc}</i></figcaption>
                   </figure>
                 </div>
                 <div className='ficha-contenedor'>
                   <ul>
+                    <li><b>Desarrollado con:</b> {proyectosContenido[boton].tecUno}</li>
                     <li><b>Repositorio:</b> <a target='blank' href={proyectosContenido[boton].repositorio}>{proyectosContenido[boton].repoTitle}</a> </li>
                     {proyectosContenido[boton].url ? (<li><b>URL:</b> <a target='blank' href={proyectosContenido[boton].url}>{proyectosContenido[boton].urlTitle}</a></li>) : (<></>)}
-                    <li><b>Desarrollado con:</b> {proyectosContenido[boton].tecUno}</li>
-                    <li><b>Otras Herramientas:</b> {proyectosContenido[boton].tecDos}</li>
                   </ul>
                 </div>
               </div>

@@ -1,13 +1,23 @@
 #experiencia h1 {
   font-size: 2.5em;
-  color: #84a0fc;
+  color: #f2f5ff;
   }
 
+
+  #experiencia .experiencia-encabezado{
+    padding: 10px;
+    border-bottom: 1px #839ffc solid;
+  }
+  
+  #experiencia .experiencia-contenido{
+    padding: 10px;
+  }
+  
 
 section .experiencia-descripcion li,
 section .estudios-descripcion li {
   padding-bottom: 10px;
-  color: #ccd6f6;
+  color: #f2f5ff;
 }
 
 section .experiencia-descripcion li::marker,
@@ -50,7 +60,7 @@ section .experiencia-botones button span{
 section .experiencia-botones button:hover,
 section .estudios-botones button:hover {
     background-color: #84a0fc;
-    color: #fff;
+    color: #f2f5ff;
     filter: drop-shadow(0 0px 10px #84a0fc);
 }
 
@@ -59,7 +69,7 @@ section .estudios-botones button#seleccionado {
   background-color: #84a0fc;
   padding: 5px;
   border: 2px solid #84a0fc;
-  color: #fff;
+  color: #f2f5ff;
   border-radius: 20px;
 }
 
@@ -70,19 +80,20 @@ section .estudios-descripcion {
   padding-left: 20px;
 }
 
-section .experiencia-descripcion h1,
-section .estudios-descripcion h1 {
-  color: #84a0fc;
-  text-shadow: 0 0 14px #84a0fc;
-  font-size: 1.2em !important;
-  margin-bottom: 15px;
-}
 section .experiencia-descripcion h2,
-section .estudios-descripcion h2,
-section .experiencia-descripcion h3 {
-  color: #ccd6f6;
-  font-size: 1em !important;
+section .estudios-descripcion h2 {
+  color: #f2f5ff;
+  font-size: 1.8em;
   margin: 15px 0 15px 0;
+  text-align: center;
+}
+
+section .experiencia-descripcion h3,
+section .estudios-descripcion h2 {
+  color: #f2f5ff;
+  font-size: 1.5em;
+  margin: 15px 0 15px 0;
+  text-align: center;
 }
 
 section .experiencia-descripcion ul,
@@ -98,7 +109,8 @@ section .estudios-descripcion li {
 
 
 @media (min-width:992px) {
-    #experiencia .experiencia-encabezado h1{
+  section .experiencia-descripcion h2,
+  section .experiencia-descripcion  h3{
       text-align: start;
     }
     #experiencia .experiencia-botones button {width: 300px;}

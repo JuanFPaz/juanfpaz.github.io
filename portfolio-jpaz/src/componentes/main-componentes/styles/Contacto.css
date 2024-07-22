@@ -1,10 +1,19 @@
 #contacto h1 {
   font-size: 2.5em;
-  color: #84a0fc;
+  color: #f2f5ff;
 }
 
 #contacto {
-    color: #ccd6f6;
+    color: #f2f5ff;
+  }
+
+  #contacto .contacto-encabezado{
+    padding: 10px;
+    border-bottom: 1px #839ffc solid;
+  }
+  
+  #contacto .contacto-contenido{
+    padding: 10px;
   }
 
   .contacto-contenido{

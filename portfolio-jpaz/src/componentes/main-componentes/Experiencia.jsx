@@ -65,8 +65,8 @@ function Experiencia ({ id }) {
             </ul>
           </div>
           <div className='experiencia-descripcion'>
-            <h1>{exp.titulo} - {exp.subtitulo}</h1>
-            <h2>{exp.fechaToString}</h2>
+            <h2>{exp.titulo} - {exp.subtitulo}</h2>
+            <h3>{exp.fechaToString}</h3>
             <ul>
               {exp.descripcion.map((desc, idx) => (
                 <li key={idx}>{desc}</li>
