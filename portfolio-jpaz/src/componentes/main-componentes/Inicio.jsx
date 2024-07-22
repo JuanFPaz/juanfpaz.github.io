@@ -10,7 +10,7 @@ function Inicio ({ id }) {
           <h2>Juan Paz</h2>
           <h3>Bienvenido a mi sitio web.</h3>
           <p>
-            Soy un <b>desarrollador web</b>  especializado en Javascript creando aplicaciones Front end y Back end, gestionando eficazmente mis proyectos y con conocimientos sólidos utilizando diferentes lenguajes de programación y herramientas de desarrollo.
+            Soy un <b>desarrollador web</b>  especializado en Javascript creando aplicaciones Front end y Back end, <b>gestionando eficazmente</b> mis proyectos y con <b>conocimientos sólidos</b> utilizando diferentes lenguajes de programación y herramientas de desarrollo.
             <br />
             <br />
             Actualmente estoy <b>enfocado</b> en crecer como profesional en el <b>desarrollo de aplicaciones.</b>
