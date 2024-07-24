@@ -5,14 +5,10 @@
 
 
   #experiencia .experiencia-encabezado{
-    padding: 10px;
+    padding: 10px 0 10px 0;
     border-bottom: 1px #839ffc solid;
   }
-  
-  #experiencia .experiencia-contenido{
-    padding: 10px;
-  }
-  
+
 
 section .experiencia-descripcion li,
 section .estudios-descripcion li {
@@ -29,8 +25,9 @@ section .experiencia-botones ul,
 section .estudios-botones ul {
     list-style: none;
     display: flex;
-    padding: 0;
+    padding: 12px 0 12px 0;
     margin: 0;
+    overflow-y: auto;
 }
 
 section .experiencia-botones li,
@@ -73,27 +70,18 @@ section .estudios-botones button#seleccionado {
   border-radius: 20px;
 }
 
-section .experiencia-descripcion,
-section .estudios-descripcion {
-  margin-top: 1em;
-  width: 100%;
-  padding-left: 20px;
-}
 
 section .experiencia-descripcion h2,
 section .estudios-descripcion h2 {
   color: #f2f5ff;
   font-size: 1.8em;
-  margin: 15px 0 15px 0;
-  text-align: center;
+  padding: 10px 0 10px 0;
 }
 
-section .experiencia-descripcion h3,
-section .estudios-descripcion h2 {
+section .experiencia-descripcion h3{
   color: #f2f5ff;
   font-size: 1.5em;
-  margin: 15px 0 15px 0;
-  text-align: center;
+  padding: 10px 0 10px 0;
 }
 
 section .experiencia-descripcion ul,
@@ -109,6 +97,11 @@ section .estudios-descripcion li {
 
 
 @media (min-width:992px) {
+  #proyectos .proyectos-botones ul{
+    padding: 0;
+   overflow-y: visible; /*Para "desactivar" el overflow-y y no se note ese contenedor invisible cuando hovereamos los botones de la lista de proyectos.*/
+  }
+
   section .experiencia-descripcion h2,
   section .experiencia-descripcion  h3{
       text-align: start;

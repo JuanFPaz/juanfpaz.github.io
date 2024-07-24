@@ -153,7 +153,7 @@ const arrayDeImagenes = [
 const softSkillsText = [
   {
     id: 0,
-    text: 'Gestion de proyectos'
+    text: 'Gestión de proyectos'
   },
   {
     id: 1,
@@ -162,27 +162,27 @@ const softSkillsText = [
 
   {
     id: 2,
-    text: 'Comunicacion'
+    text: 'Comunicación'
   },
   {
     id: 3,
-    text: 'Resolucion de problemas'
+    text: 'Resolución  de problemas'
   },
   {
     id: 4,
-    text: 'Organizacion'
+    text: 'Organización'
   },
   {
     id: 5,
-    text: 'Colaboracion'
+    text: 'Colaboración'
   },
   {
     id: 6,
-    text: 'Pensamiento logico'
+    text: 'Pensamiento lógico'
   },
   {
     id: 7,
-    text: 'Rapido Aprendizaje'
+    text: 'Rápido Aprendizaje'
   },
   {
     id: 8,
@@ -190,7 +190,7 @@ const softSkillsText = [
   },
   {
     id: 9,
-    text: 'Empatia'
+    text: 'Empatía'
   },
   {
     id: 10,
@@ -205,6 +205,11 @@ const softSkillsText = [
 function SoftSkills () {
   return (
     <div className='softSkills-contenedor'>
+      <div className='skills-titulo'>
+        <h2>
+          Soft Skills
+        </h2>
+      </div>
       <ul>
         {softSkillsText.map(({ id, text }) => (
           <li key={id}>
@@ -221,6 +226,11 @@ function HardSkills () {
 
   return (
     <div className='hardSkills-contenedor'>
+      <div className='skills-titulo'>
+        <h2>
+          Hard Skills
+        </h2>
+      </div>
       <div className='skills-grid'>
         {img.map((i) => (
           <OverlayTrigger key={i.id} overlay={<Tooltip id='tooltip-disabled'>{i.nombre}</Tooltip>}>

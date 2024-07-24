@@ -1,16 +1,10 @@
 .proyectos-img {
-  width: 100%;
   margin: 0 auto;
-  border: 1px solid #84a0fc;
-  background-color: #1d1d1d;
-  border-bottom: 0;
-  border-top-left-radius:10px;
-  border-top-right-radius: 10px;
 }
 
 .proyectos-img img{
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: contain;
 }
 
@@ -49,12 +43,8 @@
 }
 
 #proyectos .proyectos-encabezado{
-  padding: 10px;
+  padding: 10px 0 10px 0;
   border-bottom: 1px #839ffc solid;
-}
-
-#proyectos .proyectos-contenido{
-  padding: 0 10px 10px 10px;
 }
 
 #proyectos .proyectos-botones ul {
@@ -79,8 +69,7 @@
   border: 2px solid #84a0fc;
   color: #84a0fc;
   border-radius: 20px;
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
-    0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out , color 0.5s ease-in-out;
 }
 
 #proyectos .proyectos-botones button:hover {
@@ -131,14 +120,43 @@
   transition: text-shadow 0.5s ease-in-out;
 }
 
+
+
 #proyectos .proyectos-contenido a:hover {
-  font-size: 1em;
-  text-decoration: none;
-  color: #84a0fc;
-  font-weight: 800;
-  transition: text-shadow 0.5s ease-in-out;
   text-shadow: 0 0 15px #84a0fc;
 }
+
+#proyectos .proyectos-enlaces{
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}
+
+#proyectos .proyectos-enlaces>a {
+  width: 48px;
+  height: 48px;
+  display: block;
+  border: 1px solid #84a0fc;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+#proyectos .proyectos-enlaces>a:hover{
+  background-color: #84a0fc;
+  filter: drop-shadow(0 0px 10px #84a0fc);
+}
+
+#proyectos .proyectos-enlaces img {
+  filter: none;
+  width: 100%;
+  transition: filter 0.3s ease-in-out;
+}
+
+#proyectos .proyectos-enlaces>a:hover img {
+  filter: brightness(10);
+}
+
 
 @media (min-width:992px) {
   #proyectos .proyectos-botones ul{
@@ -148,8 +166,4 @@
 
   #proyectos .proyectos-botones {margin-top: 62px;}
   #proyectos .proyectos-botones button {width: 300px;}
-
-  .proyectos-img img{
-    height: 300px;
-  }
 }

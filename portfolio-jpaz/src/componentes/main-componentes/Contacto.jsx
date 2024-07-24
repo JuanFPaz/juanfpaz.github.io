@@ -16,7 +16,7 @@ function Contacto ({ id }) {
           <p><b>¡Gracias por haber visitado mi Portfolio!</b> Espero que haya sido de tu agrado y que hayas encontrado interesante el contenido de mi sitio.
             <br />
             <br />
-            Si deseas <b>contactarte conmigo</b>, a continuacion encontraras unos <b>enlaces</b> para que puedas enviarme un mensaje a mi <b>perfil de linkedin</b> o mi <b>correo electronico.</b>
+            Si deseas <b>contactarte conmigo</b>, a continuación encontrarás unos <b>enlaces</b> para que puedas enviarme un mensaje a mi <b>perfil de linkedin</b> o mi <b>correo electrónico.</b>
           </p>
           <ul>
             <li><a className='miau' style={{ backgroundImage: `url(${linkedin})` }} href='https://www.linkedin.com/in/jpaz94/' target='blank' /></li>

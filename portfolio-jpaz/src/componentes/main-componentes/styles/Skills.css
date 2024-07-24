@@ -3,13 +3,16 @@
   color: #f2f5ff;
 }
 
-#skills .skills-encabezado{
-  padding: 10px;
-  border-bottom: 1px #839ffc solid;
+
+#skills h2{
+  font-size: 2em;
+  color: #f2f5ff;
+  padding: 10px 0 10px 0;
 }
 
-#skills .skills-contenido{
-  padding:10px;
+#skills .skills-encabezado{
+  padding: 10px 0 10px 0;
+  border-bottom: 1px #839ffc solid;
 }
 
 #skills .softSkills-contenedor {

@@ -1,6 +1,8 @@
 /* eslint-disable import/no-absolute-path */
 import { useState, useEffect, useRef } from 'react'
 // Iconos
+import enlace from '/icons/enlace-blue.svg'
+import ghBlue from '/icons/gh-blue.svg'
 import react from '/icons/react.svg'
 import node from '/icons/nodejs-icon.svg'
 import unity from '/icons/unity.svg'
@@ -10,7 +12,7 @@ import js from '/icons/js.svg'
 import reactFootballito from '/img/proyectos/reactFootballito.png'
 import apiFootballito from '/img/proyectos/apiF.png'
 import nasa from '/img/proyectos/spaceOddity.png'
-import musica from '/img/proyectos/musica.png'
+import musica from '/img/proyectos/musica-2.png'
 import sistema from '/img/proyectos/sistemav.png'
 import jumpingGuy from '/img/proyectos/jg.png'
 import './styles/Proyectos.css'
@@ -207,13 +209,27 @@ function Proyectos ({ id }) {
                     <img src={proyectosContenido[boton].background} />
                   </figure>
                 </div>
-                <div className='ficha-contenedor'>
+                <div>
+                  <h3 style={{ color: '#fff' }}>Enlaces:</h3>
+                  <div className='proyectos-enlaces'>
+                    {proyectosContenido[boton].url
+                      ? (
+                        <a href={proyectosContenido[boton].url} target='blank'>
+                          <img src={enlace} alt={`Link a enlace del proyecto ${proyectosContenido[boton].titulo}`} />
+                        </a>)
+                      : (<></>)}
+                    <a href={proyectosContenido[boton].repositorio} target='blank'>
+                      <img src={ghBlue} alt={`Link a enlace del repositorio de ${proyectosContenido[boton].titulo}`} />
+                    </a>
+                  </div>
+                </div>
+                {/* <div className='ficha-contenedor'>
                   <ul>
                     <li><b>Desarrollado con:</b> {proyectosContenido[boton].tecUno}</li>
                     <li><b>Repositorio:</b> <a target='blank' href={proyectosContenido[boton].repositorio}>{proyectosContenido[boton].repoTitle}</a> </li>
                     {proyectosContenido[boton].url ? (<li><b>URL:</b> <a target='blank' href={proyectosContenido[boton].url}>{proyectosContenido[boton].urlTitle}</a></li>) : (<></>)}
                   </ul>
-                </div>
+                </div> */}
               </div>
               <div className='proyectos-text'>
                 <div ref={ref} className='proyectos-parrafos' />

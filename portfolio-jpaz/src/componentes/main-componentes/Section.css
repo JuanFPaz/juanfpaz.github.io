@@ -18,7 +18,7 @@ b {
 section div#inicio {
   width: 100%;
   padding: 10px;
-  scroll-margin-top: 90vh; /* Ajusta este valor según sea necesario */
+  scroll-margin-top: 100vh; /* Ajusta este valor según sea necesario */
 }
 
 section div#sobremi,
@@ -26,10 +26,7 @@ section div#skills,
 section div#experiencia,
 section div#contacto,
 section div#proyectos {
-  scroll-margin-top: 120px; /* Ajusta este valor según sea necesario */
-  border: 1px solid #84a0fc;
-  border-radius: 10px;
-  /* box-shadow: 1px 1px 15px -5px #84a0fc; */
+  scroll-margin-top: 10px; /* Ajusta este valor según sea necesario */
 }
 
 
