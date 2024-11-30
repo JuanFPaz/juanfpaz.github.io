@@ -70,7 +70,10 @@ const proyectosContenido = [
     tecDos:
         'VS Code - Figma - Git - Github - Notion',
     html: `
-      <p><b>React Footballito</b> es una aplicacion <b>Front end</b> en desarrollo que visualiza los datos de diferentes ligas y copas de fútbol a nivel clubes y selecciones, inspirada en <a href='https://promiedos.com.ar'>promiedos.com.ar</a>.</p>
+    <p><b>React Footballito</b> es una aplicacion en <b>desarrollo</b> creada <b>React y Javascript.</b>. Esta proyecto visualiza los datos de diferentes ligas y copas de fútbol a nivel clubes y selecciones, inspirada en <a href='https://promiedos.com.ar' target='blank'>promiedos.com.ar</a>.</p>
+    `,
+    nohtml: `
+      <p><b>React Footballito</b> es una aplicacion <b>Front end</b> en desarrollo que visualiza los datos de diferentes ligas y copas de fútbol a nivel clubes y selecciones, inspirada en</p>
       <p><b>Fue un desafio</b> construir la aplicacion desde cero y crear un estilo propio, pero celebro que pude completar el <b>objetivo principal</b> que era crear una estructura de componentes y distribucion de datos solida y reutilizable, para poder manejar y <b>visualizar</b> los datos obtenidos de <b>API Footballito</b> (aplicacion backend desarrollada en simultaneo).</p>
       <p>Actualmente me encuentro <b>mejorando los estilos</b> de la aplicacion para que sea más atractiva y para brindar una mejor experiencia al usuario y <b>documentar</b> los avances para tener un seguimiento del desarrollo de la aplicacion. <b>Para más detalles</b>, podes visitar el <a target='_blank' href='https://www.figma.com/proto/o4lS9FkHAHoImlcbQuWQl1/Maqueta-de-React-Footballito?node-id=0-1&t=U4jttj3mTXMLHjrE-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1'>prototipo de la aplicacion</a> y chequear su estado actual.</p>
     `
@@ -140,6 +143,9 @@ const proyectosContenido = [
     tecUno: 'Java - Maven',
     tecDos: 'Apache Neatbeans - Git - Github - Notion',
     html: `
+      miau
+    `,
+    nohtml: `
       <p><b>Sistema Vacacional</b> es una aplicacion de <b>escritorio</b> desarrollada con <b>Java</b> y configurada con <b>Maven</b>. Este <b>proyecto integra</b> lo aprendido en el <a target='blank' href='https://www.youtube.com/watch?v=L1oMLsiMusQ'>curso de Java</a> en mis inicios como programador.</p>
       <p>El objetivo de esta aplicacion es realizar el calculo de las vacaciones de un empleado, en base a su antigüedad y su puesto en la empresa. Pero lo que <b>destaco</b> de este proyecto, son los <b>conceptos tecnicos</b> aprendidos del lenguaje, como el uso de la terminal de comandos para compilar y probar los codigos, sobre los conceptos basicos de la programacion que me permitieron <b>adaptarme</b> más rapido a nuevos lenguajes como <b>Javascript</b>, entre otras cosas.</p>
       <p>Recientemente, recree la aplicacion utilizando el editor de codigos <b>Apache NetBeans</b> y que me permitio <b>adaptarme</b> con un nuevo entorno de desarrollo, configurar y compilar el proyecto <b>Maven</b>, implementar nuevas mejoras o crear nuevos proyectos con <b>Java</b>.</p>
@@ -203,13 +209,13 @@ function Proyectos ({ id }) {
               <h2>{proyectosContenido[boton].titulo}</h2>
             </div>
             <div className='proyectos-resumen'>
-              <div className='proyectos-tool'>
+              <div className='proyectos-img-container'>
                 <div className='proyectos-img'>
                   <figure>
-                    <img src={proyectosContenido[boton].background} />
+                    <img src={proyectosContenido[boton].background} alt={proyectosContenido[boton].figDesc} />
                   </figure>
                 </div>
-                <div>
+                <div className='proyectos-enlaces-container'>
                   <h3 style={{ color: '#fff' }}>Enlaces:</h3>
                   <div className='proyectos-enlaces'>
                     {proyectosContenido[boton].url
@@ -223,13 +229,6 @@ function Proyectos ({ id }) {
                     </a>
                   </div>
                 </div>
-                {/* <div className='ficha-contenedor'>
-                  <ul>
-                    <li><b>Desarrollado con:</b> {proyectosContenido[boton].tecUno}</li>
-                    <li><b>Repositorio:</b> <a target='blank' href={proyectosContenido[boton].repositorio}>{proyectosContenido[boton].repoTitle}</a> </li>
-                    {proyectosContenido[boton].url ? (<li><b>URL:</b> <a target='blank' href={proyectosContenido[boton].url}>{proyectosContenido[boton].urlTitle}</a></li>) : (<></>)}
-                  </ul>
-                </div> */}
               </div>
               <div className='proyectos-text'>
                 <div ref={ref} className='proyectos-parrafos' />

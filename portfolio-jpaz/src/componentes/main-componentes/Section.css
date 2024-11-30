@@ -34,10 +34,10 @@ section div#proyectos {
 section:has(> div#inicio) {
   display: flex;
   align-items: flex-start;
-  background-image: url("/background/background-1.jpg"),
+  background-image: url("/background/bk-2.jpg"),
     linear-gradient(#00080ea8, #00080ea8);
   background-blend-mode: overlay; /* Aplica el modo de mezcla "overlay" para superponer el color */
-  height: 95vh;
+  height: 100vh;
   background-position: center center; /* Centra la imagen */
   background-size: cover; /* Ajusta el tamaño de la imagen al 50% del contenedor */
   margin: 0;

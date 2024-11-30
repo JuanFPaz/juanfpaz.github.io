@@ -1,5 +1,5 @@
 .proyectos-img {
-  margin: 0 auto;
+  display: flex;
 }
 
 .proyectos-img img{
@@ -129,12 +129,12 @@
 #proyectos .proyectos-enlaces{
   display: flex;
   justify-content: space-between;
-  width: 15%;
+  width: 95px;
 }
 
 #proyectos .proyectos-enlaces>a {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   display: block;
   border: 1px solid #84a0fc;
   padding: 5px;
@@ -159,6 +159,7 @@
 
 
 @media (min-width:992px) {
+  /*te quiero mucho medidas absolutas <3*/
   #proyectos .proyectos-botones ul{
     padding: 0;
    overflow-y: visible; /*Para "desactivar" el overflow-y y no se note ese contenedor invisible cuando hovereamos los botones de la lista de proyectos.*/

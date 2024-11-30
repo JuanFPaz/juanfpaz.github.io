@@ -5,8 +5,10 @@ import './Header.css'
 function Header () {
   return (
     <header className='fixed-top'>
-      <Logo />
-      <NavHeader />
+      <div className='header-container'>
+        <Logo />
+        <NavHeader />
+      </div>
     </header>
   )
 }

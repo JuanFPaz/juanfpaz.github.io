@@ -5,14 +5,14 @@
 html {  
   font-size: 10px !important;
   scroll-padding-top: 91px;
-  background-color: #0a192f;
+  background-color: #060e1a;
 }
 
 body {
   font-family: 'Noto Sans JP', sans-serif !important;
   font-weight: 200;
   margin: 0;
-  background-color: #0a192f;
+  background-color: #060e1a;
 }
 
 ::-webkit-scrollbar {

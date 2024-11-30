@@ -52,6 +52,7 @@ function Experiencia ({ id }) {
   }
   return (
     <section>
+      {console.log('te quiero :)')}
       <div id={id} className='experiencia-contenedor'>
         <div className='experiencia-encabezado'>
           <h1>{'{ Experiencia }'}</h1>

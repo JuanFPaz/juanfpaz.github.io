@@ -97,7 +97,8 @@ section .estudios-descripcion li {
 
 
 @media (min-width:992px) {
-  #proyectos .proyectos-botones ul{
+  section .experiencia-botones ul{
+    margin-top:58px;
     padding: 0;
    overflow-y: visible; /*Para "desactivar" el overflow-y y no se note ese contenedor invisible cuando hovereamos los botones de la lista de proyectos.*/
   }

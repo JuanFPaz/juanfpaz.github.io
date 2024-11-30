@@ -1,16 +1,14 @@
 header {
-  background-color: #0a192f;
+  background-color: #060e1a;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   padding: 10px 10px 10px 10px;
-  border-bottom: 1px #839ffc solid;
-  box-shadow: 1px 1px 30px -10px #84a0fc;
+  /* border-bottom: 1px #839ffc solid;*/
+  box-shadow: 1px 1px 30px -10px #84a0fc; 
 }
 .logo-contenedor a#logo img {
   filter: none;
   transition: filter 0.5s ease-in-out;
-  height: 40px;
 }
 
 .logo-contenedor a#logo img:hover {
@@ -22,14 +20,9 @@ header {
   align-items: center;
 }
 
-/*El primer selector es para el boton que se ve en el header*/
-/*El segundo selector es para el boton que esta dentro del offcanvas 
-
-  -.- '
-*/
 header button,
 div.offcanvas-header button {
-  background-color: #0a192f;
+  background-color: #060e1a;
   border: 2px solid #84a0fc;
   border-radius: 5px !important;
   width: 40px;
@@ -95,5 +88,11 @@ div.offcanvas-body a:hover {
 
   div.offcanvas-body a {
     font-size: 1.4em;
+  }
+}
+
+@media (min-width: 1200px) {
+  header .header-container{
+    width: 1400px;
   }
 }
