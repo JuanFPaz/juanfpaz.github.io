@@ -1,31 +1,31 @@
-#skills h1 {
+#habilidades h1 {
   font-size: 2.5em;
   color: #f2f5ff;
 }
 
 
-#skills h2{
+#habilidades h2{
   font-size: 2em;
   color: #f2f5ff;
   padding: 10px 0 10px 0;
 }
 
-#skills .skills-encabezado{
+#habilidades .skills-encabezado{
   padding: 10px 0 10px 0;
   border-bottom: 1px #839ffc solid;
 }
 
-#skills .softSkills-contenedor {
+#habilidades .softSkills-contenedor {
   width: 100%;
   overflow-y: auto;
 }
 
-#skills .softSkills-contenedor,
-#skills .hardSkills-contenedor {
+#habilidades .softSkills-contenedor,
+#habilidades .hardSkills-contenedor {
   margin-top: 15px;
 }
 
-#skills .skills-contenido ul {
+#habilidades .skills-contenido ul {
   border-radius: 2px;
   height: 180px;
   display: flex;
@@ -35,53 +35,53 @@
   margin: 0;
 }
 
-#skills .skills-contenido li {
+#habilidades .skills-contenido li {
   text-overflow: ellipsis;
   color: #f2f5ff;
   padding-bottom: 10px;
 }
 
-#skills .skills-contenido li::marker {
+#habilidades .skills-contenido li::marker {
   color: #84a0fc;
 }
 
-#skills .skills-grid {
+#habilidades .skills-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 5px;
 }
 
-#skills .skills-items {
+#habilidades .skills-items {
   background-color: #16386b;
   border-radius: 2px;
   padding: 8px;
 }
 
-#skills img {
+#habilidades img {
   width: 100%;
 }
 
-#skills img[alt='Logo Unity']{
+#habilidades img[alt='Logo Unity']{
   filter: brightness(0.25);
 }
 
-#skills img[alt='Logo Node.js']{
+#habilidades img[alt='Logo Node.js']{
   filter: brightness(0.85);
 }
 
 @media (min-width: 768px) { 
 
-  #skills .skills-grid {
+  #habilidades .skills-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 5px;
   }
 
-  #skills .skills-img-container{
+  #habilidades .skills-img-container{
     width: 100%;
     margin: 0 auto;
   }
-  #skills .skills-contenido ul {
+  #habilidades .skills-contenido ul {
     height: 110px;
   }
  }

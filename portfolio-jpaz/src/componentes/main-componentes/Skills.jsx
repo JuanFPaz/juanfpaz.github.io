@@ -40,12 +40,12 @@ const arrayDeImagenes = [
     alt: 'Logo CSS 3',
     id: self.crypto.randomUUID()
   },
-  {
-    nombre: 'Bootstrap',
-    url: bootstrap,
-    alt: 'Logo Bootstrap',
-    id: self.crypto.randomUUID()
-  },
+  // {
+  //   nombre: 'Bootstrap',
+  //   url: bootstrap,
+  //   alt: 'Logo Bootstrap',
+  //   id: self.crypto.randomUUID()
+  // },
   {
     nombre: 'JavaScript',
     url: js,
@@ -58,24 +58,24 @@ const arrayDeImagenes = [
     alt: 'Logo React',
     id: self.crypto.randomUUID()
   },
-  {
-    nombre: 'Vite',
-    url: vite,
-    alt: 'Logo Vite',
-    id: self.crypto.randomUUID()
-  },
+  // {
+  //   nombre: 'Vite',
+  //   url: vite,
+  //   alt: 'Logo Vite',
+  //   id: self.crypto.randomUUID()
+  // },
   {
     nombre: 'Java',
     url: java,
     alt: 'Logo Java',
     id: self.crypto.randomUUID()
   },
-  {
-    nombre: 'Apacahe Maven',
-    url: maven,
-    alt: 'Logo Apache Maven',
-    id: self.crypto.randomUUID()
-  },
+  // {
+  //   nombre: 'Apacahe Maven',
+  //   url: maven,
+  //   alt: 'Logo Apache Maven',
+  //   id: self.crypto.randomUUID()
+  // },
   {
     nombre: 'Node.js',
     url: node,
@@ -100,12 +100,12 @@ const arrayDeImagenes = [
     alt: 'Logo CSharp',
     id: self.crypto.randomUUID()
   },
-  {
-    nombre: 'Figma',
-    url: figma,
-    alt: 'Logo Figma',
-    id: self.crypto.randomUUID()
-  },
+  // {
+  //   nombre: 'Figma',
+  //   url: figma,
+  //   alt: 'Logo Figma',
+  //   id: self.crypto.randomUUID()
+  // },
   {
     nombre: 'Notion',
     url: notion,
@@ -135,19 +135,19 @@ const arrayDeImagenes = [
     url: vscode,
     alt: 'Logo Visual Studio Code',
     id: self.crypto.randomUUID()
-  },
-  {
-    nombre: 'Apache NetBeans',
-    url: netbeans,
-    alt: 'Logo Apache NetBeans',
-    id: self.crypto.randomUUID()
-  },
-  {
-    nombre: 'Cloudflare',
-    url: cloudflare,
-    alt: 'Logo Cloudflare',
-    id: self.crypto.randomUUID()
   }
+  // {
+  //   nombre: 'Apache NetBeans',
+  //   url: netbeans,
+  //   alt: 'Logo Apache NetBeans',
+  //   id: self.crypto.randomUUID()
+  // },
+  // {
+  //   nombre: 'Cloudflare',
+  //   url: cloudflare,
+  //   alt: 'Logo Cloudflare',
+  //   id: self.crypto.randomUUID()
+  // }
 ]
 
 const softSkillsText = [
@@ -222,35 +222,47 @@ function SoftSkills () {
 }
 
 function HardSkills () {
-  const [img, setImage] = useState([...arrayDeImagenes])
-
   return (
-    <div className='hardSkills-contenedor'>
-      <div className='skills-titulo'>
-        <h2>
+    <>
+      <div className='hardSkills-contenedor'>
+        <div className='skills-titulo'>
           Hard Skills
-        </h2>
+        </div>
       </div>
-      <div className='skills-grid'>
-        {img.map((i) => (
-          <OverlayTrigger key={i.id} overlay={<Tooltip id='tooltip-disabled'>{i.nombre}</Tooltip>}>
-            <div className='skills-items'>
-              <div className='skills-img-container'>
-                <img src={i.url} alt={i.alt} />
-              </div>
-            </div>
-          </OverlayTrigger>))}
-      </div>
-    </div>
+    </>
   )
 }
+
+// function HardSkills () {
+//   const [img, setImage] = useState([...arrayDeImagenes])
+
+//   return (
+//     <div className='hardSkills-contenedor'>
+//       <div className='skills-titulo'>
+//         <h2>
+//           Hard Skills
+//         </h2>
+//       </div>
+//       <div className='skills-grid'>
+//         {img.map((i) => (
+//           <OverlayTrigger key={i.id} overlay={<Tooltip id='tooltip-disabled'>{i.nombre}</Tooltip>}>
+//             <div className='skills-items'>
+//               <div className='skills-img-container'>
+//                 <img src={i.url} alt={i.alt} />
+//               </div>
+//             </div>
+//           </OverlayTrigger>))}
+//       </div>
+//     </div>
+//   )
+// }
 
 function Skills ({ id }) {
   return (
     <section>
       <div id={id} className='skills-contenedor'>
         <div className='skills-encabezado'>
-          <h1>{'{ Skills }'}</h1>
+          <h1>{'{ Habilidades }'}</h1>
         </div>
         <div className='skills-contenido'>
           <SoftSkills />

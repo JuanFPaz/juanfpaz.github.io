@@ -64,38 +64,7 @@
   border-top: 1px solid #84a0fc;
 }
 
-#sobremi .ficha-contenedor li.liButton {
-  padding: 0;
-}
 
-#sobremi button {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  transition: background-color 0.5s ease-in-out;
-}
-
-#sobremi button:hover {
-  background-color: #84a0fc;
-  filter: drop-shadow(0 0 10px #84a0fc);
-}
-
-#sobremi  a,
-#sobremi  a:visited {
-  display: block;
-  width: 100%;
-  padding: 2px;
-  color: #84a0fc;
-  text-decoration: none;
-  transition: color 0.5s ease-in-out;
-}
-
-#sobremi .sobreMi-aside a:hover {
-  color: #f2f5ff;
-
-}
 
 
 @media (min-width:992px) {

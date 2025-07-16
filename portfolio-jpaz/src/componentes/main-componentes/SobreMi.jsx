@@ -3,7 +3,6 @@
 import './Section.css'
 import './styles/SobreMi.css'
 import profile from '/img/profile.jpg'
-import cv from '/pdf/CV-JuanPaz-2024.pdf'
 
 function SobreMi ({ id }) {
   return (
@@ -23,15 +22,6 @@ function SobreMi ({ id }) {
               <figure>
                 <img src={profile} alt='mi-foto' />
               </figure>
-            </div>
-            <div className='ficha-contenedor'>
-              <ul>
-                <li className='liButton'>
-                  <button>
-                    <a href={cv} target='_blank' rel='noopener noreferrer'> Ver Curriculum Vitae </a>
-                  </button>
-                </li>
-              </ul>
             </div>
           </div>
         </div>

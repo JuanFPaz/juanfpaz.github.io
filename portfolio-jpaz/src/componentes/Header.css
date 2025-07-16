@@ -1,98 +1,75 @@
 header {
-  background-color: #060e1a;
-  display: flex;
-  justify-content: center;
-  padding: 10px 10px 10px 10px;
-  /* border-bottom: 1px #839ffc solid;*/
-  box-shadow: 1px 1px 30px -10px #84a0fc; 
-}
-.logo-contenedor a#logo img {
-  filter: none;
-  transition: filter 0.5s ease-in-out;
-}
-
-.logo-contenedor a#logo img:hover {
-  filter: drop-shadow(0 0px 10px #84a0fc);
-}
-
-.navHeader {
-  display: flex;
-  align-items: center;
-}
-
-header button,
-div.offcanvas-header button {
-  background-color: #060e1a;
-  border: 2px solid #84a0fc;
-  border-radius: 5px !important;
-  width: 40px;
-  height: 40px;
-}
-
-div.offcanvas-header,
-div.offcanvas-body {
-  background-color: #0a192f;
-}
-
-svg {
-  width: 25px;
-  height: 25px;
-}
-
-div.offcanvas-header,
-div.offcanvas-body{
-  display: flex;
-  justify-content: end;
-  padding: 10px;
-}
-div.offcanvas-body nav {
-  display: flex;
-  justify-content: center;
-}
-
-div.offcanvas-body{
-  justify-content: center;
-}
-
-div.offcanvas-body ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style: none;
+  background-color: rgb(5, 7, 27);
   padding: 0;
-  margin: 0;
+  box-shadow: 0px 1px 40px -5px rgb(0, 99, 175);
 }
-
-div.offcanvas-body a {
-  color: #f2f5ff;
-  text-decoration: none;
-  font-size: 2em;
-  transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
-}
-div.offcanvas-body a:hover {
-  color: #84a0fc;
-  text-shadow: 0 0 15px #84a0fc;
-}
-
-@media (min-width: 1200px) { 
-  header{
-    padding: 10px 30px 10px 30px;
+  header .logo-contenedor h1{
+    font-weight: 700;
+    font-size: 1.8em;
+  }
+    header .logo-contenedor h2{
+    font-weight: 700;
+    font-size: 1em;
   }
 
-  div.offcanvas-body ul {
-    display: flex;
-    flex-direction: row;
-    width: 600px;
+div.offCanvasHeader {
+  background-color: rgb(5, 7, 27);
+}
+
+
+header a.navbar-brand ,
+div.offCanvasHeader a.navbar-brand{
+    color: rgb(255, 255, 255);
+    transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out !important;
+}
+
+header a.navbar-brand:hover ,
+div.offCanvasHeader a.navbar-brand:hover{
+  color: rgb(0, 145, 255);
+}
+div.offcanvas-body a {
+  color: rgb(242, 245, 255) !important;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+@media (min-width: 992px) {
+  header .logo-contenedor h1{
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+    header .logo-contenedor h2{
+    font-weight: 700;
+    font-size: 0.7em;
   }
 
   div.offcanvas-body a {
-    font-size: 1.4em;
+    color: rgb(242, 245, 255);
+    font-weight: 400;
+    font-size: 1.5em;
   }
 }
 
-@media (min-width: 1200px) {
-  header .header-container{
-    width: 1400px;
-  }
+button.toggleOffCanvas {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0);
+  border: 2px solid rgb(255, 255, 255) !important;
+  border-radius: 5px;
+  /* color: rgb(255, 0, 0) !important; */
+  transition: border-color 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+button.toggleOffCanvas svg{
+  padding: 5px;
+  transition:fill 0.5s ease-in-out;
+}
+
+button.toggleOffCanvas:hover {
+  border-color:rgb(0, 145, 255) !important;
+  filter: drop-shadow(0 0 5px rgb(0, 145, 255));
+}
+
+button.toggleOffCanvas svg:hover{
+  fill: rgb(0, 145, 255);
 }
