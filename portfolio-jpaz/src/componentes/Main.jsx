@@ -14,8 +14,8 @@ function Main () {
       <Inicio id='inicio' />
       <Proyectos id='proyectos' />
       <SobreMi id='sobremi' />
-      <Skills id='habilidades' />
       <Experiencia id='experiencia' />
+      <Skills id='habilidades' />
       <Contacto id='contacto' />
     </main>
   )

@@ -1,11 +1,30 @@
+#proyectos p,
+#proyectos a,
+#proyectos li{
+  font-size: 1.5rem;
+}
+#proyectos h1 {
+  font-size: 2.5rem;
+  color: rgb(242, 245, 255);
+}
+
+#proyectos h2{
+  font-size: 2rem;
+  color: rgb(242, 245, 255);
+}
+
+#proyectos p {
+  color: rgb(242, 245, 255);
+}
 .proyectos-img {
   display: flex;
+      background-color: rgb(7, 7, 7);
+    border-radius: 5px;
+    border: 1px solid rgb(92, 92, 92);;
 }
 
 .proyectos-img img{
   width: 100%;
-  height: 300px;
-  object-fit: contain;
 }
 
 .iconTec {
@@ -17,34 +36,25 @@
   filter: drop-shadow(0 0 1px black);
 }
 
+/**Este era para Unity, pero lo borre
+* 23/7/2025
+*/
 .iconTec.unity-icon {
   filter: drop-shadow(0 0 1px rgb(255, 255, 255));
 }
 
-#proyectos h1 {
-  font-size: 2.5em;
-  color: #f2f5ff;
-}
 
-#proyectos h2{
-  font-size: 2em;
-  color: #f2f5ff;
-  padding: 10px 0 10px 0;
-}
-
-#proyectos p {
-  color: #f2f5ff;
-}
 
 #proyectos .proyectos-encabezado{
   padding: 10px 0 10px 0;
-  border-bottom: 1px #839ffc solid;
+  border-bottom: 1px rgb(242, 245, 255) solid;
 }
+
 
 #proyectos .proyectos-botones ul {
   list-style: none;
   display: flex;
-  padding: 12px 0 12px 0;
+  padding: 20px 0 20px 0;
   margin: 0;
   overflow-y: auto;
 }
@@ -52,7 +62,6 @@
 #proyectos .proyectos-botones li {
   display: block;
   padding: 5px;
-  font-size: 1em;
 }
 
 #proyectos .proyectos-botones button {
@@ -60,11 +69,10 @@
   display: flex;
   background-color: rgba(0, 0, 0);
   padding: 5px;
-  font-size: 1.2em;
   font-weight: 600;
   border: 2px solid rgb(0, 145, 255);
   color: rgb(0,145,255);
-  border-radius: 15px;
+  border-radius: 7px;
   transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out , color 0.5s ease-in-out;
 }
 
@@ -72,92 +80,77 @@
   filter: drop-shadow(0 0 5px rgb(0,145,255));
 }
 
-#proyectos .proyectos-botones button#seleccionado{
+#proyectos .proyectos-botones button.seleccionado{
   background-color: rgb(0, 145, 255);
   padding: 5px;
   border: 2px solid rgb(0, 145, 255);
-  color: #000000;
+  color: rgb(0, 0, 0);
 }
 
-#proyectos .proyectos-tool {
-  display: flex;
-  flex-direction: column;
+#proyectos .proyectos-titulo {
+  padding: 20px 0 20px 0
 }
 
-#proyectos .ficha-contenedor {
-  width: 100%;
-  margin: 0 auto;
-  border: 1px solid #84a0fc;
-  border-top: 0;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-#proyectos .ficha-contenedor ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  border-top: 1px solid #84a0fc;
-}
-
-#proyectos .ficha-contenedor li {
-  color: #f2f5ff;
-  border-top: 1px solid #84a0fc;
+#proyectos .proyectos-contenido b{
+  color:rgb(0, 145, 255) ;
 }
 
 #proyectos .proyectos-contenido a {
   font-size: 1em;
-  text-decoration: none;
-  color: #84a0fc;
+  color:rgb(0, 145, 255) ;
   font-weight: 800;
   transition: text-shadow 0.5s ease-in-out;
 }
 
-
-
 #proyectos .proyectos-contenido a:hover {
-  text-shadow: 0 0 15px #84a0fc;
+  text-shadow: 0 0 15px rgb(0, 145, 255);
 }
 
 #proyectos .proyectos-enlaces{
   display: flex;
-  justify-content: space-between;
-  width: 95px;
+  justify-content: start;
+  margin: 5px 0 5px 0
 }
 
 #proyectos .proyectos-enlaces>a {
   width: 40px;
   height: 40px;
   display: block;
-  border: 1px solid #84a0fc;
-  padding: 5px;
-  border-radius: 5px;
-  transition: background-color 0.5s ease-in-out, filter 0.5s ease-in-out;
+    background-color: rgb(0, 99, 175);
+    border-radius: 4px;
+    padding: 2px;
+    margin: 0 10px 0 0;
+    transition: filter 0.5s ease-in-out
 }
 
 #proyectos .proyectos-enlaces>a:hover{
-  background-color: #84a0fc;
-  filter: drop-shadow(0 0px 10px #84a0fc);
+  filter: drop-shadow(0 0 10px rgb(0, 99, 175));
 }
 
 #proyectos .proyectos-enlaces img {
-  filter: none;
   width: 100%;
-  transition: filter 0.3s ease-in-out;
+    filter: brightness(10);
+  padding: 4px
 }
 
-#proyectos .proyectos-enlaces>a:hover img {
+/* #proyectos .proyectos-enlaces>a:hover img {
   filter: brightness(10);
-}
+} */
 
 
 @media (min-width:992px) {
+  .iconTec{
+    width: 32px;
+height: 28px;
+}
+#proyectos .proyectos-botones{padding-top: 15px}
   /*te quiero mucho medidas absolutas <3*/
   #proyectos .proyectos-botones ul{
     padding: 0;
    overflow-y: visible; /*Para "desactivar" el overflow-y y no se note ese contenedor invisible cuando hovereamos los botones de la lista de proyectos.*/
+  
   }
+#proyectos .proyectos-contenido .proyectos-descripcion{ margin-left: 1rem}
 
-  #proyectos .proyectos-botones {margin-top: 62px;}
   #proyectos .proyectos-botones button {width: 300px;}
 }

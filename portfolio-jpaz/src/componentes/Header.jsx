@@ -38,7 +38,7 @@ function Header () {
                     </svg>
                   </button>
                 </Offcanvas.Header>
-                <Offcanvas.Body className='d-flex justify-content-md-center justify-content-lg-end'>
+                <Offcanvas.Body className='d-flex justify-content-center justify-content-lg-end'>
                   <Nav variant='underline'>
                     <Nav.Item>
                       <Nav.Link href='#proyectos'>Proyectos</Nav.Link>
@@ -51,6 +51,9 @@ function Header () {
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link href='#habilidades'>Habilidades</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link href='#contacto'>Contacto</Nav.Link>
                     </Nav.Item>
                   </Nav>
                 </Offcanvas.Body>

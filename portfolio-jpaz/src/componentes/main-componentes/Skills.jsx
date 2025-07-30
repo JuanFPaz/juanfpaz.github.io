@@ -2,8 +2,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import { useState } from 'react'
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
-import Tooltip from 'react-bootstrap/Tooltip'
 import html from '/icons/html-5.svg'
 import css from '/icons/css-3.svg'
 import js from '/icons/js.svg'
@@ -30,155 +28,142 @@ import './styles/Skills.css'
 const arrayDeImagenes = [
   {
     nombre: 'HTML 5',
+    info: 'Lenguaje de Marcado.',
     url: html,
     alt: 'Logo HTML 5',
     id: self.crypto.randomUUID()
   },
   {
     nombre: 'CSS 3',
+    info: 'Lenguaje de Estilos.',
     url: css,
     alt: 'Logo CSS 3',
     id: self.crypto.randomUUID()
   },
-  // {
-  //   nombre: 'Bootstrap',
-  //   url: bootstrap,
-  //   alt: 'Logo Bootstrap',
-  //   id: self.crypto.randomUUID()
-  // },
+  {
+    nombre: 'Bootstrap',
+    info: 'Framework de Estilos.',
+    url: bootstrap,
+    alt: 'Logo Bootstrap',
+    id: self.crypto.randomUUID()
+  },
   {
     nombre: 'JavaScript',
+    info: 'Lenguaje de Programacion.',
     url: js,
     alt: 'Logo JavaScript',
     id: self.crypto.randomUUID()
   },
   {
     nombre: 'React',
+    info: 'Libreria de Javascript.',
     url: react,
     alt: 'Logo React',
     id: self.crypto.randomUUID()
   },
-  // {
-  //   nombre: 'Vite',
-  //   url: vite,
-  //   alt: 'Logo Vite',
-  //   id: self.crypto.randomUUID()
-  // },
+  {
+    nombre: 'Vite',
+    info: 'Herramienta de Desarrollo Frontend.',
+    url: vite,
+    alt: 'Logo Vite',
+    id: self.crypto.randomUUID()
+  },
   {
     nombre: 'Java',
+    info: 'Lenguaje de Programacion.',
     url: java,
     alt: 'Logo Java',
     id: self.crypto.randomUUID()
-  },
-  // {
-  //   nombre: 'Apacahe Maven',
-  //   url: maven,
-  //   alt: 'Logo Apache Maven',
-  //   id: self.crypto.randomUUID()
-  // },
-  {
-    nombre: 'Node.js',
-    url: node,
-    alt: 'Logo Node.js',
-    id: self.crypto.randomUUID()
-  },
-  {
-    nombre: 'Express.js',
-    url: express,
-    alt: 'Logo Express.js',
-    id: self.crypto.randomUUID()
-  },
-  {
-    nombre: 'Unity Engine',
-    url: unity,
-    alt: 'Logo Unity',
-    id: self.crypto.randomUUID()
-  },
-  {
-    nombre: 'C# (CSharp)',
-    url: csharp,
-    alt: 'Logo CSharp',
-    id: self.crypto.randomUUID()
-  },
-  // {
-  //   nombre: 'Figma',
-  //   url: figma,
-  //   alt: 'Logo Figma',
-  //   id: self.crypto.randomUUID()
-  // },
-  {
-    nombre: 'Notion',
-    url: notion,
-    alt: 'Logo Notion',
-    id: self.crypto.randomUUID()
-  },
-  {
-    nombre: 'Trello',
-    url: trello,
-    alt: 'Logo Trello',
-    id: self.crypto.randomUUID()
-  },
-  {
-    nombre: 'Git',
-    url: git,
-    alt: 'Logo Git',
-    id: self.crypto.randomUUID()
-  },
-  {
-    nombre: 'GitHub',
-    url: github,
-    alt: 'Logo GitHub',
-    id: self.crypto.randomUUID()
-  },
-  {
-    nombre: 'VS Code',
-    url: vscode,
-    alt: 'Logo Visual Studio Code',
-    id: self.crypto.randomUUID()
   }
-  // {
-  //   nombre: 'Apache NetBeans',
-  //   url: netbeans,
-  //   alt: 'Logo Apache NetBeans',
-  //   id: self.crypto.randomUUID()
-  // },
-  // {
-  //   nombre: 'Cloudflare',
-  //   url: cloudflare,
-  //   alt: 'Logo Cloudflare',
-  //   id: self.crypto.randomUUID()
-  // }
+]
+
+const arrayDeImagenesDos = [{
+  nombre: 'Node.js',
+  info: 'Entorno de desarrollo.',
+  url: node,
+  alt: 'Logo Node.js',
+  id: self.crypto.randomUUID()
+},
+{
+  nombre: 'Express.js',
+  info: 'Framework de Node.js.',
+  url: express,
+  alt: 'Logo Express.js',
+  id: self.crypto.randomUUID()
+},
+{
+  nombre: 'Notion',
+  info: 'Herramienta de Gestion de Tareas.',
+  url: notion,
+  alt: 'Logo Notion',
+  id: self.crypto.randomUUID()
+},
+{
+  nombre: 'Trello',
+  info: 'Herramienta de Gestion de Tareas.',
+  url: trello,
+  alt: 'Logo Trello',
+  id: self.crypto.randomUUID()
+},
+{
+  nombre: 'Git',
+  info: 'Sistema de Gestion de Versiones.',
+  url: git,
+  alt: 'Logo Git',
+  id: self.crypto.randomUUID()
+},
+{
+  nombre: 'GitHub',
+  info: 'Plataforma de almacenamiento de proyectos.',
+  url: github,
+  alt: 'Logo GitHub',
+  id: self.crypto.randomUUID()
+},
+{
+  nombre: 'VS Code',
+  info: 'Editor de Codigo.',
+  url: vscode,
+  alt: 'Logo Visual Studio Code',
+  id: self.crypto.randomUUID()
+}
 ]
 
 const softSkillsText = [
   {
     id: 0,
-    text: 'Gestión de proyectos'
+    text: 'Adaptabilidad'
   },
   {
     id: 1,
-    text: 'Trabajo en equipo'
+    text: 'Empatia'
   },
 
   {
     id: 2,
-    text: 'Comunicación'
+    text: 'Compromiso'
   },
   {
     id: 3,
-    text: 'Resolución  de problemas'
+    text: 'Trabajo en Equipo'
   },
   {
     id: 4,
-    text: 'Organización'
+    text: 'Colaborador'
+  }
+]
+
+const softSkillsTextDos = [
+  {
+    id: 4,
+    text: 'Autodidacta'
   },
   {
     id: 5,
-    text: 'Colaboración'
+    text: 'Comunicacion'
   },
   {
     id: 6,
-    text: 'Pensamiento lógico'
+    text: 'Resolucion de Problemas'
   },
   {
     id: 7,
@@ -186,19 +171,7 @@ const softSkillsText = [
   },
   {
     id: 8,
-    text: 'Adaptabilidad'
-  },
-  {
-    id: 9,
-    text: 'Empatía'
-  },
-  {
-    id: 10,
-    text: 'Escucha activa'
-  },
-  {
-    id: 11,
-    text: 'Compromiso'
+    text: 'Gestion de Proyectos'
   }
 ]
 
@@ -207,62 +180,90 @@ function SoftSkills () {
     <div className='softSkills-contenedor'>
       <div className='skills-titulo'>
         <h2>
-          Soft Skills
+          Habilidades Blandas
         </h2>
       </div>
-      <ul>
-        {softSkillsText.map(({ id, text }) => (
-          <li key={id}>
-            {text}
-          </li>
-        ))}
-      </ul>
+      <div className='skills-list'>
+        <div className='row'>
+          <div className='col-lg-6'>
+            {softSkillsText.map(({ id, text }) => (
+              <div className='skills-items' key={id}>
+                <span>{text}</span>
+              </div>
+            ))}
+          </div>
+          <div className='col-lg-6'>
+            {softSkillsTextDos.map(({ id, text }) => (
+              <div className='skills-items' key={id}>
+                <span>{text}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* <ul>
+          {softSkillsText.map(({ id, text }) => (
+            <li key={id}>
+              {text}
+            </li>
+          ))}
+        </ul> */}
+      </div>
     </div>
   )
 }
 
 function HardSkills () {
+  const [img, setImage] = useState([...arrayDeImagenes])
+  const [img2, setImage2] = useState([...arrayDeImagenesDos])
+
   return (
-    <>
-      <div className='hardSkills-contenedor'>
-        <div className='skills-titulo'>
-          Hard Skills
-        </div>
+    <div className='techHabilidades-contenedor'>
+      <div className='skills-titulo'>
+        <h2>
+          Habilidades Tecnicas
+        </h2>
       </div>
-    </>
+      <div className='skills-list'>
+        <div className='row'>
+          <div className='col-lg-6'>
+            {img.map((i) => (
+              <div className='skills-items' key={i.id}>
+                <img src={i.url} alt={i.alt} />
+                <div className='desc-container d-flex flex-column justify-content-center'>
+                  <ul>
+                    <li className='nameItem'> {i.nombre} </li>
+                    <li className='descItem'> {i.info ? i.info : 'miau'}</li>
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className='col-lg-6'>
+            {img2.map((i) => (
+              <div className='skills-items' key={i.id}>
+                <img src={i.url} alt={i.alt} />
+                <div className='desc-container d-flex flex-column justify-content-center'>
+                  <ul>
+                    <li className='nameItem'> {i.nombre} </li>
+                    <li className='descItem'> {i.info ? i.info : 'miau'}</li>
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </div>
   )
 }
-
-// function HardSkills () {
-//   const [img, setImage] = useState([...arrayDeImagenes])
-
-//   return (
-//     <div className='hardSkills-contenedor'>
-//       <div className='skills-titulo'>
-//         <h2>
-//           Hard Skills
-//         </h2>
-//       </div>
-//       <div className='skills-grid'>
-//         {img.map((i) => (
-//           <OverlayTrigger key={i.id} overlay={<Tooltip id='tooltip-disabled'>{i.nombre}</Tooltip>}>
-//             <div className='skills-items'>
-//               <div className='skills-img-container'>
-//                 <img src={i.url} alt={i.alt} />
-//               </div>
-//             </div>
-//           </OverlayTrigger>))}
-//       </div>
-//     </div>
-//   )
-// }
 
 function Skills ({ id }) {
   return (
     <section>
-      <div id={id} className='skills-contenedor'>
+      <div id={id} className='container-lg'>
         <div className='skills-encabezado'>
-          <h1>{'{ Habilidades }'}</h1>
+          <h1>Habilidades</h1>
         </div>
         <div className='skills-contenido'>
           <SoftSkills />

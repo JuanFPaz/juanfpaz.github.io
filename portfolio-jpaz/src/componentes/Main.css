@@ -4,18 +4,6 @@ main {
   justify-content: center;
   align-items: center;
   }
-
-  
-  main p {
-    margin: 12px 0 0 0;
-    font-size: 1.3em;
-    line-height: 1.4;
-  }
-  
-  main li{
-    font-size: 1.2em;
-  }
-
-  main a{
-    font-size: 1.2em;
-  }
+  main h1,
+  main h2,
+  main h3 {margin: 0}

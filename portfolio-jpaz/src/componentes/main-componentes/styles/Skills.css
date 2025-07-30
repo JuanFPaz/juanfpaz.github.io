@@ -1,87 +1,62 @@
 #habilidades h1 {
-  font-size: 2.5em;
-  color: #f2f5ff;
-}
+  font-size: 2.5rem;
+  color: rgb(242, 245, 255);}
 
+#habilidades h2 {
+  font-size: 2rem;
+  color: rgb(242, 245, 255);}
 
-#habilidades h2{
-  font-size: 2em;
-  color: #f2f5ff;
+#habilidades li{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: rgb(242, 245, 255);}
+
+#habilidades span{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: rgb(242, 245, 255);}
+
+#habilidades .skills-encabezado {
   padding: 10px 0 10px 0;
+  border-bottom: 1px #ffffff solid;
 }
 
-#habilidades .skills-encabezado{
-  padding: 10px 0 10px 0;
-  border-bottom: 1px #839ffc solid;
+#habilidades .skills-titulo {
+  padding: 20px 0 20px 0;
 }
 
-#habilidades .softSkills-contenedor {
-  width: 100%;
-  overflow-y: auto;
-}
+/* #habilidades .techHabilidades-contenedor .skills-flex {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+} */
 
-#habilidades .softSkills-contenedor,
-#habilidades .hardSkills-contenedor {
-  margin-top: 15px;
-}
-
-#habilidades .skills-contenido ul {
-  border-radius: 2px;
-  height: 180px;
+#habilidades  .skills-items {
   display: flex;
   justify-content: flex-start;
-  flex-direction: column;
-  flex-wrap: wrap;
+    background: rgb(14 39 77);
+  border: 1px rgb(24, 67, 131) solid;
+  border-radius: 7px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+#habilidades .techHabilidades-contenedor .skills-items ul{
+  list-style: none;
   margin: 0;
 }
 
-#habilidades .skills-contenido li {
-  text-overflow: ellipsis;
-  color: #f2f5ff;
-  padding-bottom: 10px;
+#habilidades .techHabilidades-contenedor .skills-items li.descItem{
+  font-size: 1.3rem;
+  color: rgb(130, 130, 130) ;
 }
 
-#habilidades .skills-contenido li::marker {
-  color: #84a0fc;
-}
-
-#habilidades .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 5px;
-}
-
-#habilidades .skills-items {
-  background-color: #16386b;
-  border-radius: 2px;
-  padding: 8px;
+#habilidades .techHabilidades-contenedor .skills-items ul{
+  list-style: none;
+  margin: 0;
 }
 
 #habilidades img {
-  width: 100%;
+  width: 10%;
 }
-
-#habilidades img[alt='Logo Unity']{
-  filter: brightness(0.25);
-}
-
-#habilidades img[alt='Logo Node.js']{
-  filter: brightness(0.85);
-}
-
-@media (min-width: 768px) { 
-
-  #habilidades .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 5px;
-  }
-
-  #habilidades .skills-img-container{
-    width: 100%;
-    margin: 0 auto;
-  }
-  #habilidades .skills-contenido ul {
-    height: 110px;
-  }
- }

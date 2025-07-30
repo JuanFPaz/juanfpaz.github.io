@@ -48,7 +48,7 @@ function Estudios ({ id }) {
   }
   return (
     <section>
-      <div id={id} className='estudios-contenedor'>
+      <div id={id} className='container-lg'>
         <div className='estudios-encabezado'>
           <h1>{'{ Educacion }'}</h1>
         </div>

@@ -6,7 +6,7 @@ function Footer () {
       <ul>
         <li>Desarrollado por Juan Paz.</li>
         <li>Desplegado con Github Pages.</li>
-        <li>2023 - 2024</li>
+        <li>2023 - {new Date().getFullYear()}</li>
       </ul>
     </footer>
   )

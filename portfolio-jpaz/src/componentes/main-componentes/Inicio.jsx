@@ -1,7 +1,7 @@
 /* eslint-disable import/no-absolute-path */
 /* eslint-disable no-unused-vars */
 import './styles/Inicio.css'
-import cv from '/pdf/CV-JuanPaz-2024.pdf'
+import cv from '/pdf/CV-JuanPaz-2025.pdf'
 
 function Inicio ({ id }) {
   return (
@@ -15,7 +15,7 @@ function Inicio ({ id }) {
                 Soy un <b>desarrollador web</b>  especializado en Javascript creando aplicaciones Front end y Back end, <b>gestionando eficazmente</b> mis proyectos y con <b>conocimientos sólidos</b> utilizando diferentes lenguajes de programación y herramientas de desarrollo.
                 <br />
                 <br />
-                Actualmente estoy <b>enfocado</b> en crecer como profesional en el <b>desarrollo de aplicaciones.</b>
+                Actualmente estoy en <b>busqueda de trabajo</b>, para forjar mi perfil profesional como <b>desarrollo de Software</b>.
               </p>
             </div>
             <div className='row mt-5'>
